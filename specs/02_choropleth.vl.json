@@ -1,0 +1,166 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 2. Choropleth map: average rating of bars by the country where the cocoa beans were grown. A slider limits the map to reviews from a chosen year onwards.",
+  "width": "container",
+  "height": 380,
+  "projection": {"type": "equalEarth"},
+  "params": [
+    {
+      "name": "fromYear",
+      "value": 2006,
+      "bind": {
+        "input": "range",
+        "min": 2006,
+        "max": 2021,
+        "step": 1,
+        "name": "Show reviews from the year "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "description": "Background: every country in a pale neutral, so the cocoa belt stands out",
+      "data": {
+        "url": "data/processed/world-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [{"filter": "datum.properties.iso3 != 'ATA'"}],
+      "mark": {"type": "geoshape", "fill": "#EFE7DC", "stroke": "#FFFDF9", "strokeWidth": 0.5}
+    },
+    {
+      "description": "Bean countries, shaded by average rating",
+      "data": {"url": "data/processed/chocolate.csv"},
+      "transform": [
+        {
+          "filter": "isValid(datum.bean_iso3) && datum.bean_iso3 != '' && datum.review_year >= fromYear"
+        },
+        {
+          "aggregate": [
+            {"op": "mean", "field": "rating", "as": "avg_rating"},
+            {"op": "count", "as": "n_bars"}
+          ],
+          "groupby": ["bean_iso3", "bean_country"]
+        },
+        {
+          "lookup": "bean_iso3",
+          "from": {
+            "data": {
+              "url": "data/processed/world-110m.json",
+              "format": {"type": "topojson", "feature": "countries"}
+            },
+            "key": "properties.iso3"
+          },
+          "as": "geo"
+        },
+        {"filter": "isValid(datum.geo)"},
+        {
+          "calculate": "datum.n_bars >= 5 ? format(datum.avg_rating, '.2f') : format(datum.avg_rating, '.2f') + ' (too few bars to compare)'",
+          "as": "rating_text"
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "#FFFDF9", "strokeWidth": 0.6, "cursor": "pointer"},
+      "encoding": {
+        "shape": {"field": "geo", "type": "geojson"},
+        "color": {
+          "condition": {"test": "datum.n_bars < 5", "value": "#D8CEC2"},
+          "field": "avg_rating",
+          "type": "quantitative",
+          "title": "Average rating (out of 5)",
+          "scale": {
+            "domain": [2.8, 3.5],
+            "range": ["#EFD5B2", "#C48A57", "#4E2A16"],
+            "clamp": true
+          },
+          "legend": {
+            "orient": "bottom-left",
+            "direction": "horizontal",
+            "gradientLength": 180,
+            "format": ".1f",
+            "values": [2.8, 3, 3.2, 3.4]
+          }
+        },
+        "tooltip": [
+          {"field": "bean_country", "title": "Beans grown in"},
+          {"field": "rating_text", "title": "Average rating"},
+          {"field": "n_bars", "title": "Bars reviewed"}
+        ]
+      }
+    },
+    {
+      "description": "Annotation: circle and label the top-rated bean country (at least 10 bars). It moves with the slider.",
+      "data": {"url": "data/processed/chocolate.csv"},
+      "transform": [
+        {
+          "filter": "isValid(datum.bean_iso3) && datum.bean_iso3 != '' && datum.review_year >= fromYear"
+        },
+        {
+          "aggregate": [
+            {"op": "mean", "field": "rating", "as": "avg_rating"},
+            {"op": "count", "as": "n_bars"}
+          ],
+          "groupby": ["bean_iso3", "bean_country"]
+        },
+        {"filter": "datum.n_bars >= 10"},
+        {
+          "window": [{"op": "row_number", "as": "rank"}],
+          "sort": [{"field": "avg_rating", "order": "descending"}]
+        },
+        {"filter": "datum.rank == 1"},
+        {
+          "lookup": "bean_iso3",
+          "from": {
+            "data": {"url": "data/processed/country_points.csv"},
+            "key": "iso3",
+            "fields": ["lon", "lat"]
+          }
+        },
+        {
+          "calculate": "'Top rated: ' + datum.bean_country + ' (' + format(datum.avg_rating, '.2f') + ')'",
+          "as": "label"
+        }
+      ],
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 260,
+            "fillOpacity": 0,
+            "stroke": "#B5652B",
+            "strokeWidth": 2
+          }
+        },
+        {
+          "transform": [{"filter": "datum.lon > 90"}],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -14,
+            "dy": -12,
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2B1D14"
+          },
+          "encoding": {"text": {"field": "label"}}
+        },
+        {
+          "transform": [{"filter": "datum.lon <= 90"}],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 14,
+            "dy": -12,
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2B1D14"
+          },
+          "encoding": {"text": {"field": "label"}}
+        }
+      ]
+    }
+  ],
+  "autosize": {"type": "fit-x", "contains": "padding"}
+}

@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 11. Tasting words: the 24 words used most often to describe bars, sorted by the average rating of the bars they describe. Each line starts at the average for all bars, so words on the right side belong to better-than-average bars. Dot size = how many bars the word describes.",
+  "width": "container",
+  "height": {"step": 17},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "layer": [
+    {
+      "data": {"url": "data/processed/tasting_words.csv"},
+      "transform": [
+        {"joinaggregate": [{"op": "mean", "field": "rating", "as": "all_avg"}]},
+        {
+          "aggregate": [
+            {"op": "mean", "field": "rating", "as": "avg_rating"},
+            {"op": "count", "as": "n_bars"},
+            {"op": "max", "field": "all_avg", "as": "all_avg"}
+          ],
+          "groupby": ["word"]
+        },
+        {
+          "window": [{"op": "row_number", "as": "rank"}],
+          "sort": [{"field": "n_bars", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 24"}
+      ],
+      "encoding": {
+        "y": {
+          "field": "word",
+          "type": "nominal",
+          "title": null,
+          "sort": {"field": "avg_rating", "order": "descending"},
+          "axis": {"labelFontSize": 12.5, "labelColor": "#2B1D14", "ticks": false, "domain": false}
+        }
+      },
+      "layer": [
+        {
+          "mark": {"type": "rule", "strokeWidth": 2, "color": "#D9B793"},
+          "encoding": {
+            "x": {"field": "all_avg", "type": "quantitative"},
+            "x2": {"field": "avg_rating"}
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "color": "#8E5531",
+            "opacity": 1,
+            "stroke": "#FFFDF9",
+            "strokeWidth": 1.2,
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "x": {
+              "field": "avg_rating",
+              "type": "quantitative",
+              "title": "Average rating of the bars described with this word",
+              "scale": {"domain": [2.6, 3.7], "zero": false},
+              "axis": {"values": [2.6, 2.8, 3, 3.2, 3.4, 3.6], "format": ".1f", "grid": true}
+            },
+            "size": {
+              "field": "n_bars",
+              "type": "quantitative",
+              "title": "Bars described this way",
+              "scale": {"range": [30, 320]},
+              "legend": {
+                "orient": "bottom-right",
+                "direction": "vertical",
+                "symbolFillColor": "#8E5531",
+                "symbolStrokeWidth": 0,
+                "values": [50, 100, 200]
+              }
+            },
+            "tooltip": [
+              {"field": "word", "title": "Word"},
+              {"field": "n_bars", "title": "Bars described this way"},
+              {"field": "avg_rating", "title": "Average rating", "format": ".2f"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "data": {"url": "data/processed/chocolate.csv"},
+      "transform": [
+        {"aggregate": [{"op": "mean", "field": "rating", "as": "avg"}]},
+        {"calculate": "'Average of all bars: ' + format(datum.avg, '.2f')", "as": "txt"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "#B5652B", "strokeDash": [4, 3], "strokeWidth": 1.5},
+          "encoding": {"x": {"field": "avg", "type": "quantitative"}}
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5,
+            "baseline": "bottom",
+            "dy": -4,
+            "fontSize": 12,
+            "fontWeight": 600,
+            "color": "#B5652B"
+          },
+          "encoding": {
+            "x": {"field": "avg", "type": "quantitative"},
+            "y": {"value": 0},
+            "text": {"field": "txt"}
+          }
+        }
+      ]
+    }
+  ]
+}

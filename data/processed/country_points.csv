@@ -1,0 +1,88 @@
+iso3,lon,lat,country,region
+ARE,54.2,23.871,United Arab Emirates,Asia
+ARG,-64.738,-34.57,Argentina,South America
+AUS,134.225,-25.618,Australia,Oceania
+AUT,14.06,47.621,Austria,Europe
+BEL,4.588,50.653,Belgium,Europe
+BLZ,-88.704,17.195,Belize,Central America & Caribbean
+BOL,-64.655,-16.704,Bolivia,South America
+BRA,-53.173,-10.655,Brazil,South America
+CAN,-97.859,58.45,Canada,North America
+CHE,8.116,46.793,Switzerland,Europe
+CHL,-71.238,-35.882,Chile,South America
+CHN,103.424,36.748,China,Asia
+CIV,-5.612,7.552,Côte d'Ivoire,Africa
+CMR,12.606,5.654,Cameroon,Africa
+COD,23.577,-2.839,DR Congo,Africa
+COG,15.136,-0.837,Congo,Africa
+COL,-73.073,3.916,Colombia,South America
+CRI,-84.173,9.966,Costa Rica,Central America & Caribbean
+CUB,-78.932,21.647,Cuba,Central America & Caribbean
+CZE,15.343,49.78,Czechia,Europe
+DEU,10.27,51.077,Germany,Europe
+DNK,9.303,56.21,Denmark,Europe
+DOM,-70.462,18.885,Dominican Republic,Central America & Caribbean
+ECU,-78.384,-1.454,Ecuador,South America
+ESP,-3.624,40.321,Spain,Europe
+FIN,26.142,64.261,Finland,Europe
+FJI,178.07,-17.71,Fiji,Oceania
+FRA,2.349,46.559,France,Europe
+GAB,11.687,-0.647,Gabon,Africa
+GBR,-2.566,53.769,United Kingdom,Europe
+GHA,-1.237,7.923,Ghana,Africa
+GRD,-61.68,12.12,Grenada,Central America & Caribbean
+GTM,-90.372,15.696,Guatemala,Central America & Caribbean
+HND,-86.593,14.825,Honduras,Central America & Caribbean
+HTI,-72.659,18.9,Haiti,Central America & Caribbean
+HUN,19.343,47.204,Hungary,Europe
+IDN,114.022,-0.255,Indonesia,Asia
+IND,79.54,22.819,India,Asia
+IRL,-8.017,53.172,Ireland,Europe
+ISL,-18.765,65.08,Iceland,Europe
+ISR,35.001,31.479,Israel,Asia
+ITA,12.367,43.428,Italy,Europe
+JAM,-77.324,18.138,Jamaica,Central America & Caribbean
+JPN,136.713,36.008,Japan,Asia
+KOR,127.82,36.419,South Korea,Asia
+LBR,-9.409,6.43,Liberia,Africa
+LCA,-60.98,13.91,St Lucia,Central America & Caribbean
+LKA,80.668,7.7,Sri Lanka,Asia
+LTU,23.888,55.283,Lithuania,Europe
+MDG,46.729,-19.301,Madagascar,Africa
+MEX,-102.223,23.913,Mexico,North America
+MMR,96.513,20.945,Myanmar,Asia
+MTQ,-61.02,14.64,Martinique,Central America & Caribbean
+MYS,114.668,3.548,Malaysia,Asia
+NGA,7.986,9.545,Nigeria,Africa
+NIC,-85.021,12.847,Nicaragua,Central America & Caribbean
+NLD,5.5,52.293,Netherlands,Europe
+NOR,12.368,64.086,Norway,Europe
+NZL,170.597,-43.962,New Zealand,Oceania
+PAN,-80.109,8.533,Panama,Central America & Caribbean
+PER,-74.431,-9.147,Peru,South America
+PHL,121.55,15.742,Philippines,Asia
+PNG,144.322,-6.645,Papua New Guinea,Oceania
+POL,19.344,52.134,Poland,Europe
+PRI,-66.5,18.22,Puerto Rico,Central America & Caribbean
+PRT,-8.061,39.607,Portugal,Europe
+RUS,95.718,65.943,Russia,Europe
+SGP,103.82,1.35,Singapore,Asia
+SLB,160.16,-9.64,Solomon Islands,Oceania
+SLE,-11.795,8.53,Sierra Leone,Africa
+SLV,-88.872,13.726,El Salvador,Central America & Caribbean
+STP,6.61,0.19,São Tomé and Príncipe,Africa
+SUR,-55.911,4.12,Suriname,South America
+SWE,16.109,62.419,Sweden,Europe
+TGO,0.998,8.435,Togo,Africa
+THA,101.002,14.981,Thailand,Asia
+TTO,-61.22,10.45,Trinidad and Tobago,Central America & Caribbean
+TWN,120.972,23.739,Taiwan,Asia
+TZA,34.742,-6.251,Tanzania,Africa
+UGA,32.357,1.295,Uganda,Africa
+USA,-98.734,39.868,United States,North America
+VCT,-61.2,13.25,St Vincent and the Grenadines,Central America & Caribbean
+VEN,-66.153,7.161,Venezuela,South America
+VNM,106.333,16.556,Vietnam,Asia
+VUT,167.95,-15.38,Vanuatu,Oceania
+WSM,-172.1,-13.76,Samoa,Oceania
+ZAF,25.158,-28.923,South Africa,Africa

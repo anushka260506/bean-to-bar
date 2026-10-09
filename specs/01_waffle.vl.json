@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 1. Waffle chart: out of every 100 bars, how many fall in each rating band. Each square = 1% of all bars reviewed.",
+  "width": 300,
+  "height": 300,
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [
+    {"joinaggregate": [{"op": "count", "as": "band_count"}], "groupby": ["rating_band"]},
+    {"joinaggregate": [{"op": "count", "as": "total"}]},
+    {
+      "window": [{"op": "row_number", "as": "rank"}],
+      "sort": [{"field": "rating_band_order"}, {"field": "rating", "order": "descending"}]
+    },
+    {"calculate": "floor((datum.rank - 1) * 100 / datum.total)", "as": "square"},
+    {"calculate": "floor((datum.square + 0.5) * datum.total / 100) + 1", "as": "middle_rank"},
+    {"filter": "datum.rank == datum.middle_rank"},
+    {"calculate": "datum.square % 10", "as": "col"},
+    {"calculate": "floor(datum.square / 10)", "as": "row"},
+    {"calculate": "format(datum.band_count / datum.total, '.1%')", "as": "share"}
+  ],
+  "mark": {
+    "type": "square",
+    "size": 520,
+    "stroke": "#FFFDF9",
+    "strokeWidth": 1.5,
+    "cursor": "pointer"
+  },
+  "params": [
+    {
+      "name": "hoverBand",
+      "select": {
+        "type": "point",
+        "fields": ["rating_band"],
+        "on": "pointerover",
+        "clear": "pointerout"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {"field": "col", "type": "ordinal", "axis": null},
+    "y": {"field": "row", "type": "ordinal", "axis": null},
+    "color": {
+      "field": "rating_band",
+      "type": "nominal",
+      "title": "Rating band",
+      "scale": {
+        "domain": [
+          "Outstanding",
+          "Highly recommended",
+          "Recommended",
+          "Disappointing",
+          "Unpleasant"
+        ],
+        "range": ["#4E2A16", "#8E5531", "#C48A57", "#E0B98A", "#EFD5B2"]
+      },
+      "legend": {
+        "orient": "right",
+        "symbolType": "square",
+        "symbolSize": 160,
+        "labelLimit": 240,
+        "labelExpr": "datum.label == 'Outstanding' ? 'Outstanding (4–5)' : datum.label == 'Highly recommended' ? 'Highly recommended (3.5–3.9)' : datum.label == 'Recommended' ? 'Recommended (3–3.4)' : datum.label == 'Disappointing' ? 'Disappointing (2–2.9)' : 'Unpleasant (1–1.9)'"
+      }
+    },
+    "opacity": {"condition": {"param": "hoverBand", "empty": true, "value": 1}, "value": 0.35},
+    "tooltip": [
+      {"field": "rating_band", "title": "Rating band"},
+      {"field": "band_count", "title": "Number of bars", "format": ","},
+      {"field": "share", "title": "Share of all bars"}
+    ]
+  }
+}

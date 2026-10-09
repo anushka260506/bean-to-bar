@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Bean to Bar: What Makes a Great Chocolate Bar?</title>
+  <meta name="author" content="Anushka Khunteta">
+  <meta name="description" content="A data story about 2,700 expert chocolate bar reviews and where cocoa comes from. FIT3179 Data Visualisation 2.">
+
+  <!-- Fonts: Fraunces (headings) + Source Sans 3 (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vega, Vega-Lite and Vega-Embed (pinned versions) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="hero">
+    <p class="kicker">Product reviews · A data story</p>
+    <h1>From Bean to Bar</h1>
+    <p class="lede">What makes a great chocolate bar? We look at thousands of expert reviews and the countries where cocoa grows to find out.</p>
+    <p class="byline">By Anushka Khunteta · Created October 2026 · FIT3179 Data Visualisation, Monash University</p>
+  </header>
+
+  <!-- ===================== SECTION 1 ===================== -->
+  <section class="section" id="s1">
+    <div class="row">
+      <div class="span-5">
+        <h2 class="section-head"><span class="num">1</span>The verdict on <span data-fact="bars">2,500</span> bars</h2>
+        <p>One expert has tasted and rated <span data-fact="bars">2,500</span> dark chocolate bars since 2006. How many of them are actually worth buying?</p>
+        <p>Each bar is scored from 1 to 5. Anything from 4 up is <b>outstanding</b>, and anything under 3 is <b>disappointing</b>.</p>
+        <div class="facts">
+          <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
+          <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
+          <div class="fact"><b>1</b><span>expert taster</span></div>
+        </div>
+      </div>
+      <figure class="chart span-7" id="c01">
+        <h3>Out of every 100 bars, how many are outstanding?</h3>
+        <p class="chart-intro">Each square stands for 1 in every 100 bars reviewed. Darker squares are better bars.</p>
+        <div class="vis" id="vis01"></div>
+        <figcaption class="source">Data: Flavors of Cacao chocolate database (Brady Brelinski).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 2 ===================== -->
+  <section class="section" id="s2">
+    <div class="section-head">
+      <h2><span class="num">2</span>Where do the beans come from?</h2>
+      <p>Cocoa only grows in a narrow belt near the equator. Do the countries that grow the most cocoa also grow the best?</p>
+    </div>
+    <div class="row">
+      <figure class="chart span-12" id="c02">
+        <h3>Average rating by the country where the beans grew</h3>
+        <p class="chart-intro">Darker countries produced better-rated bars. Drag the slider to see only recent reviews.</p>
+        <div class="vis" id="vis02"><div class="pending">Chart 2 · Choropleth map · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="chart span-8" id="c03">
+        <h3>Who grows the most cocoa?</h3>
+        <p class="chart-intro">Bigger circles mean more cocoa grown. Circle colour shows the average rating of bars made from that country's beans.</p>
+        <div class="vis" id="vis03"><div class="pending">Chart 3 · Proportional symbol map · coming in Step 6</div></div>
+        <figcaption class="source">Data: FAOSTAT, Food and Agriculture Organization of the United Nations; Flavors of Cacao.</figcaption>
+      </figure>
+      <aside class="callout span-4">
+        <h3>The takeaway</h3>
+        <p>Written once we analyse the data.</p>
+      </aside>
+    </div>
+    <div class="row">
+      <div class="span-5">
+        <p>Text about the biggest surprises goes here once we analyse the data.</p>
+      </div>
+      <figure class="chart span-7" id="c04">
+        <h3>Big growers vs top-rated growers</h3>
+        <p class="chart-intro">Each dot is a cocoa-growing country. Further right means it grows more cocoa, and higher up means its beans make better-rated bars.</p>
+        <div class="vis" id="vis04"><div class="pending">Chart 4 · Scatterplot · coming in Step 6</div></div>
+        <figcaption class="source">Data: FAOSTAT; Flavors of Cacao.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 ===================== -->
+  <section class="section" id="s3">
+    <div class="section-head">
+      <h2><span class="num">3</span>Who makes the bars?</h2>
+      <p>Beans rarely become bars where they are grown. They travel across the world to craft makers, including several here in Australia.</p>
+    </div>
+    <div class="row">
+      <figure class="chart span-12" id="c05">
+        <h3>Where Australian makers get their beans</h3>
+        <p class="chart-intro">Each line joins a bean country to the maker's country. Thicker lines mean more bars. Pick another maker country from the list.</p>
+        <div class="vis" id="vis05"><div class="pending">Chart 5 · Flow map · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="chart span-6" id="c06">
+        <h3>Where are the makers? Continent, then country</h3>
+        <p class="chart-intro">Each box is one country where chocolate makers are based. Bigger boxes mean more bars reviewed. Darker boxes mean better average ratings. Hover over a box for details.</p>
+        <div class="vis" id="vis06"><div class="pending">Chart 6 · Treemap · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+      <figure class="chart span-6" id="c07">
+        <h3>Which regions make the most outstanding bars?</h3>
+        <p class="chart-intro">Each column is a maker region, and wider columns mean more bars. Each column is split by rating band, so the dark strip at the top shows the share of outstanding bars. Regions with under 5% of all bars are grouped as “Other regions”.</p>
+        <div class="vis" id="vis07"><div class="pending">Chart 7 · Mosaic chart · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="chart span-7" id="c08">
+        <h3>Australia's chocolate makers</h3>
+        <p class="chart-intro">Each dot is an Australian maker's average rating. The line runs from the average of all bars, so dots to the right beat the average. Makers with only one or two bars reviewed are less certain.</p>
+        <div class="vis" id="vis08"><div class="pending">Chart 8 · Bar chart · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+      <aside class="callout aus span-5">
+        <h3>Spotlight: Australia</h3>
+        <p>Written once we analyse the data.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4 ===================== -->
+  <section class="section" id="s4">
+    <div class="section-head">
+      <h2><span class="num">4</span>What's inside the bar?</h2>
+      <p>Is darker chocolate better? And do extras like vanilla or added cocoa butter help or hurt?</p>
+    </div>
+    <div class="row">
+      <figure class="chart span-6" id="c09">
+        <h3>Is darker chocolate better?</h3>
+        <p class="chart-intro">Each column is a cocoa content band and adds up to 100%. Read across the top row to compare how often each band produces an outstanding bar.</p>
+        <div class="vis" id="vis09"><div class="pending">Chart 9 · Heatmap · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+      <figure class="chart span-6" id="c10">
+        <h3>Which recipes score best?</h3>
+        <p class="chart-intro">Each row is a recipe used in at least 20 bars. Filled dots show the ingredients it contains. The bar shows the average rating, and the best recipe is at the top.</p>
+        <div class="vis" id="vis10"><div class="pending">Chart 10 · Recipe matrix · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5 ===================== -->
+  <section class="section" id="s5">
+    <div class="section-head">
+      <h2><span class="num">5</span>How do experts describe great chocolate?</h2>
+      <p>Every review lists the bar's most memorable qualities. Some words keep appearing on the best bars.</p>
+    </div>
+    <div class="row">
+      <figure class="chart span-12" id="c11">
+        <h3>Words used for the best and worst bars</h3>
+        <p class="chart-intro">These are the 24 words the taster used most often. Words further right describe better-rated bars. Bigger dots mean the word was used more often.</p>
+        <div class="vis" id="vis11"><div class="pending">Chart 11 · Word scale · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao ("most memorable characteristics").</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6 ===================== -->
+  <section class="section" id="s6">
+    <div class="section-head">
+      <h2><span class="num">6</span>Has chocolate got better over time?</h2>
+      <p>Craft chocolate has boomed since 2006. Have the ratings risen with it?</p>
+    </div>
+    <div class="row">
+      <figure class="chart span-7" id="c12">
+        <h3>How ratings have shifted over the years</h3>
+        <p class="chart-intro">Each hill shows how ratings were spread in a group of years. A taller hump means more bars got that score. Darker hills have a higher average rating.</p>
+        <div class="vis" id="vis12"><div class="pending">Chart 12 · Ridgeline plot · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+      <figure class="chart span-5" id="c13">
+        <h3>How many bars were reviewed each year</h3>
+        <p class="chart-intro">Years with fewer reviews tell us less, so keep this in mind when reading the hills beside it.</p>
+        <div class="vis" id="vis13"><div class="pending">Chart 13 · Line chart · coming in Step 6</div></div>
+        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 7 ===================== -->
+  <section class="section" id="s7">
+    <div class="section-head">
+      <h2><span class="num">7</span>Your chocolate aisle guide</h2>
+      <p>Four things to look for next time you buy a bar.</p>
+    </div>
+    <div class="row">
+      <aside class="callout span-3"><h3>Takeaway 1</h3><p>Written once we analyse the data.</p></aside>
+      <aside class="callout span-3"><h3>Takeaway 2</h3><p>Written once we analyse the data.</p></aside>
+      <aside class="callout span-3"><h3>Takeaway 3</h3><p>Written once we analyse the data.</p></aside>
+      <aside class="callout span-3"><h3>Takeaway 4</h3><p>Written once we analyse the data.</p></aside>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER / METADATA ===================== -->
+  <footer>
+    <div class="row">
+      <div class="span-6">
+        <h3>Data sources</h3>
+        <ul>
+          <li>Chocolate bar ratings: Brady Brelinski, <a href="https://flavorsofcacao.com/chocolate_database.html">Flavors of Cacao chocolate database</a> (<span data-fact="data-note">version to be confirmed</span>).</li>
+          <li>Cocoa bean production: <a href="https://www.fao.org/faostat/en/#data/QCL">FAOSTAT, Crops and livestock products</a>, Food and Agriculture Organization of the United Nations.</li>
+          <li>Country shapes: <a href="https://www.naturalearthdata.com/">Natural Earth</a>, via <a href="https://github.com/topojson/world-atlas">world-atlas</a>.</li>
+        </ul>
+      </div>
+      <div class="span-6">
+        <h3>About this page</h3>
+        <p>Created by Anushka Khunteta, October 2026, for FIT3179 Data Visualisation at Monash University. Charts and maps built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://vega.github.io/vega/">Vega</a>. Chart specifications are in the <a href="specs/">specs folder</a> of this repository.</p>
+        <p><b>Use of AI:</b> Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the data files and check the grammar of the text. All design choices and final text were reviewed by the author.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 4. Scatterplot: each dot is a cocoa-growing country with at least 5 bars reviewed. Across = tonnes of cocoa grown in the latest FAO year (log scale, because the biggest growers produce thousands of times more than the smallest). Up = average rating of bars made from its beans.",
+  "width": "container",
+  "height": 260,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "data": {"url": "data/processed/fao_cocoa_production.csv"},
+  "transform": [
+    {"joinaggregate": [{"op": "max", "field": "year", "as": "latest"}]},
+    {"filter": "datum.year == datum.latest && datum.tonnes > 0"},
+    {
+      "lookup": "iso3",
+      "from": {
+        "data": {"url": "data/processed/bean_country_summary.csv"},
+        "key": "iso3",
+        "fields": ["n_bars", "avg_rating"]
+      }
+    },
+    {"filter": "isValid(datum.n_bars) && datum.n_bars >= 5"},
+    {
+      "window": [{"op": "row_number", "as": "size_rank"}],
+      "sort": [{"field": "tonnes", "order": "descending"}]
+    },
+    {
+      "window": [{"op": "row_number", "as": "rating_rank"}],
+      "sort": [{"field": "avg_rating", "order": "descending"}]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "tonnes",
+      "type": "quantitative",
+      "title": "Cocoa grown (tonnes, log scale)",
+      "scale": {"type": "log"},
+      "axis": {"format": "~s", "grid": false}
+    },
+    "y": {
+      "field": "avg_rating",
+      "type": "quantitative",
+      "title": "Average rating of its bars",
+      "scale": {"zero": false},
+      "axis": {"format": ".1f", "tickCount": 5}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "color": "#8E5531",
+        "opacity": 0.9,
+        "stroke": "#FFFDF9",
+        "strokeWidth": 1,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "country", "title": "Country"},
+          {"field": "tonnes", "title": "Cocoa grown (tonnes)", "format": ","},
+          {"field": "avg_rating", "title": "Average rating", "format": ".2f"},
+          {"field": "n_bars", "title": "Bars reviewed"}
+        ]
+      }
+    },
+    {
+      "description": "Label the three biggest growers and the three best-rated countries",
+      "transform": [{"filter": "datum.size_rank <= 3 || datum.rating_rank <= 3"}],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 7,
+        "dy": -6,
+        "fontSize": 11.5,
+        "fontWeight": 600,
+        "color": "#2B1D14"
+      },
+      "encoding": {"text": {"field": "country"}}
+    }
+  ]
+}

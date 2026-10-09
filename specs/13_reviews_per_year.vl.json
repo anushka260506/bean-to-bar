@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 13. Line chart: how many bars were reviewed each year. Years with few reviews tell us less, so this chart helps readers judge the ridgeline beside it.",
+  "width": "container",
+  "height": 230,
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [{"aggregate": [{"op": "count", "as": "n_bars"}], "groupby": ["review_year"]}],
+  "encoding": {
+    "x": {
+      "field": "review_year",
+      "type": "quantitative",
+      "title": "Review year",
+      "axis": {
+        "format": "d",
+        "tickCount": 6,
+        "labelOverlap": "greedy",
+        "grid": false,
+        "labelFlush": false
+      },
+      "scale": {"nice": false, "zero": false}
+    },
+    "y": {
+      "field": "n_bars",
+      "type": "quantitative",
+      "title": "Bars reviewed",
+      "axis": {"tickCount": 5}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line", "strokeWidth": 2, "color": "#8E5531", "interpolate": "linear"}},
+    {
+      "params": [
+        {
+          "name": "hoverYear",
+          "select": {
+            "type": "point",
+            "fields": ["review_year"],
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {"type": "circle", "color": "#8E5531", "stroke": "#FFFDF9", "strokeWidth": 1.5},
+      "encoding": {
+        "size": {"condition": {"param": "hoverYear", "empty": false, "value": 120}, "value": 40},
+        "tooltip": [
+          {"field": "review_year", "title": "Year", "format": "d"},
+          {"field": "n_bars", "title": "Bars reviewed"}
+        ]
+      }
+    },
+    {
+      "description": "Label the busiest year",
+      "transform": [
+        {
+          "window": [{"op": "row_number", "as": "rank"}],
+          "sort": [{"field": "n_bars", "order": "descending"}]
+        },
+        {"filter": "datum.rank == 1"},
+        {
+          "calculate": "'Busiest year: ' + datum.review_year + ' (' + datum.n_bars + ' bars)'",
+          "as": "txt"
+        }
+      ],
+      "mark": {"type": "text", "dy": -12, "fontSize": 12, "fontWeight": 600, "color": "#2B1D14"},
+      "encoding": {"text": {"field": "txt"}}
+    }
+  ],
+  "autosize": {"type": "fit-x", "contains": "padding"}
+}
