@@ -1,0 +1,197 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 10. Recipe matrix (UpSet-style): each row is a recipe used by at least 20 bars. Filled dots show which ingredients the recipe uses. The right panel shows the average rating of bars made with that recipe, best at the top.",
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [
+    {"filter": "datum.recipe != 'Not listed'"},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "rating", "as": "avg_rating"},
+        {"op": "count", "as": "n_bars"},
+        {"op": "max", "field": "has_beans", "as": "Beans"},
+        {"op": "max", "field": "has_sugar", "as": "Sugar"},
+        {"op": "max", "field": "has_other_sweetener", "as": "Other sweetener"},
+        {"op": "max", "field": "has_cocoa_butter", "as": "Cocoa butter"},
+        {"op": "max", "field": "has_vanilla", "as": "Vanilla"},
+        {"op": "max", "field": "has_lecithin", "as": "Lecithin"},
+        {"op": "max", "field": "has_salt", "as": "Salt"}
+      ],
+      "groupby": ["recipe"]
+    },
+    {"filter": "datum.n_bars >= 20"},
+    {
+      "calculate": "format(datum.avg_rating, '.2f') + '  ·  ' + format(datum.n_bars, ',') + ' bars'",
+      "as": "bar_label"
+    }
+  ],
+  "spacing": 10,
+  "resolve": {"scale": {"y": "shared"}},
+  "hconcat": [
+    {
+      "width": 230,
+      "height": {"step": 30},
+      "transform": [
+        {
+          "fold": [
+            "Beans",
+            "Sugar",
+            "Other sweetener",
+            "Cocoa butter",
+            "Vanilla",
+            "Lecithin",
+            "Salt"
+          ],
+          "as": ["ingredient", "used"]
+        },
+        {
+          "calculate": "indexof(['Beans', 'Sugar', 'Other sweetener', 'Cocoa butter', 'Vanilla', 'Lecithin', 'Salt'], datum.ingredient)",
+          "as": "idx"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "recipe",
+          "type": "nominal",
+          "sort": {"field": "avg_rating", "op": "max", "order": "descending"},
+          "axis": null
+        }
+      },
+      "layer": [
+        {
+          "description": "Line joining the ingredients each recipe uses",
+          "transform": [
+            {"filter": "datum.used == 1"},
+            {
+              "aggregate": [
+                {"op": "min", "field": "idx", "as": "first"},
+                {"op": "max", "field": "idx", "as": "last"},
+                {"op": "max", "field": "avg_rating", "as": "avg_rating"}
+              ],
+              "groupby": ["recipe"]
+            }
+          ],
+          "mark": {"type": "rule", "strokeWidth": 2.5, "color": "#2B1D14"},
+          "encoding": {
+            "x": {"field": "first", "type": "quantitative"},
+            "x2": {"field": "last"},
+            "y": {
+              "field": "recipe",
+              "type": "nominal",
+              "sort": {"field": "avg_rating", "op": "max", "order": "descending"},
+              "axis": null
+            },
+            "opacity": {
+              "condition": {"param": "hoverRecipe", "empty": true, "value": 1},
+              "value": 0.25
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 150,
+            "stroke": "#2B1D14",
+            "strokeWidth": 1.2,
+            "opacity": 1
+          },
+          "encoding": {
+            "x": {
+              "field": "idx",
+              "type": "quantitative",
+              "title": null,
+              "scale": {"domain": [-0.5, 6.5]},
+              "axis": {"labels": false, "grid": false, "domain": false, "ticks": false}
+            },
+            "fill": {
+              "condition": {"test": "datum.used == 1", "value": "#2B1D14"},
+              "value": "#FFFDF9"
+            },
+            "opacity": {
+              "condition": {"param": "hoverRecipe", "empty": true, "value": 1},
+              "value": 0.25
+            },
+            "tooltip": [
+              {"field": "recipe", "title": "Recipe"},
+              {"field": "n_bars", "title": "Bars", "format": ","},
+              {"field": "avg_rating", "title": "Average rating", "format": ".2f"}
+            ]
+          }
+        },
+        {
+          "description": "Ingredient names above the dot columns",
+          "transform": [{"aggregate": [], "groupby": ["idx", "ingredient"]}],
+          "mark": {
+            "type": "text",
+            "angle": 315,
+            "align": "left",
+            "baseline": "middle",
+            "dx": 2,
+            "fontSize": 11.5,
+            "color": "#2B1D14"
+          },
+          "encoding": {
+            "x": {"field": "idx", "type": "quantitative"},
+            "y": {"value": -10},
+            "text": {"field": "ingredient"}
+          }
+        }
+      ]
+    },
+    {
+      "width": 250,
+      "height": {"step": 30},
+      "encoding": {
+        "y": {
+          "field": "recipe",
+          "type": "nominal",
+          "sort": {"field": "avg_rating", "op": "max", "order": "descending"},
+          "axis": null
+        },
+        "opacity": {"condition": {"param": "hoverRecipe", "empty": true, "value": 1}, "value": 0.3}
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "height": 14,
+            "cornerRadiusEnd": 3,
+            "color": "#8E5531",
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "x": {
+              "field": "avg_rating",
+              "type": "quantitative",
+              "title": "Average rating (out of 5)",
+              "scale": {"domain": [0, 5]},
+              "axis": {"orient": "top", "values": [0, 1, 2, 3, 4, 5], "grid": true}
+            },
+            "tooltip": [
+              {"field": "recipe", "title": "Recipe"},
+              {"field": "n_bars", "title": "Bars", "format": ","},
+              {"field": "avg_rating", "title": "Average rating", "format": ".2f"}
+            ]
+          },
+          "params": [
+            {
+              "name": "hoverRecipe",
+              "select": {
+                "type": "point",
+                "fields": ["recipe"],
+                "on": "pointerover",
+                "clear": "pointerout"
+              }
+            }
+          ]
+        },
+        {
+          "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 11.5, "color": "#2B1D14"},
+          "encoding": {
+            "x": {"field": "avg_rating", "type": "quantitative"},
+            "text": {"field": "bar_label"}
+          }
+        }
+      ]
+    }
+  ]
+}

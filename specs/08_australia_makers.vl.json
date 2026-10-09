@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 8. Australian chocolate makers: each maker's average rating compared with the average of every bar in the database. Lines start at the world average, so you can see who is above and who is below it.",
+  "width": "container",
+  "height": {"step": 26},
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [
+    {"joinaggregate": [{"op": "mean", "field": "rating", "as": "world_avg"}]},
+    {"filter": "datum.maker_iso3 == 'AUS'"},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "rating", "as": "avg_rating"},
+        {"op": "count", "as": "n_bars"},
+        {"op": "max", "field": "world_avg", "as": "world_avg"}
+      ],
+      "groupby": ["maker"]
+    },
+    {"calculate": "replace(datum.maker, /, The$/, '')", "as": "maker_name"},
+    {
+      "calculate": "datum.maker_name + '  (' + datum.n_bars + (datum.n_bars == 1 ? ' bar)' : ' bars)')",
+      "as": "label"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "label",
+      "type": "nominal",
+      "sort": {"field": "avg_rating", "order": "descending"},
+      "title": null,
+      "axis": {
+        "labelFontSize": 12.5,
+        "labelColor": "#2B1D14",
+        "labelLimit": 200,
+        "ticks": false,
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#9CC3C0", "strokeWidth": 2},
+      "encoding": {
+        "x": {"field": "world_avg", "type": "quantitative"},
+        "x2": {"field": "avg_rating"}
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 130,
+        "color": "#2E7D7A",
+        "opacity": 1,
+        "stroke": "#FFFDF9",
+        "strokeWidth": 1.5,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "avg_rating",
+          "type": "quantitative",
+          "title": "Average rating (out of 5)",
+          "scale": {"domain": [2.75, 4], "zero": false},
+          "axis": {"values": [2.75, 3, 3.25, 3.5, 3.75, 4], "format": ".2f", "grid": true}
+        },
+        "tooltip": [
+          {"field": "maker_name", "title": "Maker"},
+          {"field": "avg_rating", "title": "Average rating", "format": ".2f"},
+          {"field": "n_bars", "title": "Bars reviewed"}
+        ]
+      }
+    },
+    {
+      "description": "World average reference line and its label",
+      "mark": {"type": "rule", "color": "#B5652B", "strokeDash": [4, 3], "strokeWidth": 1.5},
+      "encoding": {
+        "x": {"aggregate": "max", "field": "world_avg", "type": "quantitative"},
+        "y": null
+      }
+    },
+    {
+      "transform": [
+        {"aggregate": [{"op": "max", "field": "world_avg", "as": "world_avg"}]},
+        {"calculate": "'All bars: ' + format(datum.world_avg, '.2f')", "as": "txt"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "baseline": "top",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#B5652B"
+      },
+      "encoding": {
+        "x": {"field": "world_avg", "type": "quantitative"},
+        "y": {"value": 0},
+        "text": {"field": "txt"}
+      }
+    }
+  ],
+  "autosize": {"type": "fit-x", "contains": "padding"}
+}

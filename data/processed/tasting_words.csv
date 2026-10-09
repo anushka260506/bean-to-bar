@@ -1,0 +1,7063 @@
+ref,word,rating
+2454,rich cocoa,3.25
+2454,fatty,3.25
+2454,bready,3.25
+2458,cocoa,3.5
+2458,vegetal,3.5
+2458,savory,3.5
+2454,cocoa,3.75
+2454,blackberry,3.75
+2454,full body,3.75
+2542,chewy,3.0
+2542,off,3.0
+2542,rubbery,3.0
+2546,fatty,3.0
+2546,earthy,3.0
+2546,moss,3.0
+2546,nutty,3.0
+2546,chalky,3.0
+2546,mildly bitter,3.25
+2546,basic cocoa,3.25
+2546,fatty,3.25
+2542,milk brownie,3.5
+2542,macadamia,3.5
+2542,chewy,3.5
+797,vegetal,3.5
+797,nutty,3.5
+797,fruity,3.75
+797,melon,3.75
+797,roasty,3.75
+1011,brief fruit note,2.75
+1011,earthy,2.75
+1011,nutty,2.75
+1015,burnt rubber,2.75
+1015,alkalyzed notes,2.75
+1011,sticky,3.0
+1011,red fruit,3.0
+1011,sour,3.0
+1015,sticky,3.0
+1015,smokey,3.0
+1015,grass,3.0
+1011,mild tobacco,3.25
+1015,mild fruit,3.25
+1015,strong smoke,3.25
+1019,green,3.25
+1019,nutty,3.25
+1019,cocoa,3.25
+1019,cocoa,3.5
+1019,sour,3.5
+1019,intense tangerine,3.5
+1011,sandy,3.75
+1011,nutty,3.75
+1011,cocoa,3.75
+1011,fig,3.75
+1015,oily,4.0
+1015,nut,4.0
+1015,caramel,4.0
+1015,raspberry,4.0
+1019,sweet,4.0
+1019,cocoa,4.0
+1019,tangerine,4.0
+1315,harsh,2.75
+1315,leather,2.75
+1315,earthy,2.75
+1315,sliglty dry,3.5
+1315,papaya,3.5
+1315,nutty,3.5
+1315,mild choco,3.5
+1315,roasty,3.5
+1319,astringent,3.75
+1319,nutty,3.75
+1319,chocolatey,3.75
+1319,delicate,4.0
+1319,hazelnut,4.0
+1319,brownie,4.0
+1676,burnt wood,2.75
+1676,earthy,2.75
+1676,choco,2.75
+1676,roasty,3.0
+1676,acidic,3.0
+1676,nutty,3.0
+1680,mild profile,3.5
+1680,chocolaty,3.5
+1680,spice,3.5
+1704,grainy texture,3.5
+1704,cocoa,3.5
+1704,sweet,3.5
+1876,sweet,3.75
+1876,chocolatey,3.75
+1876,vegetal,3.75
+2206,alluring aroma,3.5
+2206,powdery,3.5
+2206,nutty,3.5
+2206,sweet,3.75
+2206,dairy,3.75
+2206,spice,3.75
+2206,cocoa,3.75
+2648,light color,4.0
+2648,fruit,4.0
+2648,yogurt,4.0
+1462,yellow fruit,3.75
+1470,intense,3.75
+1470,nutty,3.75
+1470,cherry,3.75
+1470,cocoa,3.75
+2462,herbal,3.25
+2462,molasses,3.25
+2462,hammy,3.25
+2470,hot cocoa,3.5
+2470,rich,3.5
+2470,molasses,3.5
+705,sweet,2.75
+705,sublte strawberry,2.75
+705,spicy and candy-like,3.25
+705,orange,3.5
+705,floral,3.5
+705,lemon,3.5
+705,cocoa and powerful tang,3.5
+2438,unrefined,2.5
+2438,sweet,2.5
+2438,metallic,2.5
+2438,basic,2.75
+2438,sweet,2.75
+2438,cocoa,2.75
+2438,woody,2.75
+2442,sweet,2.75
+2442,cocoa,2.75
+2442,rubbery,2.75
+2438,sandy,3.0
+2438,woody,3.0
+2438,spicy,3.0
+2438,sweet,3.0
+370,sandy,2.75
+370,sweet,2.75
+370,banana cream,2.75
+370,roasty,3.0
+370,nutty,3.0
+370,coffee,3.0
+316,gritty,3.0
+316,spice,3.0
+316,cocoa,3.0
+502,strong pepper,2.75
+502,musty,2.75
+508,fatty,2.75
+508,intense,2.75
+508,woody,2.75
+636,hay,3.75
+636,nut,3.75
+636,berry,3.75
+1061,sandy,2.5
+1061,dirt,2.5
+1061,ashey,2.5
+1173,cardboard,2.5
+1173,dirt,2.5
+1173,roasty,2.5
+1215,roasty,2.75
+1215,sweet,2.75
+1215,savory,2.75
+1215,nutty,2.75
+1215,roasty,2.75
+1215,odd dairy,2.75
+1215,citrus,3.0
+1215,fatty,3.0
+1215,dairy,3.0
+1992,strawberry,3.5
+1992,cream,3.5
+1992,gateway,3.5
+1944,sandy,3.5
+1944,green,3.5
+1944,floral,3.5
+1944,sandy,3.5
+1944,sweet,3.5
+1944,nibby,3.5
+1944,sandy,3.5
+1944,melon,3.5
+1944,banana,3.5
+1944,sandy,3.5
+1944,sweet,3.5
+1944,roasty,3.5
+1125,sweet,2.5
+1125,moldy,2.5
+1125,off,2.5
+1125,sandy,3.0
+1125,sweet,3.0
+1125,dairy,3.0
+1125,spice,3.0
+1133,grit,3.0
+1133,sweet,3.0
+1133,caramel,3.0
+1133,fruit,3.0
+1129,gritty,3.25
+1129,berry,3.25
+1129,mild bitter,3.25
+1133,gritty,3.25
+1133,too sweet,3.25
+1133,fruit,3.25
+1732,sandy,2.5
+1732,sweet,2.5
+1732,pungent,2.5
+1732,sandy,2.5
+1732,sweet,2.5
+1732,sour,2.5
+1732,off,2.5
+1728,powdery,2.75
+1728,sweet,2.75
+1728,molasses,2.75
+1732,sandy,2.75
+1732,nutty,2.75
+1732,earthy,2.75
+1732,roasty,2.75
+1728,dry,3.0
+1728,sweet,3.0
+1728,caramel,3.0
+2044,sweet,3.0
+2044,coarse,3.0
+2044,nutty,3.0
+147,waxy,3.0
+147,nutty,3.0
+147,mint,3.0
+129,spice,3.5
+129,nut,3.5
+129,cocoa,3.5
+129,fruit,3.5
+175,spicy,3.75
+175,strawberry,3.75
+304,sticky,2.75
+304,nutty,2.75
+304,high acidity,2.75
+363,hot spice,3.0
+363,roasty,3.0
+544,woody,3.0
+544,red berry,3.0
+544,sour,3.0
+470,orange,3.75
+470,cinamon,3.75
+470,strong spice,4.0
+470,intense pepper,4.0
+725,tart,4.0
+725,lemon,4.0
+725,smoke,4.0
+327,waxy mouthfeel,2.75
+327,spicy,2.75
+464,fatty,2.75
+464,mushroom,2.75
+464,off notes,2.75
+322,dry,3.0
+322,chalky,3.0
+322,fudge-like,3.0
+464,roasty,3.0
+464,oddly sweet,3.0
+464,marshmallow,3.0
+1964,raisins,3.0
+1964,pungent,3.0
+1964,few grits,3.5
+1964,blackcherry,3.5
+1964,licorice,3.5
+1145,oily,3.25
+1145,vanilla,3.25
+1145,melon,3.25
+1145,cocoa,3.25
+1145,oily,3.5
+1145,vegetal,3.5
+1145,nutty,3.5
+1145,cocoa,3.5
+1494,roasty,3.0
+1494,brownie,3.0
+1494,nutty,3.0
+1494,fruity,3.25
+1494,sour,3.25
+1498,high roast,3.25
+1498,high astringnet,3.25
+1498,smokey,3.25
+1498,savory,3.25
+1498,sandy,3.25
+1498,roasty,3.25
+1498,nutty,3.25
+1498,rich,3.5
+1498,sour,3.5
+1498,mild smoke,3.5
+75,red wine,3.75
+75,rich cocoa,3.75
+75,long,3.75
+123,creamy,3.0
+123,earthy,3.0
+123,vegetal,3.0
+123,sandy,3.0
+123,woody,3.0
+123,spicy,3.0
+123,fruity with coffee notes,3.5
+129,coffee,3.5
+129,fruit,3.5
+129,woodsy,3.5
+170,fatty,3.5
+170,dairy,3.5
+170,caramel,3.5
+170,cocoa,3.5
+123,creamy,3.75
+123,fruit,3.75
+123,cocoa,3.75
+979,creamy,3.75
+979,raspberry,3.75
+979,nutty,3.75
+2088,vanilla,3.0
+2088,mint,3.0
+2088,roasty,3.0
+2088,vanilla,3.0
+2088,nuts,3.0
+2088,roasty,3.0
+2092,nutty,3.0
+2092,mild roasty,3.0
+2092,vanilla,3.0
+2092,sweet,3.5
+2092,delicate,3.5
+2092,complex,3.5
+2434,nut,2.75
+2434,fatty,2.75
+2434,rubbery,2.75
+2434,rich,2.75
+572,creamy,2.75
+572,red berry,2.75
+572,bitter,2.75
+572,very sweet,3.75
+572,bright red,3.75
+572,banana,3.75
+572,roasty,3.75
+572,fatty,3.75
+572,nutty,3.75
+572,coffee,3.75
+572,creamy,4.0
+572,sweet,4.0
+572,cocoa,4.0
+572,banana,4.0
+1065,grainy,3.25
+1065,sweet,3.25
+1065,poor aftertaste,3.25
+1259,chalky,3.0
+1259,mild fruit,3.0
+1259,burnt,3.0
+1852,light roast,3.5
+1852,caramel,3.5
+1852,cocoa,3.5
+2586,burnt toast,3.0
+2586,cherry,3.0
+2586,orange citrus,3.25
+2586,harsh earthiness,3.25
+1379,earthy,2.5
+1379,sour milk,2.5
+1379,leather,2.5
+1379,bitter,2.75
+1379,floral,2.75
+1379,leather,2.75
+1375,sandy,3.0
+1375,fruity,3.0
+1375,short,3.0
+1379,nutty,3.0
+1379,mild spice,3.0
+1379,mild earthy,3.0
+1602,floral,2.75
+1602,chemical off,2.75
+1602,strawberry,3.25
+1602,butterscotch,3.25
+1602,off,3.25
+1534,creamy,3.5
+1534,rich,3.5
+1534,rum,3.5
+1534,roasty,3.5
+1534,floral,3.5
+1534,nutty,3.5
+1534,rich cocoa,3.5
+1598,spicy,3.5
+1598,brownie,3.5
+1598,nutty,3.5
+1602,intense,3.5
+1602,floral,3.5
+1602,bourbon,3.5
+1534,spicy,3.75
+1534,cocoa,3.75
+1598,floral,3.75
+1598,strawberry,3.75
+1598,metallic,3.75
+1598,creamy,4.0
+1598,sticky,4.0
+1598,peanut butter,4.0
+1904,sticky,3.25
+1904,floral,3.25
+1904,roasty,3.25
+1904,chewy,3.25
+1904,mild floral,3.25
+1928,smoke,3.25
+1928,hammy,3.25
+1928,cocoa base,3.25
+1928,earthy,3.25
+1928,nutty,3.25
+1928,cardboard,3.25
+1724,delicate,3.5
+1724,simple,3.5
+1900,cashew,3.5
+1900,roasty,3.5
+1900,chunky melt,3.5
+1904,subtle,3.5
+1904,mysterious,3.5
+1908,nutty,3.5
+1908,green,3.5
+1724,appealing smoke,3.75
+1724,woody,3.75
+1904,muddy,3.75
+1904,rich cocoa,3.75
+1904,raspberry,3.75
+1928,dark berry,3.75
+1928,chocolatey,3.75
+1908,balanced,4.0
+1908,cherry,4.0
+1908,choco,4.0
+1924,creamy,4.0
+1924,complex,4.0
+1924,balanced,4.0
+2020,slight roasty,3.5
+2020,basic cocoa,3.5
+2020,sour fruit,3.5
+2020,rich cocoa,3.5
+2020,mild roasty,3.5
+2028,dried fruit,3.5
+2028,fig,3.5
+2028,anise,3.5
+2024,creamy,4.0
+2024,bright fruit,4.0
+2028,long lasting,4.0
+2028,cocoa,4.0
+2068,nuts,3.0
+2068,dried fruit,3.0
+2068,short,3.0
+2254,smooth,4.0
+2254,nutty,4.0
+2254,cocoa,4.0
+2450,burn butterscotch,3.0
+2450,rubbery,3.0
+2330,herbs,3.25
+2330,mushroom,3.25
+2330,acidic,3.25
+2166,cocoa,3.0
+2166,earthy,3.0
+2166,hammy,3.0
+2162,melon,3.25
+2162,late hammy,3.25
+2162,smooth,3.5
+2162,vegetal,3.5
+2162,roasty,3.5
+2162,rich cocoa,3.5
+300,spicy,3.75
+300,minty,3.75
+300,vegetal,3.75
+363,cocoa,1.75
+363,dominate off note,1.75
+355,oily,2.5
+355,nutty,2.5
+355,burnt,2.5
+355,sour,2.5
+355,gritty,2.75
+355,very smokey,2.75
+355,sour,2.75
+363,sl. bitter,3.0
+363,cherry,3.0
+363,rich,3.0
+363,spicey,3.0
+363,mild metallic,3.0
+363,spice,3.25
+363,cocoa,3.25
+363,short,3.25
+486,very nutty,1.75
+486,very bitter,1.75
+600,chewy,3.25
+600,grassy,3.25
+600,nutty,3.25
+600,unrefined,3.25
+600,distinct spicey,3.25
+600,black pepper and banana,3.5
+531,grassy,3.75
+531,black licorice,3.75
+531,mint,3.75
+745,blackpepper,2.75
+745,chemical,2.75
+745,rubber,2.75
+729,nuts,4.0
+729,butterscotch,4.0
+729,brownie,4.0
+947,marshmallow,3.75
+947,roasty,3.75
+947,nutty,3.75
+1193,gritty,3.25
+1193,nutty,3.25
+1181,creamy,2.75
+1181,marshmallow,2.75
+1181,off,2.75
+2562,cinamon,3.25
+2562,nutmeg,3.25
+2562,fatty,3.25
+2562,strawberry,3.25
+2562,sour,3.25
+2566,caramel,3.5
+2566,sour milk,3.5
+141,leather,2.5
+141,black licorice,2.5
+141,off,2.5
+175,smooth,3.0
+175,astringent,3.0
+175,cocoa,3.0
+331,strawberries,3.75
+331,mild tart,3.75
+331,roasty,3.75
+647,creamy,3.75
+647,woody,3.75
+647,cocoa,3.75
+661,grapes,3.75
+661,woody,3.75
+661,roasty,3.75
+1780,creamy,3.75
+1780,rich,3.75
+1780,blueberry,3.75
+2434,off aroma,3.0
+2434,vegetal,3.0
+2434,honey,3.0
+2434,sandy,3.0
+2056,sandy,2.75
+2056,vanilla,2.75
+2056,waxy,3.0
+2056,dried fruit,3.0
+2056,sandy,3.0
+2056,roasty,3.0
+2056,nutty,3.0
+2056,long,3.5
+2056,bright fruit,3.5
+2056,sweet,3.5
+2056,sour,3.5
+2672,chemical,2.5
+2672,spice,2.5
+2672,earthy,2.5
+2672,intense,3.0
+2672,sour tart plum,3.0
+2672,rubber,3.0
+999,chalky,2.5
+999,intense,2.5
+999,chemical,2.5
+999,chalky,2.5
+999,fragrant,2.5
+999,then off,2.5
+995,unrefined,3.0
+995,flat,3.0
+995,grassy,3.0
+1474,coarse,3.25
+1474,smokey,3.25
+1474,metallic,3.25
+1474,smoke,3.5
+1474,ham,3.5
+1474,papaya,3.5
+2146,bland,3.0
+2146,sugary,3.0
+2146,large grits,3.0
+1454,molasses,2.75
+1454,caramel,2.75
+1454,pungent,2.75
+1454,black pepper,3.5
+1454,cardamom,3.5
+2290,gritty,2.5
+2290,fatty,2.5
+2290,sour,2.5
+2290,off,2.5
+2294,bitter,2.75
+2294,fatty,2.75
+2294,mild fruit,2.75
+2294,base cocoa,3.25
+2294,mild fruit,3.25
+2294,roasty,3.25
+983,complex,3.25
+983,black pepper,3.25
+983,coffee,3.25
+983,molasses,3.5
+983,toffee,3.5
+983,coffee grounds,3.5
+983,raspberry,3.75
+983,mild sour,3.75
+1295,creamy,4.0
+1295,rounded,4.0
+1295,orange,4.0
+1554,intense,3.5
+1554,smokey,3.5
+1554,dried fruit,3.5
+1980,slightly dry,3.5
+1980,cocoa,3.5
+1980,berry,3.5
+1980,intense,3.5
+1980,tangy,3.5
+1980,alcohol,3.5
+955,gritty,2.75
+955,floral,2.75
+955,vanilla,2.75
+1880,sandy,3.25
+1880,floral,3.25
+1880,sweet,3.25
+1840,creamy,3.5
+1840,sweet,3.5
+1840,fudgey,3.5
+1868,strawberry,3.75
+1868,candy flavor,3.75
+2374,strong vanilla,2.25
+2374,off notes,2.25
+1948,caramel,3.0
+1948,spice,3.0
+1948,earthy,3.0
+1948,smokey,3.25
+1948,woody,3.25
+1948,tobacco,3.25
+1784,intense,2.75
+1784,bitter,2.75
+1784,dry,2.75
+1784,sandy,2.75
+1784,sweet,2.75
+1784,molasses,2.75
+1784,intense,2.75
+1784,floral,2.75
+1784,black pepper,2.75
+1788,intense floral,2.75
+1788,bitter,2.75
+1788,earthy,2.75
+586,pastey,2.75
+586,nutty,2.75
+586,intense,2.75
+586,smokey,2.75
+586,sticky,2.75
+586,moss,2.75
+586,nuts,2.75
+586,dry,3.5
+586,cinamon,3.5
+586,nutmeg,3.5
+1804,oily,3.25
+1804,complex,3.25
+1804,pungent,3.25
+1800,sticky,3.5
+1800,delicate,3.5
+1800,melon,3.5
+1864,caramel,3.5
+1864,mild dried fruit,3.5
+2190,high acidity,3.25
+2190,nutty,3.25
+2190,roasty,3.25
+2648,dominate cocoa notes,3.75
+1768,unbalanced,2.75
+1768,tangy,2.75
+1768,pungent,2.75
+1768,sweet,3.0
+1768,nibby,3.0
+1768,green,3.0
+1768,balanced,3.5
+1768,complex,3.5
+1768,berry,3.5
+2246,gummy,3.0
+2246,roasty,3.0
+2246,fatty,3.0
+2246,gummy,3.0
+2246,fatty,3.0
+2246,sour,3.0
+2246,off aroma,3.0
+2246,smokey,3.0
+2246,off note,3.0
+773,intense,3.75
+773,red berry,3.75
+773,strawberry,3.75
+757,smokey,4.0
+757,raspberries,4.0
+757,cocoa,4.0
+1141,tobacco,3.5
+1141,dairy,3.5
+1141,sour,3.5
+1141,nutty,3.5
+1141,roasty,3.5
+1141,dairy,3.5
+1141,mocha,3.5
+1141,intense,3.5
+1141,sweet,3.5
+1141,cinamon and nutmeg,4.0
+797,sweet,2.75
+797,vanilla,2.75
+797,cocoa,2.75
+508,creamy,3.25
+508,macadamia,3.25
+508,pepper,3.25
+508,nutty,3.25
+508,light toffee,3.25
+508,mild musty,3.25
+508,ham-like,3.5
+508,smokey,3.5
+508,banana,3.5
+508,dark cocoa,3.5
+508,spicy pepper,3.5
+636,chunky,3.0
+636,nutty,3.0
+636,banana,3.0
+636,bitter then nutty rustic,3.0
+636,earthy,3.0
+636,creamy,3.5
+636,banana,3.5
+636,rich,3.5
+636,creamy,4.0
+636,nutty,4.0
+636,cocoa,4.0
+1482,bitter,2.5
+1482,molasses,2.5
+1482,flour,2.5
+1486,molasses,2.5
+1486,metallic,2.5
+1486,earthy,2.5
+1486,sour,2.5
+1486,tart,2.5
+1486,molasses,2.5
+1486,mild bitter,3.25
+1486,diluted,3.25
+1486,vanilla,3.25
+2088,gritty,3.0
+2088,spicy,3.0
+2088,earthy,3.0
+2088,fatty,3.0
+2088,bland,3.0
+2088,nutty,3.0
+2084,smooth texture,3.5
+2084,earthy,3.5
+2084,nutty,3.5
+233,rich cocoa,3.0
+233,red berry,3.0
+233,sour,3.0
+256,nutmeg,3.0
+256,sour,3.0
+233,intense,3.5
+233,rum,3.5
+233,tea,3.5
+233,nutty,3.75
+233,astringent,3.75
+414,chalky,3.0
+414,strong,3.0
+414,harsh smoke,3.0
+423,rustic,3.25
+423,red berry,3.25
+423,woody,3.25
+414,intense marshmallow,3.5
+414,cocoa,3.5
+431,chocolate covered cherries,3.5
+558,pastey,2.75
+558,off spicey,2.75
+558,nutty,2.75
+565,red berry,3.0
+565,strong wine,3.0
+565,sour,3.0
+565,nutty,3.0
+565,mild bitter,3.0
+478,dry,3.25
+478,cardamom,3.25
+478,medicinal,3.25
+502,robust,3.75
+502,cocoa,3.75
+502,fruity,3.75
+963,roasted nuts,3.5
+963,rich,3.5
+963,roasty,3.5
+2108,floral,3.0
+2108,molasses,3.0
+2108,chemical,3.0
+2114,molasses,3.0
+2114,earthy,3.0
+2114,spicy,3.0
+2114,sweet,3.25
+2114,sour milk,3.25
+2422,off,2.75
+2422,rubbery,2.75
+2422,burnt molasses,2.75
+256,unrefined,2.75
+256,fruity,2.75
+256,sweet grass,2.75
+256,muted spice,2.75
+256,rich,3.0
+256,leather,3.0
+256,woodsy,3.0
+2574,bright fruit,3.75
+2574,crisp nibs,3.75
+2574,cocoa,3.75
+1331,fatty,2.75
+1331,nutty,2.75
+2590,burnt caramel,3.25
+2590,cocoa,3.25
+2590,floral,3.25
+2590,honey with subtle tobacco,3.25
+322,oily,2.75
+322,flat,2.75
+322,woody,2.75
+322,sour,2.75
+1046,complex,3.5
+1046,fruity,3.5
+1046,mild bitter,3.5
+911,chewy,3.5
+911,complex,3.5
+911,black pepper,3.5
+911,gritty,3.75
+911,tart red berry,3.75
+911,powerful,3.75
+1752,roasty,2.75
+1752,coffee,2.75
+1752,earthy,2.75
+1756,astringent,3.0
+1756,sour,3.0
+1756,coffee,3.0
+1740,sandy,3.5
+1740,tart,3.5
+1740,sour,3.5
+1740,sweet,3.5
+1752,bready,3.5
+1752,melon,3.5
+1996,pungent off flavor,2.75
+2290,sweet,2.5
+2290,dirty,2.5
+2290,off notes,2.5
+2290,sweet,2.75
+2290,fruit,2.75
+2290,chemical off note,2.75
+2290,grassy,3.25
+2290,savory,3.25
+2290,sour,3.25
+81,acidic,1.5
+81,bitter,1.5
+81,dry,1.5
+81,vegetal,3.0
+81,dominant tobacco,3.0
+24,spice,3.75
+24,woodsy,3.75
+24,long lasting,3.75
+32,sandy,3.75
+32,creamy,3.75
+32,berry,3.75
+75,mellow,3.75
+75,tart,3.75
+75,coffee,3.75
+48,creamy,4.0
+48,fatty,4.0
+48,floral,4.0
+81,creamy,4.0
+81,coconut,4.0
+81,tang,4.0
+123,dry,2.5
+123,floral,2.5
+123,bitter,2.5
+199,creamy,4.0
+199,strawberry,4.0
+199,nutty,4.0
+336,flat,2.75
+336,bread,2.75
+336,earthy,2.75
+331,oily,3.0
+331,intense cocoa,3.0
+331,sl. burnt,3.0
+336,mild bitter,3.0
+336,nut,3.0
+336,possible mold,3.0
+395,fatty,3.0
+395,roasty,3.0
+395,earthy,3.0
+761,oily,3.25
+761,creamy,3.25
+761,woody,3.25
+629,fatty,3.5
+629,raisin,3.5
+629,grape,3.5
+629,roasty,3.5
+629,woody,3.5
+629,mint,3.5
+629,creamy,3.5
+629,cocoa,3.5
+629,smokey,3.5
+672,oily,3.5
+672,fatty,3.5
+672,rich,3.5
+672,nutty,3.5
+629,chunky,3.75
+629,very grassy,3.75
+629,mild mint,3.75
+629,grassy,4.0
+629,black pepper,4.0
+629,fatty,4.0
+629,spicy,4.0
+629,gentle roast,4.0
+1042,fatty,3.25
+1042,roasty,3.25
+1042,black pepper,3.25
+1038,oily,3.5
+1038,roasted nuts,3.5
+1038,rich cocoa,3.5
+1418,roasty,3.25
+1418,tobacco,3.25
+1418,earthy,3.25
+1418,complex,3.75
+1418,brownie,3.75
+1418,mint,3.75
+1418,spice,3.75
+1339,creamy,4.0
+1339,homey,4.0
+1339,nutty,4.0
+1912,heavy roast,3.5
+1912,fatty,3.5
+1912,gateway,3.5
+2246,oily,4.0
+2246,subtle,4.0
+2246,mild coffee,4.0
+2250,creamy,4.0
+2250,rich,4.0
+2250,complex,4.0
+2554,bold,3.75
+2554,woody,3.75
+2554,nut,3.75
+2554,roasty,3.75
+2554,creamy,3.75
+341,cardboard,1.5
+341,very bitter,1.5
+341,floral,1.5
+316,sticky,3.25
+316,lavendar,3.25
+316,molasses,3.25
+1267,sandy,2.75
+1267,vanilla,2.75
+1267,candy-like,2.75
+1271,gritty,2.75
+1271,sweet,2.75
+1271,mild coffee,2.75
+2254,balanced,3.5
+2254,floral,3.5
+2254,honey,3.5
+2194,sweet,3.75
+2194,rich mocha,3.75
+2194,acidic,3.75
+2096,nuts,4.0
+2096,fruit,4.0
+2542,very sweet,3.0
+2542,melon,3.0
+2542,caramel,3.0
+1125,oily,3.0
+1125,vanilla,3.0
+1125,caramel,3.0
+1125,dairy,3.0
+1125,intense,3.25
+1125,alocohol,3.25
+1125,floral,3.25
+1129,fatty,3.5
+1129,brownie,3.5
+1129,nutty,3.5
+1129,intense,3.5
+1129,cooked banana,3.5
+1255,intense,3.75
+1255,cocoa,3.75
+1255,complex,3.75
+1355,intense,4.0
+1355,raisins,4.0
+1355,roasty,4.0
+1462,complex,3.75
+1462,brownie,3.75
+1462,lime,3.75
+1462,rich,3.75
+1868,nutty,3.5
+1868,slight hammy,3.5
+1868,rich,3.5
+1868,simple,3.75
+1868,rich cocoa,3.75
+1980,earthy,3.25
+1980,cherries,3.25
+1984,sandy,3.75
+1984,floral,3.75
+1984,honey,3.75
+1518,bitter,2.75
+1518,tart,2.75
+1518,acidic,2.75
+1514,roasty,3.0
+1514,sweet,3.0
+1514,brownie,3.0
+1514,bitter,3.25
+1514,dark berry,3.25
+1514,fatty,3.25
+1518,mild smoke,3.25
+1518,raisins,3.25
+1518,coffee,3.25
+1518,citrus,3.25
+1518,sweet,3.25
+1518,cocoa,3.25
+1514,tart,3.5
+1514,tea,3.5
+1514,leather,3.5
+1514,sour,3.5
+1149,chalky,3.0
+1149,sandy,3.0
+1149,tart,3.0
+1149,bland,3.0
+1235,fatty,2.75
+1235,sweet,2.75
+1235,metallic,2.75
+1231,sweet,3.0
+1231,mild molasses,3.0
+1231,bland,3.0
+1231,spicy,3.5
+1231,black pepper,3.5
+1231,banana,3.5
+1231,floral,3.5
+1231,banana,3.5
+1638,powdery,3.25
+1638,floral,3.25
+1638,molasses,3.25
+1181,gritty,2.75
+1181,sweet,2.75
+1181,brownie,2.75
+2052,dirt,2.5
+2052,earthy,2.5
+2052,floral,2.5
+2052,roasty and under refined,3.0
+1323,sweet,2.5
+1323,sour dairy,2.5
+1299,high roast,3.25
+1299,coffee,3.25
+1299,spicy,3.25
+1303,roasty,3.25
+1303,fruit,3.25
+1303,mild metallic,3.25
+1303,coffee,3.25
+1303,high roast,3.25
+1303,spicy,3.25
+1299,floral,3.5
+1299,mild citrus,3.5
+1299,orange,3.5
+2314,smokey,3.0
+2314,sour,3.0
+2274,molasses,3.25
+2274,sour notes,3.25
+2274,base cocoa w/ palm notes,3.5
+2330,off pungent,3.0
+2330,grassy,3.0
+2330,melon,3.0
+2266,vegetal,3.5
+2266,unique,3.5
+2266,subtle but refreshing,3.75
+1606,dirt,2.5
+1606,floral,2.5
+1606,sweet,2.5
+600,over roasted,2.25
+600,bitter,2.25
+600,nutty,2.25
+502,oily,2.5
+502,buttery,2.5
+502,intense,2.5
+502,creamy,2.75
+502,burnt wood,2.75
+1215,roasty,2.5
+1215,almost burnt,2.5
+1215,intense,2.5
+141,sandy,2.0
+141,dairy,2.0
+141,cocoa,2.0
+147,creamy,3.0
+147,woody,3.0
+147,cocoa,3.0
+300,dry,2.0
+300,flat flavor,2.0
+300,astringent,2.0
+586,spice,3.0
+586,fruit medley,3.0
+586,roasty,3.0
+1716,gritty,3.5
+1716,sweet,3.5
+1716,citrus,3.5
+2226,light color,2.5
+2226,dirty,2.5
+2226,musty,2.5
+2230,light color,3.0
+2230,dirty,3.0
+2230,astringent,3.0
+2226,light color,3.75
+2226,creamy,3.75
+2226,hazelnut,3.75
+1391,intense,2.5
+1391,earthy,2.5
+1391,fuel,2.5
+1391,nutty,3.25
+1391,intense,3.25
+1391,leathery,3.25
+1391,bright fruit,3.5
+1391,strawberry,3.5
+1395,fruity,3.75
+1395,nutty,3.75
+1395,brownie,3.75
+1668,intense,3.25
+1668,black licorice,3.25
+1668,nutty,3.25
+1692,spicy,3.25
+1692,nutty,3.25
+1692,ends sour,3.25
+1688,assertive,3.5
+1688,fruity,3.5
+1688,acidic,3.5
+2238,sandy,2.75
+2238,chalky,2.75
+2238,earthy,2.75
+2278,high astringent,2.5
+2278,sandy,2.5
+2278,grass,2.5
+2278,raspberry,3.0
+2278,dirty,3.0
+2278,sour,3.0
+2076,poor texture,3.0
+2076,earthy,3.0
+1434,green,2.75
+1434,vegetal,2.75
+1434,soil,2.75
+1434,fuel,2.75
+1434,intense,3.25
+1434,spice,3.25
+1430,intense,3.5
+1430,marshmallow,3.5
+1430,fruit,3.5
+1430,earthy,3.5
+1430,woody,3.5
+1430,smoke,3.5
+1662,rich,3.75
+1662,nutty,3.75
+1662,acidic,3.75
+1816,distinct,3.75
+1816,short,3.75
+1816,dried fruit,3.75
+1816,mild cocoa,3.75
+1816,astringent,3.75
+1860,deep cocoa,3.5
+1860,fatty,3.5
+1860,dairy,3.5
+641,rustic,3.0
+641,sweet,3.0
+641,one dimensional,3.0
+647,rustic,3.25
+647,gritty,3.25
+647,sweet,3.25
+647,fruit,3.25
+641,creamy,3.75
+641,blueberry,3.75
+641,black pepper,3.75
+991,oily,3.75
+991,cherry,3.75
+991,rich cocoa,3.75
+336,distinct lemon,4.0
+346,creamy,4.0
+346,nutty,4.0
+346,banana,4.0
+346,rich,4.0
+537,silky,3.25
+537,"""andes"" mint",3.25
+537,off nutty,3.25
+508,creamy,3.5
+508,earthy,3.5
+508,dark roast,3.5
+537,gritty,3.5
+537,fudge-like,3.5
+537,nutty,3.5
+537,intense,3.5
+537,roasty,3.5
+537,rich cocoa,3.5
+523,creamy,3.75
+523,mild spice,3.75
+523,hazelnut,3.75
+523,creamy,4.0
+523,mild spice,4.0
+523,cocoa,4.0
+1908,rich,3.5
+1908,cherries,3.5
+1908,acidic,3.5
+2510,cocoa butter dominates,2.75
+2510,cocoa,2.75
+2510,intense,2.75
+2510,sweet,2.75
+2510,vanilla dominate,2.75
+2510,cocoa base,3.0
+2510,sweet,3.0
+2510,earthy,3.0
+1684,sour milk,3.0
+1684,off,3.0
+1684,late tart,3.0
+1684,dried fruit,3.25
+1684,sour,3.25
+1684,nutella,3.25
+1684,balanced,3.5
+1684,dairy,3.5
+1684,spicy,3.5
+2084,high astringent,3.0
+2084,earthy,3.0
+2084,creamy,3.25
+2084,complex,3.25
+2084,astingent,3.25
+2084,floral,3.5
+2084,rum,3.5
+2610,herbal,3.5
+2610,cocoa tea,3.5
+2614,complex,3.5
+2614,floral,3.5
+2614,spicy,3.5
+2614,fruit,3.5
+2614,smooth,3.5
+2614,slow,3.5
+2614,mild grape,3.5
+2610,chocolate and grapes,4.0
+259,klingy,1.5
+259,hint of fruit,1.5
+259,very bitter,1.5
+245,cloying,2.5
+245,fatty,2.5
+245,bitter,2.5
+237,sandy,3.5
+237,sweet,3.5
+237,bold citrus,3.5
+237,dry,3.5
+237,spicy,3.5
+237,fruity,3.5
+141,bitter,1.0
+141,cocoa,1.0
+296,sweet,2.75
+296,metallic,2.75
+296,vanilla,2.75
+749,burnt up front,2.25
+765,burnt coffee,2.5
+765,fatty,2.5
+809,nutty,3.0
+809,ashey,3.0
+809,coffee,3.0
+1185,fatty,3.5
+1185,controlled bitter,3.5
+1185,fruit,3.5
+1442,intense,2.5
+1442,ashey,2.5
+1442,earthen,2.5
+1442,intense,3.0
+1442,fatty,3.0
+1442,brownie,3.0
+1442,oily surface,3.5
+1442,berry,3.5
+1442,cream,3.5
+1804,nutty,2.5
+1804,burnt,2.5
+1804,fuel,2.5
+1804,sweet,2.75
+1804,acidic,2.75
+1804,fatty,2.75
+1804,strong nutty with off notes,3.0
+1808,sandy,3.0
+1808,bold,3.0
+1808,cherry,3.0
+1808,dairy,3.25
+1808,chocolate,3.25
+1808,mild fruit,3.25
+2558,spice,3.25
+2558,oats,3.25
+2558,nutty,3.25
+2558,fatty,3.25
+2558,spice,3.25
+2558,honey,3.25
+2558,fatty,3.25
+2558,single note of cocoa,3.5
+2558,fatty,3.5
+2558,cocoa base,3.75
+2558,fruit,3.75
+2558,creamy,3.75
+237,grainy,2.0
+237,intense,2.0
+237,bitter,2.0
+237,perfume,2.5
+237,chemical off note,2.5
+245,crumbly,2.75
+245,cinamon,2.75
+266,sweet,3.0
+266,floral,3.0
+266,yogurt,3.0
+269,sticky,3.25
+269,sweet,3.25
+269,grassy,3.25
+269,sandy,3.5
+269,sweet,3.5
+269,spicy,3.5
+1263,mild smoke,3.5
+1263,melon,3.5
+1263,tart,3.75
+1263,malt,3.75
+1263,mild smoke,3.75
+2626,burnt blueberry,3.0
+2626,off,3.0
+2626,unusually tart,3.25
+2626,nutty,3.25
+2630,intense,3.25
+2630,cooked black licorice,3.25
+2630,strong tobacco,3.25
+2630,grassy,3.25
+845,fatty,2.75
+845,fruit,2.75
+845,muted,2.75
+841,fatty,3.0
+841,woody,3.0
+841,coffee,3.0
+1586,floral,3.25
+1586,earthy,3.25
+1586,acidic,3.25
+1582,woody,3.5
+1582,spicy,3.5
+1582,tobacco,3.5
+1586,acidic,3.5
+1586,astringent,3.5
+1586,spicy,3.5
+1884,sweet,3.0
+1884,marshmallow,3.0
+1888,nutty,3.25
+1888,grain,3.25
+1888,late choco,3.25
+1888,mild smoke,3.25
+1888,sweet edge,3.25
+1888,overly sweet,3.5
+1888,mild spice,3.5
+1888,sweet,3.5
+1888,grassy,3.5
+1888,nutty,3.5
+2154,off notes,2.0
+2154,vanilla,2.0
+2394,sandy,3.0
+2394,intense,3.0
+2394,sweet,3.0
+2394,rich,3.0
+2402,molasses,3.25
+2402,rich,3.25
+2402,vegetal,3.25
+1105,sandy,2.5
+1105,fruity,2.5
+1105,acidic,2.5
+1105,metallic,2.5
+1153,molasses,2.75
+1153,cocoa,2.75
+1101,sandy,3.0
+1101,tobacco,3.0
+1101,molasses,3.0
+1153,mild metallic and spice,3.0
+1105,sandy,3.25
+1105,nutty,3.25
+1105,cocoa,3.25
+1109,sandy,3.25
+1109,molasses,3.25
+1109,spice,3.25
+1101,sandy,3.5
+1101,mild intensity,3.5
+1101,fruit,3.5
+1407,soapy,2.75
+1407,earthy,2.75
+1347,caramel,3.5
+1347,molasses,3.5
+1347,fruit,3.5
+1371,caramel,3.5
+1371,sweet,3.5
+1371,delicate,3.5
+1570,roasty,3.5
+1570,black pepper,3.5
+1570,nutty,3.5
+1574,nutty,3.5
+1574,floral,3.5
+1574,roasty,3.5
+1570,med roast,3.75
+1570,grassy,3.75
+1570,dried fruit,3.75
+1724,bright fruit,4.0
+1724,molasses,4.0
+1724,nutty,4.0
+1956,nutty,3.25
+1956,roasty,3.25
+1956,caramel,3.25
+2354,smooth,3.5
+2354,mellow,3.5
+2354,floral,3.5
+2314,smooth,3.75
+2314,caramel,3.75
+2314,dried fruit,3.75
+2554,complex,4.0
+2554,strawberry,4.0
+2554,floral,4.0
+2688,mild strawberry,4.0
+2688,cocoa,4.0
+2688,acidic,4.0
+1247,burnt rubber,2.5
+1247,leather,2.5
+1247,mild fruit,2.75
+1247,off notes,2.75
+1251,nutty,2.75
+1251,roasty,2.75
+1251,smokey,2.75
+1251,creamy,3.0
+1251,woody,3.0
+1251,slight cherry,3.0
+404,sticky,2.75
+404,mild mint,2.75
+404,bitter,2.75
+1426,sandy,2.75
+1426,roasty,2.75
+1426,coffee,2.75
+2672,cherry,3.0
+2672,sour milk,3.0
+2672,brownie,3.0
+2676,vanilla,3.0
+2676,sour,3.0
+2676,bubblegum,3.0
+2676,dominate grape,3.25
+2676,plastic off note,3.25
+2028,dark roast,3.0
+2028,rich cocoa,3.0
+2238,butter,3.5
+2238,roasty,3.5
+2238,cocoa,3.5
+2238,nutty,3.5
+1900,slightly metallic,3.25
+1900,woody,3.25
+1900,berry,3.25
+252,dry,3.0
+252,sandy,3.0
+252,cocoa,3.0
+486,very sweet,2.75
+486,very spicey,2.75
+1235,green,3.5
+1235,leafy,3.5
+2202,spicy,3.0
+2202,chocolatey,3.0
+2202,atypical,3.0
+2422,sl. chalky,3.5
+2422,floral,3.5
+2422,pure,3.5
+2668,early fruit,3.25
+2668,earthy,3.25
+2668,alcohol,3.25
+2668,dried fruit,3.25
+2668,banana,3.25
+2668,sweet,3.25
+2668,vanilla,3.25
+672,cocoa,3.5
+672,subtle peanut butter,3.5
+1454,floral,3.25
+1454,earthy,3.25
+1407,bland,3.0
+1407,mild choco & leather,3.0
+1407,powdery,3.25
+1407,bland,3.25
+1407,mild choco,3.25
+1696,roasty,2.75
+1696,sour milk,2.75
+1696,off note,2.75
+1696,high roast,3.5
+1696,banana raspberry,3.5
+2298,grassy,2.5
+2298,rubbery,2.5
+2298,chunky,3.25
+2298,spicy,3.25
+2298,rubbery,3.25
+1482,flat,2.5
+1482,metallic,2.5
+1482,floral,2.5
+1514,spicy,2.5
+1514,earthy off notes,2.5
+1482,flat,2.75
+1482,floral,2.75
+1482,medicinal,2.75
+2442,sugar dominates,3.0
+2442,molasses,3.0
+647,mild,3.75
+647,fruity then nutty,3.75
+647,mild,3.75
+647,earthy,3.75
+647,grassy,3.75
+1772,sticky,2.5
+1772,bitter,2.5
+1772,molasses,2.5
+1772,tart,2.5
+1772,sticky,2.5
+1772,coconut,2.5
+1772,sour,2.5
+1772,bitter,2.5
+1760,gritty,2.5
+1760,molasses,2.5
+1760,earthy,2.5
+1760,roasty,2.75
+1760,cocoa,2.75
+1760,molasses,2.75
+1768,nutty,2.75
+1768,roasty,2.75
+1768,bitter,2.75
+1764,gritty,3.0
+1764,sweet,3.0
+1764,molasses,3.0
+1764,sandy,3.0
+1764,rich,3.0
+1764,roasty,3.0
+1764,earthy,3.0
+1764,gritty,3.0
+1764,nutty,3.0
+1764,caramel,3.0
+1764,molasses,3.25
+1764,tart,3.25
+1764,floral,3.25
+1259,unrefined,2.75
+1259,odd,2.75
+1259,vegetal,2.75
+1530,earthy,3.25
+1530,coffee,3.25
+1530,mild,3.25
+1530,tang,3.25
+1530,bold,3.5
+1530,rich cocoa,3.5
+1530,coffee,3.5
+1530,nuts,3.75
+1530,coffee,3.75
+1530,peanut butter,3.75
+919,sandy,2.5
+919,fruity,2.5
+919,burnt,2.5
+919,sandy,2.75
+919,sweet,2.75
+919,cocoa,2.75
+919,tart,3.25
+919,bright fruit,3.25
+919,sour coffee,3.25
+1121,intense orange,3.75
+1121,floral notes,3.75
+1582,floral,3.75
+1582,orange,3.75
+1582,cocoa,3.75
+1582,mild bitter,3.75
+1582,fruit,3.75
+1582,spice,3.75
+2700,nutty,2.75
+2700,mild dried fruit,2.75
+2700,sandy,2.75
+2700,off,2.75
+2134,spicy,3.25
+2134,banana,3.25
+2294,nutty,3.0
+2294,honey,3.0
+2294,grassy,3.0
+1219,fatty,2.5
+1219,vanilla,2.5
+1219,mass market,2.5
+2080,sandy,2.5
+2080,tart,2.5
+2080,ham,2.5
+2080,sweet,2.5
+2080,high astringent,2.75
+2080,fruit,2.75
+2080,roasty,2.75
+2080,sandy,2.75
+2080,sweet,2.75
+1454,coarse,3.0
+1454,vegetal,3.0
+1454,nibby,3.0
+682,rustic,3.25
+682,sweet,3.25
+682,brownie,3.25
+682,banana,3.25
+1832,grainy,3.25
+1832,sweet,3.25
+1832,whole bean,3.25
+2594,melon,3.25
+2594,mild spice,3.25
+2594,cocoa,3.25
+2598,hazelnut,3.25
+2598,bold,3.25
+2598,strong roast,3.25
+2594,full flavor w/ dominant roast,3.5
+117,earthy,2.5
+117,floral,2.5
+117,mild bitter,2.5
+117,sweet,2.5
+117,cardboard,2.5
+117,sweet,3.0
+117,marshmallow,3.0
+209,long lasting,3.5
+209,cocoa base,3.5
+439,chewy,3.25
+439,fudge-like,3.25
+439,perfume,3.25
+439,oily,3.25
+439,grassy,3.25
+439,minty,3.25
+478,earthy,3.25
+478,sweet,3.25
+478,spicey,3.5
+478,cocoa,3.5
+1522,coarse,2.5
+1522,sweet,2.5
+1522,sour,2.5
+1522,leathery,2.5
+1522,gritty,2.5
+1522,mild bitter,2.5
+1522,off notes,2.5
+377,dry,2.5
+377,ashey,2.5
+377,medicinal,2.5
+377,fatty,2.75
+377,cigarette butt,2.75
+377,coffee,2.75
+377,oily,3.0
+377,muted,3.0
+377,fruity,3.0
+377,roasty,3.0
+377,tart,3.0
+377,slight burnt,3.0
+377,slow,3.0
+377,fatty,3.0
+377,subdued,3.0
+377,nutty,3.0
+2534,rich,3.5
+2534,raisiny,3.5
+2534,molasses,3.5
+2514,mild lemon,3.75
+2514,cocoa,3.75
+2514,crisp nibs,3.75
+2534,fruity,3.75
+2534,honey,3.75
+2534,cocoa,3.75
+2534,roasty,3.75
+2514,cherry,4.0
+2514,perfectly balanced roast,4.0
+2638,roasty,3.5
+2638,cocoa,3.5
+2638,sandy,3.5
+2638,coffee at,3.5
+2638,hint of lemon,3.75
+2638,classic brownie,3.75
+1149,gritty,2.75
+1149,sweet,2.75
+1149,hot cocoa,2.75
+2250,sweet,2.75
+2250,sandy,2.75
+2250,spicy,2.75
+2226,bold,3.75
+2226,spice,3.75
+2226,hit of anise,3.75
+2314,roasty,3.0
+2314,hammy,3.0
+2314,nutty,3.0
+2310,cocoa,3.25
+2310,woody,3.25
+2310,basic,3.25
+2310,rich cocoa,3.5
+2310,floral,3.5
+2310,acidic,3.5
+2310,basic cocoa,3.5
+2310,mild fruit,3.5
+2310,sweet,3.5
+2306,smooth,3.75
+2306,spicy,3.75
+2306,cocoa,3.75
+2310,creamy,4.0
+2310,dried fruit,4.0
+2310,nutty,4.0
+666,oily,3.75
+666,citrus,3.75
+666,orange,3.75
+445,sweet,3.0
+445,peanut butter,3.0
+486,red berry,2.75
+486,bitter,2.75
+486,roasty,2.75
+486,sour,2.75
+252,chalky,1.0
+252,musty,1.0
+252,very bitter,1.0
+209,bitter,3.0
+209,light lime,3.0
+209,sour,3.0
+227,dry,3.75
+227,sandy,3.75
+227,cocoa,3.75
+227,coffee,3.75
+470,short,3.75
+470,mild cocoa,3.75
+470,mild fruit,3.75
+2630,spice,3.5
+2630,earthy,3.5
+2630,honey,3.5
+2630,sour,3.5
+2630,blueberry,3.5
+2630,sweet edge,3.5
+2630,pure,3.5
+1486,creamy,3.5
+1486,floral,3.5
+1486,bourbon,3.5
+2474,balanced,3.5
+2474,anise,3.5
+2474,creamy,3.5
+2402,raw,2.25
+2402,dirty,2.25
+2402,metallic,2.25
+2402,dry,2.25
+2606,molasses,3.0
+2606,dried fruit,3.0
+2606,tart,3.0
+2606,off,3.0
+2606,rich cocoa,3.25
+2606,tart,3.25
+2606,papery,3.25
+2606,sweet,3.25
+2606,cocoa,3.25
+2606,cardboard off,3.25
+292,very sour,2.75
+292,mildly bitter,2.75
+296,slightly burnt,2.75
+296,mildly bitter,2.75
+292,dry,3.25
+292,coffee,3.25
+292,sour,3.25
+292,minty,3.75
+292,nutty,3.75
+292,nutmeg,3.75
+579,cocoa then roasted nut,3.25
+1630,bold,3.5
+1630,roasty,3.5
+1630,sticky,3.5
+1630,brownie,3.5
+1916,woody,2.75
+1916,nutty,2.75
+1916,off sour note,2.75
+2688,cocoa,2.5
+2688,grass,2.5
+2688,off notes,2.5
+2688,off,2.5
+2688,harsh,2.5
+2688,dirty,2.5
+2688,chemical,2.5
+2684,spicy,3.25
+2684,vanilla,3.25
+2684,sweet,3.25
+2684,cocoa,3.25
+2688,cocoa,3.5
+2688,mild fruit,3.5
+196,creamy,3.0
+196,woodsy,3.0
+196,cocoa,3.0
+220,intense,3.0
+220,tangy,3.0
+220,berry,3.0
+220,sour,3.0
+220,lemon,3.0
+220,sour,3.0
+220,slight metallic,3.0
+341,creamy,3.0
+341,buttery,3.0
+341,non descript,3.0
+445,woodsy,3.25
+445,nutty,3.25
+451,slow,3.5
+451,less intense berry,3.5
+451,nutty,3.5
+451,dark berry,3.75
+451,winey,3.75
+558,harsh aroma,2.5
+558,melon floral,2.5
+558,off,2.5
+478,fruity,3.0
+478,bland,3.0
+558,dry,3.0
+558,spicy,3.0
+558,woody,3.0
+470,coffee and cocoa,3.25
+558,oily,3.25
+558,fatty,3.25
+558,rum,3.25
+558,oily,3.25
+558,coffee,3.25
+817,high intensity bitter,1.5
+813,silky,3.5
+813,minty,3.5
+959,sandy,3.5
+959,sweet,3.5
+959,tart red berry,3.5
+821,creamy,3.75
+821,nutty,3.75
+821,cocoa,3.75
+1169,oily,3.25
+1169,fragrant,3.25
+1169,spciy,3.25
+1984,oily,3.75
+1984,rich cocoa,3.75
+1984,nutty,3.75
+48,this is not chocolate,1.0
+971,spice,3.25
+971,roasty,3.25
+971,off fatty note,3.25
+975,sandy,3.25
+975,sweet,3.25
+975,smokey,3.25
+975,acidic,3.25
+975,sweet,3.25
+975,cucumber,3.25
+975,sandy,3.25
+975,sweet,3.25
+975,spicy,3.25
+975,roasty,3.25
+975,sandy,3.5
+975,sweet,3.5
+975,nutty,3.5
+1283,true to sugar,2.5
+1283,molasses,2.5
+1335,banana nut,2.75
+1736,oily,3.25
+1736,mild bitter,3.25
+1736,nutty,3.25
+1736,fruit,3.25
+1736,creamy,3.75
+1736,complex,3.75
+1736,fruity,3.75
+2466,deep cherry,3.25
+2466,earthy,3.25
+2466,rubbery,3.25
+2466,nutty,3.25
+2466,citrus,3.25
+2502,bold,3.25
+2502,black tea,3.25
+2502,floral,3.25
+2502,banana,3.25
+2466,banana,3.5
+2466,spicy,3.5
+2466,grassy,3.5
+2656,sticky,3.75
+2656,cocoa,3.75
+2656,honey,3.75
+2526,sandy,3.25
+2526,sweet,3.25
+2526,basic cocoa base,3.25
+2522,rich malt,3.5
+2522,raspberry,3.5
+2522,cocoa,3.5
+2526,raisins,3.5
+2526,honey,3.5
+2526,molassses,3.5
+2622,deep cocoa,3.75
+2622,fruit,3.75
+2622,melon,3.75
+785,vanilla,3.25
+785,banana,3.25
+785,citrus,3.25
+1654,sandy,2.75
+1654,candy like vanilla,2.75
+1654,off,2.75
+1928,hammy,2.75
+1928,sour,2.75
+1928,astringent,2.75
+1666,off,2.25
+1666,pungent,2.25
+1666,intense,2.25
+1666,oily,2.75
+1666,grapes,2.75
+1666,pungent,2.75
+1610,floral,3.0
+1610,sour,3.0
+1610,synthetic,3.0
+1610,off,3.0
+1610,floral,3.5
+1610,banana,3.5
+2064,sweet,2.5
+2064,vinegar,2.5
+2574,harsh woody/green,2.5
+2574,cocoa base,2.5
+2574,fresh fruit,3.0
+2574,sour cherry,3.0
+2574,roasty,3.0
+2574,raisiny,3.5
+2574,slight anise,3.5
+2574,roasty,3.5
+805,dried fruit,3.0
+805,tannic,3.0
+805,grassy,3.25
+805,green,3.25
+805,candy spice,3.25
+915,spicy,3.75
+915,fudgey,3.75
+1026,acidic,2.75
+1026,sour,2.75
+1026,cocoa,2.75
+1026,licorice,3.25
+1026,sour,3.25
+1026,rich cocoa,3.25
+1085,roasty,3.5
+1085,oreo shell,3.5
+1085,coffee,3.5
+1153,mild smoke,3.5
+1153,raspberry,3.5
+1153,cocoa,3.5
+1303,roasty,2.75
+1303,spicy,2.75
+1303,nutty,2.75
+1219,heavy roast,3.5
+1219,blackberry,3.5
+1295,gummy,3.5
+1295,nutty,3.5
+1295,bourbon,3.5
+1387,cherry,3.75
+1387,rich choco,3.75
+1446,intense,3.0
+1446,roasty,3.0
+1446,coffee,3.0
+1446,raisin,3.0
+1816,cherry,3.75
+1816,rich choco,3.75
+2024,cocoa,3.0
+2024,sour,3.0
+2024,toffee,3.0
+2024,earthy,3.0
+2178,vegetal,3.0
+2178,high astringency,3.0
+2178,nutty,3.25
+2178,moderate acidity,3.25
+2178,ripe orange,3.5
+2178,citrus,3.5
+2386,green apple,3.5
+2386,sticky,3.5
+2602,pungent,2.75
+2602,woody,2.75
+2602,choco pudding,2.75
+2602,pungent,2.75
+2602,sour,2.75
+2602,tart,2.75
+2602,intense,2.75
+2550,grape,3.25
+2550,pungent,3.25
+2602,orange soda,3.25
+2602,sour,3.25
+2546,dairy,3.5
+2546,honey,3.5
+2546,cocoa,3.5
+2550,faint fruit,3.5
+2550,basic fudgey,3.5
+2546,distinct choco and graham,4.0
+654,grassy,3.25
+654,fruity,3.25
+654,brownie,3.25
+654,brownie,3.25
+654,red berry,3.25
+654,cocoa flavor dominates,3.25
+2550,light caramel,3.0
+2550,sl. dry,3.0
+2550,earthy,3.0
+423,dark woody,3.0
+423,plum,3.0
+423,astringent,3.0
+423,wood,3.25
+423,holiday spice,3.25
+423,soap,3.25
+661,oily,3.5
+661,dried fruit,3.5
+661,vanilla,3.5
+987,gummy,3.0
+987,fatty,3.0
+987,caramel,3.0
+991,nutty,3.25
+991,ashey,3.25
+991,spicy pepper,3.25
+987,spicy,3.75
+987,oily,3.75
+987,toffee,3.75
+987,hints of fruit,3.75
+987,sweet spice,4.0
+987,floral,4.0
+1223,fatty,3.25
+1223,sunflower,3.25
+1223,peanutbutter,3.25
+1920,nut,2.75
+1920,tobacco,2.75
+1920,burnt,2.75
+1920,off notes,2.75
+1920,raisins,3.0
+1920,astringent,3.0
+1920,floral,3.25
+1920,licorice,3.25
+1920,roasty,3.25
+2342,muted,3.0
+2342,creamy,3.0
+2342,grapes,3.0
+2342,fatty,3.0
+2342,muted,3.25
+2342,creamy,3.25
+2342,basic cocoa,3.25
+1550,sweet,3.0
+1550,strong sour,3.0
+1550,acidic,3.0
+1554,intense,3.0
+1554,sweet,3.0
+1554,brownie,3.0
+1550,roasty,3.25
+1550,nutty,3.25
+1550,sweet,3.25
+1554,bold,3.25
+1554,floral,3.25
+1554,rum,3.25
+1708,mild cherry,3.25
+1708,fatty,3.25
+907,nice melt,3.25
+907,odd rubber notes,3.25
+1093,vanilla,2.5
+1093,fatty,2.5
+1093,basic cocoa,2.5
+1093,chalky,2.75
+1093,vanilla,2.75
+1093,caramel,2.75
+1093,fatty,2.75
+1093,powdery,2.75
+1093,nut,2.75
+1093,sl. burnt,2.75
+1462,texture issues,3.5
+1462,brownie,3.5
+1462,one dimensional,3.5
+1462,brownie,3.5
+1832,high roast,2.5
+1832,intense,2.5
+1832,fatty,2.5
+1832,high roast,3.0
+1832,fruit,3.0
+170,sandy,2.5
+170,cloying,2.5
+170,rich cocoa,2.5
+175,dark coffee,3.0
+175,cocoa,3.0
+175,cinamon,3.0
+175,nutmeg,3.0
+175,coffee,3.0
+175,nutty,3.0
+175,simple,3.0
+175,sweet,3.0
+180,waxy,3.0
+180,tobacco,3.0
+180,smokey,3.0
+180,mild mint,3.0
+180,basic cocoa,3.0
+263,fatty,3.75
+263,rich cocoa,3.75
+263,roasty,3.75
+423,smokey,3.0
+423,chalky,3.0
+423,berry,3.0
+423,caramel,3.0
+2222,metallic,2.5
+2222,dirt/ earthy,2.5
+2222,dirty,2.5
+2222,floral,2.5
+2222,unrefined,2.5
+2222,mild bitter,3.0
+2222,fatty,3.0
+2222,grassy,3.0
+1916,vanilla,2.5
+1916,chemical,2.5
+1916,rubber,2.5
+2422,smokey,3.0
+2422,roasty,3.0
+2422,acidic,3.0
+2422,rich,3.0
+166,red berry,3.5
+166,lingering coffee,3.5
+166,sticky,3.5
+166,woodsy,3.5
+166,rum,3.5
+241,intense fruit,2.75
+241,bitter ending,2.75
+661,sandy,2.75
+661,flat,2.75
+661,hint of berry,2.75
+682,sticky,2.75
+682,very roasty,2.75
+682,nutty,2.75
+769,earthy,3.0
+769,tart,3.0
+769,sour,3.0
+769,grassy,3.25
+769,tea,3.25
+769,late sour,3.25
+895,dry,2.75
+895,mint,2.75
+895,medicinal,2.75
+1034,oily,3.25
+1034,black pepper,3.25
+1034,roasty,3.25
+1193,butter,3.5
+1193,floral,3.5
+1193,rum,3.5
+1235,mild fruit and spice,3.5
+1235,roasty,3.5
+1634,sticky,3.75
+1634,rich,3.75
+1634,cherry,3.75
+1864,tropical berry,3.5
+1864,intense,3.5
+1952,blackberry,3.75
+1952,raisns,3.75
+1972,sticky,3.75
+1972,roasty nibs,3.75
+1972,grapes,3.75
+2016,well defined,4.0
+2016,creamy,4.0
+2016,cherry,4.0
+2258,cocoa,3.75
+2258,tea,3.75
+2258,malt,3.75
+2434,sticky,3.75
+2434,dried fruit,3.75
+2434,toast,3.75
+2434,cocoa,3.75
+2270,creamy,4.0
+2270,sticky,4.0
+2270,dried fruit,4.0
+2466,burnt honey,3.5
+2466,earthy,3.5
+2554,sl. bitter,3.75
+2554,black licorice,3.75
+2554,dried fig,3.75
+2656,dried fruit,4.0
+2656,fig,4.0
+2656,astringent,4.0
+2656,sticky,4.0
+2406,late cocoa,2.5
+2406,harsh,2.5
+2406,off notes,2.5
+2402,cocoa,2.75
+2402,raw,2.75
+2402,dirty,2.75
+2402,chemical,2.75
+2402,complex,3.0
+2402,sweet,3.0
+2402,sour,3.0
+2402,grassy,3.0
+2406,bland,3.0
+2406,fatty,3.0
+2406,fruit,3.0
+1371,mild cherry,3.25
+1371,earthy,3.25
+1371,fatty,3.25
+1371,rasin,3.25
+1371,nutty,3.25
+1407,nutty,3.5
+1407,caramel,3.5
+1407,toffee,3.5
+1688,intense,3.0
+1688,spicy,3.0
+1688,floral,3.0
+311,creamy,3.75
+311,nutty,3.75
+311,fruity,3.75
+63,acidic,1.5
+63,astringent,1.5
+63,unpleasant,1.5
+304,sticky,3.0
+304,floral,3.0
+87,long lasting,3.0
+87,fruit,3.0
+87,floral,3.25
+87,olive,3.25
+87,creamy,3.5
+87,basic cocoa,3.5
+129,sticky,3.25
+129,smoke,3.25
+129,ham,3.25
+129,earthy,3.25
+135,mild spice,3.25
+135,licorice,3.25
+135,fruity,3.5
+135,basic cocoa,3.5
+192,smooth,3.5
+192,banana,3.5
+192,cocoa,3.5
+192,creamy,3.75
+192,smokey,3.75
+192,tobacco,3.75
+111,creamy,4.0
+111,complex,4.0
+111,coffee,4.0
+192,creamy,4.0
+192,nuts,4.0
+192,woody,4.0
+192,cocoa,4.0
+192,creamy,4.0
+192,mint,4.0
+192,tobacco,4.0
+192,olive,4.0
+227,cucumber,3.0
+227,hot spices,3.0
+272,creamy,3.0
+272,woody,3.0
+272,earthy,3.0
+272,sticky,3.5
+272,grassy,3.5
+272,coffee,3.5
+272,sticky,3.75
+272,olive,3.75
+470,subtle,3.0
+470,caramel,3.0
+470,sour milk,3.0
+693,smooth,3.5
+693,intense,3.5
+693,smoke,3.5
+693,nut,3.5
+863,sticky,3.5
+863,nutty,3.5
+863,creamy,3.75
+863,coffee,3.75
+863,caramel,3.75
+1109,smooth,3.0
+1109,fruit,3.0
+1109,coffee,3.0
+1109,bitter,3.0
+1672,floral,3.75
+1672,well developed,3.75
+1672,creamy,3.75
+1672,nutty,3.75
+1672,strawberry,3.75
+1672,creamy,3.75
+2040,creamy,4.0
+2040,sticky,4.0
+2040,fruit,4.0
+1672,burnt rubber,2.5
+1672,molasses,2.5
+1676,bitter,2.75
+1676,molasses,2.75
+1676,marshmallow,2.75
+1676,fruity,2.75
+1676,molasses,2.75
+1880,licorice,2.75
+1880,molasses,2.75
+1880,rubber,2.75
+2052,molasses notes from sugar,2.75
+2052,near perfect shine,3.5
+2052,cocoa,3.5
+2096,molasses,3.5
+2096,fruit,3.5
+2696,molasses notes dominate,3.25
+2390,dry,2.5
+2390,earthy,2.5
+2390,walnut,2.5
+2390,dry,2.75
+2390,sour,2.75
+2390,sweet,2.75
+2390,mild fruit,2.75
+2390,dry,3.0
+2390,cocoa,3.0
+2390,grassy,3.0
+2390,spicy,3.0
+523,chalky,2.5
+523,bread,2.5
+523,dirt,2.5
+516,caramel and cocoa,3.5
+516,rich cocoa,3.75
+516,fruity,3.75
+516,strong floral,3.75
+523,dark forest berry,3.75
+523,spice,3.75
+697,licorice,3.0
+697,leathery,3.0
+697,intense,3.25
+697,almond,3.25
+697,coffee,3.25
+661,heavy roast,3.5
+661,woody,3.5
+661,berry,3.5
+765,intense cocoa,3.5
+623,dried fruit,3.75
+623,grapes,3.75
+623,sour,3.75
+923,creamy,3.75
+923,nutty,3.75
+1331,sandy,3.5
+1331,full bodied,3.5
+1331,spicy,3.5
+1331,black pepper,3.75
+1331,rich,3.75
+1331,intense,3.75
+1662,intense,4.0
+1662,spicy,4.0
+1662,butterscotch,4.0
+1964,candy like off flavor,2.75
+2100,intense earthy,3.25
+2100,cocoa,3.25
+2100,roasty,3.25
+2366,cocoa,3.5
+2366,honey,3.5
+2366,watery,3.5
+2366,sweet,3.5
+2648,fruit,3.5
+2648,holiday spice,3.5
+1506,coarse,3.25
+1506,earthy,3.25
+1506,mild banana,3.25
+841,fatty,2.75
+841,muted,2.75
+1630,dates,3.25
+1630,acidic,3.25
+1630,rich cocoa,3.25
+1630,cherry,3.25
+1630,earthy,3.25
+1630,tobacco,3.25
+1626,sandy,3.5
+1626,orange,3.5
+1626,butterscotch,3.5
+1626,fatty,3.5
+1626,roasty,3.5
+1626,intense brownie,3.5
+1630,blackberry and cinnamon,4.0
+2040,smoth,4.0
+2040,dense,4.0
+2040,grape,4.0
+1343,waxy,3.25
+1343,spicy,3.25
+1343,tobacco,3.25
+1343,ultra fruity,3.5
+1343,spicy,3.75
+1343,cocoa,3.75
+1812,dried fruit,3.25
+1812,strong floral,3.25
+1812,mild,3.25
+1812,dried fruit,3.25
+1812,chocolate,3.25
+919,buttery,2.75
+919,burlap,2.75
+2358,nutty,3.5
+2358,almond butter,3.5
+1876,dry,3.0
+1876,gritty,3.0
+1876,cardboard,3.0
+1876,nutty,3.0
+2534,molasses,3.0
+2534,red fruit,3.0
+2534,astringent,3.0
+2534,cocoa,3.0
+2534,spice,3.0
+2534,alcohol,3.0
+2534,dirty,3.0
+252,lemon,2.75
+252,tart,2.75
+252,burnt,2.75
+252,chemical,2.75
+709,nutty,3.75
+709,rich,3.75
+709,red berry,3.75
+32,gritty,2.75
+32,chalky,2.75
+32,earthy,2.75
+32,sour,2.75
+206,sandy,2.5
+206,banana,2.5
+206,sour,2.5
+206,gritty,2.5
+206,sweet,2.5
+206,banana,2.5
+206,smoke,2.5
+206,muted,3.0
+206,cherry,3.0
+206,banana,3.0
+439,very sweet,2.75
+439,marshmallow,2.75
+439,sandy,3.0
+439,bold,3.0
+439,cherry,3.0
+439,peanut butter,3.0
+1662,spicy,3.75
+1662,caramel,3.75
+1662,vanilla,3.75
+2382,cocoa,3.5
+2382,fig notes,3.5
+1137,low refinement,2.75
+1137,too sweet,2.75
+1137,sandy,3.25
+1137,tannic,3.25
+1137,earthy,3.25
+1450,coarse,3.0
+1450,woody,3.0
+1450,roasty,3.0
+1454,brownine,3.5
+1454,nutty,3.5
+2114,earthy,3.25
+2114,floral,3.25
+2114,cocoa,3.25
+2108,simple,3.5
+2108,mild cocoa,3.5
+2108,fruit,3.5
+2108,spicy,3.5
+2108,sweet,3.5
+2118,fruity,3.5
+2118,roasty,3.5
+1916,carrots,3.25
+1916,heavy roast,3.25
+2198,intens,3.0
+2198,brownie,3.0
+2198,spicy,3.0
+2198,metal,3.0
+2350,dirty,2.5
+2350,earthy,2.5
+2350,burnt,2.5
+2350,honey,2.5
+2350,fruit,3.0
+2350,dirty,3.0
+2350,muddy,3.5
+2350,raisins,3.5
+2350,nut,3.5
+2350,rubbery,3.5
+565,unrefined,3.25
+565,crumbly,3.25
+565,sweet,3.25
+1209,mild bitter,3.0
+1209,smoke,3.0
+1209,hammy,3.0
+1205,spicy,3.25
+1205,green,3.25
+1205,long,3.25
+1205,intense,3.25
+1209,grit,3.25
+1209,smoke,3.25
+1209,wood,3.25
+1209,blackberry,3.25
+252,woody,3.0
+252,cocoa,3.0
+414,sticky,2.0
+414,slight plum,2.0
+414,medicinal,2.0
+431,sweet,2.75
+431,vanilla,2.75
+431,sticky,2.75
+423,hazelnut,3.5
+423,fruit,3.5
+423,slight bitter,3.5
+903,nutty,2.75
+903,ginger,2.75
+903,off notes,2.75
+2570,sweet,3.0
+2570,too few nibs,3.0
+2570,cocoa,3.0
+2570,mild licorice,3.5
+2570,late mocha,3.5
+666,gritty,2.5
+666,overyly sweet,2.5
+666,fruit punch,2.5
+666,grits,2.5
+666,very sweet,2.5
+666,banana,2.5
+666,strong vanilla,2.5
+666,strawberry,2.5
+666,nut,2.5
+672,gritty,2.5
+672,sweet,2.5
+672,vanilla,2.5
+672,woody,2.5
+666,sweet,2.75
+666,vanilla,2.75
+666,mild banana,2.75
+1275,mild fruit,3.0
+1275,earthy,3.0
+1275,spicy,3.5
+1275,roasty,3.5
+1275,mild bitter,3.5
+1275,coarse,3.75
+1275,mild bitter,3.75
+1275,raisin,3.75
+2142,prominent plum note,3.5
+2664,sandy,3.0
+2664,basic cocoa,3.0
+2664,sweet,3.0
+2450,dominated by heavy roast,3.0
+565,perfume,2.75
+565,floral,2.75
+565,vanilla,2.75
+1736,fatty,2.5
+1736,sandy,2.5
+1736,nutty,2.5
+1736,off notes,2.5
+1736,metallic,2.75
+1736,off notes,2.75
+1736,powdery,2.75
+1732,roasty,3.0
+1732,spicy,3.0
+1732,nutty,3.0
+105,malitol,2.0
+105,cocoa,2.0
+48,basic cocoa,3.0
+48,short length,3.0
+48,creamy,3.0
+48,floral,3.0
+48,complex,3.0
+105,creamy,3.0
+105,roasty,3.0
+105,cocoa,3.0
+48,fatty,3.5
+48,rich,3.5
+48,spice,3.5
+48,nutty,3.5
+56,complex,4.0
+56,raspberry,4.0
+56,cocoa,4.0
+494,spicey,3.5
+494,marshmallow,3.5
+1283,intense,2.25
+1283,molasses,2.25
+1283,sweet,2.25
+1287,intense,2.5
+1287,molasses,2.5
+1287,bitter,2.5
+1283,molasses,3.0
+1283,licorice,3.0
+1283,bitter,3.0
+1283,sandy,3.25
+1283,sweet,3.25
+1283,mild fruit,3.25
+2474,off,2.75
+2474,hammy,2.75
+2474,roasty,2.75
+2482,nutty,2.75
+2482,melon,2.75
+2482,vinegar,2.75
+2478,banana,3.0
+2478,bland,3.0
+2478,sour,3.0
+2478,off,3.0
+2486,fruit,3.25
+2486,cocoa,3.25
+2486,fatty,3.25
+2398,creamy,3.25
+2398,honey,3.25
+2398,mild hammy,3.25
+2394,caramel,3.5
+2394,acidic,3.5
+2394,creamy,3.5
+2398,plums,3.5
+2398,cocoa,3.5
+2398,cherry,3.75
+2398,cocoa,3.75
+2398,creamy,3.75
+2154,hammy,2.75
+2154,dried fruit,2.75
+2154,hammy,2.75
+2154,large grits,2.75
+2154,high acidity,3.0
+2154,bitter,3.0
+2154,nutty,3.0
+2150,roasty,3.5
+2150,simple,3.5
+2202,molasses,3.0
+2202,sour notes,3.0
+2206,muted,3.5
+2206,mild sweet cocoa,3.5
+2206,fruit,3.5
+2206,spicy mild molasses,3.5
+1267,coconut,2.75
+1267,true to sugar bar,2.75
+1776,strong vanilla,2.75
+1776,earthy,2.75
+1776,nutty,2.75
+1776,vanilla,2.75
+1776,dried fruit,2.75
+1776,nuts,2.75
+1772,gummy,2.75
+1772,bland,2.75
+1772,sour,2.75
+1776,sticky,3.5
+1776,floral,3.5
+1776,gummy,3.75
+1776,sandy,3.75
+1776,complex,3.75
+2076,coffee,2.75
+2076,acidic,2.75
+2076,astringent,2.75
+2072,nuts,3.0
+2072,sour milk,3.0
+2072,sandy,3.0
+2072,powdery,3.0
+2072,late sour,3.0
+2072,sandy,3.25
+2072,dried fruit,3.25
+2072,roasty,3.25
+2072,roasty,3.5
+2072,hazelnut,3.5
+2072,cocoa,3.5
+2430,sticky,3.0
+2430,dried sour fruit,3.0
+2430,roasty,3.0
+2430,roasted nuts,3.5
+2430,citrus,3.5
+2430,creamy,3.5
+2712,dried fruit (fig),3.5
+2712,black licorice,3.5
+2712,dairy,3.5
+2712,cocoa,3.5
+2712,mild sour,3.5
+2318,off,3.0
+2318,tropical,3.0
+2318,vegetal,3.0
+2318,rubbery,3.0
+2322,honey,3.0
+2322,mild floral,3.0
+2322,mild off,3.0
+2322,fruit,3.0
+2322,smokey,3.0
+2322,mocha,3.0
+2322,dirty,3.0
+2322,roasty,3.0
+2322,acidic,3.0
+2318,nutty,3.25
+2318,bland,3.25
+2318,late sour,3.25
+2322,floral,3.75
+2322,orange,3.75
+2322,cocoa,3.75
+2326,fig,3.75
+2326,mild anise,3.75
+915,grits,3.5
+915,hazelnut,3.5
+915,rum,3.5
+911,nutty,3.75
+911,dried fruit,3.75
+1355,intense,3.5
+1355,tobacco,3.5
+1355,nuts,3.5
+1355,caramel,3.75
+1355,dairy,3.75
+2044,large grits,2.5
+2044,sweet,2.5
+2100,large grits,3.0
+2122,sl. dry,3.0
+2122,gritty,3.0
+2122,fruity,3.0
+2122,nuts,3.0
+2100,dried fruit,3.25
+2100,large grits,3.25
+2118,nutty,3.5
+1351,coarse,3.5
+1351,hazelnut,3.5
+1351,peanut,3.5
+1351,banana,3.5
+1542,intense,3.0
+1542,bitter,3.0
+1542,off notes,3.0
+1538,few grits,3.5
+1538,spicy,3.5
+1538,cocoa,3.5
+1538,very coarse,3.5
+1538,intense,3.5
+1538,spice,3.5
+781,coarse,3.5
+781,perfume,3.5
+781,heavy roast,3.5
+785,choco covered strawberry,3.5
+887,sandpaper,2.0
+887,some fruit,2.0
+887,bitter,2.0
+883,fruit,2.5
+883,cough medicine,2.5
+883,olive,3.5
+883,rum,3.5
+1042,spice,3.5
+1042,citrus,3.5
+1042,sweet,3.5
+1209,mild bitter,3.0
+1209,roasty,3.0
+1209,red berry,3.0
+1295,sweet,3.25
+1295,tobacco,3.25
+1634,roasty,3.5
+1634,grapes,3.5
+1634,rich brownie,3.5
+1940,slight dry,3.5
+1940,citrus,3.5
+1940,grapefruit,3.5
+2430,tea,3.25
+2430,spicy,3.25
+2430,sweet,3.25
+370,slightly burnt,2.75
+370,earthy,2.75
+370,creamy,3.0
+370,simple,3.0
+370,nutty,3.0
+370,creamy,3.25
+370,roasty,3.25
+370,tobacco,3.25
+370,complex,3.5
+370,mild licorice,3.5
+370,spice,3.5
+636,mild bitter,2.75
+636,mild cocoa,2.75
+636,roasty,2.75
+682,woody,2.75
+682,red fruit,2.75
+682,sour,2.75
+688,sandy,3.0
+688,cocoa,3.0
+688,red fruit,3.0
+642,grassy,3.25
+642,brownie,3.25
+642,astringent,3.25
+682,spicy,3.25
+682,cocoa,3.25
+745,bready,3.25
+745,nutty,3.25
+745,earthy,3.25
+745,intense,3.25
+642,red berry,3.5
+642,some roasty notes,3.5
+642,woody,3.5
+642,grassy,3.5
+642,long,3.5
+745,tart,4.0
+745,roasted cocoa,4.0
+931,sandy,3.0
+931,smoke,3.0
+931,red berry,3.0
+899,mild smoke and fruit,3.5
+899,smoke,3.5
+899,fruit,3.5
+899,sour,3.5
+899,hammy,3.5
+915,caramel,4.0
+915,nuts,4.0
+915,dried fruit,4.0
+927,tart,4.0
+927,red berry,4.0
+927,smoke,4.0
+1030,mildly burnt caramel,3.25
+1081,blackberries,3.75
+1081,caramel,3.75
+1081,roasty,3.75
+1117,cocoa and fresh grapes,3.75
+1149,chocolate covered banana,4.0
+1383,light color,3.0
+1383,leathery flavor,3.0
+1383,orange,3.5
+1383,mellow but flavorful,3.5
+1383,fruity,3.5
+1383,floral,3.5
+1383,caramel,3.5
+1387,slow develop,3.5
+1387,caramel,3.5
+1387,roasty,3.5
+2024,rich cocoa,3.5
+2024,mild,3.5
+2024,fatty,3.5
+2028,rich cocoa,3.5
+2028,nuts,3.5
+2024,long lasting,3.75
+2024,fruit,3.75
+2024,spicy,3.75
+2174,roasty,3.25
+2174,mild fatty,3.25
+2174,complex,3.5
+2174,nuts,3.5
+2174,spice,3.5
+2174,floral,3.5
+2708,licorice,3.0
+2708,caramel,3.0
+2708,floral,3.0
+2708,dirty,3.0
+2642,coconut,3.25
+2642,high astringency,3.25
+2708,spicey,3.25
+2708,herbal,3.25
+2708,ripe,3.25
+2708,sl. burnt,3.25
+2642,fudgey,3.5
+2642,spicey,3.5
+2642,nutty,3.5
+2644,oily,3.5
+2644,black licorice,3.5
+2644,spicey,3.5
+2704,raspberry,3.5
+2704,mild sour,3.5
+2704,cocoa,3.5
+2644,rich chocolate,3.75
+2644,late spice notes,3.75
+2644,robust cocoa,4.0
+2644,dried cranberry,4.0
+2000,creamy,3.5
+2000,fragrant,3.5
+2000,creamy,3.75
+2000,simple,3.75
+2000,strong choco,3.75
+1375,spice,3.5
+1375,fatty,3.5
+1375,mild cocoa,3.5
+1375,strong fruit,3.5
+1375,ham,3.5
+1375,deep cocoa,3.5
+1375,banana,4.0
+1375,yogurt,4.0
+1375,cocoa,4.0
+1912,vegetal,3.5
+1912,herbs,3.5
+1912,raw,3.5
+1956,creamy,3.75
+1956,black pepper,3.75
+1956,nut,3.75
+2126,sweet,3.0
+2126,metallic,3.0
+2130,floral,3.0
+2130,sticky,3.0
+2126,woody,3.25
+2126,grassy,3.25
+2126,spicy,3.25
+2134,high acidity,3.25
+2134,grassy,3.25
+2122,unique flavor,3.5
+2122,floral-spice mix,3.5
+2130,delicate,3.5
+2130,balanced,3.5
+2122,strong cocoa,3.75
+2122,orange citrus,3.75
+2126,cocoa,3.75
+2126,savory,3.75
+2130,black pepper,3.75
+2130,high astringency,3.75
+2126,honey,4.0
+2126,deep cocoa,4.0
+2130,banana,4.0
+2130,dairy,4.0
+2130,cocoa,4.0
+623,fatty,3.25
+623,leathery,3.25
+623,earthy,3.25
+623,tobacco,3.5
+623,woody,3.5
+623,wild berry,3.5
+623,roasty,3.5
+623,fatty,3.5
+623,woody,3.5
+895,intense olive,3.25
+895,citrus,3.25
+895,vegetal,3.25
+899,spicy,3.25
+899,earthy,3.25
+899,oily,3.25
+899,fatty,3.25
+899,bold olive,3.25
+923,oily,3.75
+923,gritty,3.75
+923,savory,3.75
+1034,oily,3.25
+1034,burnt black pepper,3.25
+1034,baked bread,3.5
+1259,mild fatty,3.5
+1259,nutty,3.5
+1259,roasty,3.5
+1680,oily,3.0
+1680,sweet,3.0
+1680,dairy,3.0
+1680,bland,3.0
+1680,oily,3.25
+1680,spicy,3.25
+1680,sour,3.25
+781,fatty,3.0
+781,sweet,3.0
+781,vanilla,3.0
+753,cocoa,3.25
+753,spicy,3.25
+753,sweet,3.25
+863,oily,2.5
+863,tart,2.5
+863,chlorine,2.5
+1185,sandy,3.0
+1185,sweet,3.0
+1185,molasses,3.0
+1185,floral,3.0
+1046,dried fruit,3.75
+1046,intense,3.75
+1359,acidic,3.0
+1359,undefined,3.0
+1359,brownie,3.0
+1359,off,3.0
+1347,delicate,3.75
+1347,hebs,3.75
+1347,choco,3.75
+1780,oily,3.75
+1780,tropical,3.75
+1780,oily,4.0
+1780,dried fruit,4.0
+1780,leather,4.0
+2366,black current,3.5
+2366,bitter,3.5
+2366,astringent,3.5
+2278,balanced,3.75
+2278,fruit,3.75
+2278,nut,3.75
+2278,roasty,3.75
+2550,sl. bitter up front,3.25
+2550,fatty,3.25
+2550,intense,3.25
+2554,dried fruit,3.75
+2554,cocoa base,3.75
+2554,fatty,3.75
+2664,black licorice,3.75
+2664,tangy,3.75
+2174,cheesy off flavor,2.5
+2190,grainy texture,3.0
+2190,sour,3.0
+2190,hammy,3.0
+2202,accessible,3.0
+2202,sweet,3.0
+2202,sandy,3.0
+2202,dried fruit,3.5
+2202,cocoa,3.5
+1367,gritty,2.5
+1367,ambiguous,2.5
+1642,sandy,3.25
+1642,sweet,3.25
+1642,candy tart,3.25
+1646,sticky,3.5
+1646,spice,3.5
+1646,roasty,3.5
+1646,earthy,3.5
+1646,deep cocoa,3.5
+1646,fruit,3.5
+1646,spice,3.5
+1646,red fruit,3.5
+1646,tart,3.5
+1646,fat,3.5
+1646,leathery,3.5
+1642,cocoa and coconut,4.0
+2012,chewy,3.5
+2012,woody,3.5
+2012,rustic,3.5
+2012,fatty,3.5
+2012,creamy,3.5
+2012,roasty,3.5
+2096,dry,2.75
+2096,grainy,2.75
+2096,spicy,2.75
+2096,roasty,2.75
+2282,earthy,2.75
+2282,roasty,2.75
+2282,strong vanilla,2.75
+1672,mild woody,3.0
+1672,black licorice,3.0
+1848,mild strawberry,3.5
+1848,cocoa,3.5
+1924,sour off flavor,2.75
+1924,nutty,2.75
+1924,earthy,2.75
+1924,sweet edge,3.25
+1924,bright fruit,3.25
+1924,sour,3.25
+1924,mild molasses,3.25
+1924,rich,3.25
+1924,gateway,3.25
+2032,creamy,3.25
+2032,fig,3.25
+2446,acidic,2.5
+2446,mildly burnt,2.5
+2446,metallic,2.5
+2446,floral,3.0
+2446,rubbery,3.0
+2446,woody,3.0
+2602,banana,3.75
+2602,cocoa,3.75
+2602,late floral,3.75
+2194,fruit,2.75
+2194,tart,2.75
+2194,rubber,2.75
+2642,sweet,3.0
+2642,dominate cocoa,3.0
+2642,spice,3.0
+2642,spice/herb dominate cocoa base,3.25
+2644,sandy,3.25
+2644,sweet,3.25
+2644,earthy,3.25
+2644,deep cocoa,3.25
+741,fatty,3.0
+741,vanilla,3.0
+741,dairy,3.0
+2692,fruity,3.5
+2692,cocoa,3.5
+2692,sweet,3.5
+2692,nutty,3.5
+2692,spicy,3.5
+2692,candied orange,3.5
+2692,dried fruit,3.5
+2692,orange peel,3.5
+2692,cocoa,3.5
+2696,roasty,3.5
+2696,sweet,3.5
+2696,fruity,3.5
+2696,cocoa,3.5
+15,mildly rich,2.5
+15,basic,2.5
+15,roasty,2.5
+1896,rich,3.5
+1896,coffee,3.5
+1896,cherry,3.5
+2382,sour grapes,2.5
+2382,pungent,2.5
+2382,ashey,2.5
+2696,spicy,3.0
+2696,vanilla,3.0
+241,very sour,2.5
+241,grassy,2.5
+241,fatty,2.5
+363,very sweet,2.75
+363,coffee,2.75
+363,mild sour,2.75
+494,chunky,3.25
+494,muted,3.25
+494,mild bitter,3.25
+355,sl. sweet,3.0
+355,nutty,3.0
+355,off note,3.0
+355,hot cocoa,3.0
+355,very nutty,3.0
+355,light perfume,3.0
+355,mild,3.0
+355,sweet,3.0
+355,gritty,3.0
+355,roasty,3.0
+355,strong coffee,3.0
+355,mild nutty,3.25
+355,spicy,3.25
+355,brownie,3.25
+2060,earthy,2.75
+2060,chemical or burnt note,2.75
+87,sweet,2.5
+87,creamy,2.5
+87,vanilla,2.5
+15,creamy,3.0
+15,sweet,3.0
+15,floral,3.0
+15,vanilla,3.0
+99,fatty,3.0
+99,cocoa,3.0
+99,fruity,3.0
+87,creamy,3.5
+87,sweet,3.5
+87,blueberry,3.5
+93,creamy,3.5
+93,blackberry,3.5
+93,sweet,3.5
+93,rich cocoa,3.5
+93,mild citrus,3.5
+147,creamy,3.5
+147,sandy,3.5
+147,nutmeg,3.5
+147,moss,3.5
+259,sweet,3.0
+259,vanilla,3.0
+259,rich,3.0
+276,perfume,3.0
+276,vanilla,3.0
+276,creamy,3.5
+276,nutty,3.5
+316,sweet,3.0
+316,mild lemon,3.0
+387,bitter,3.0
+387,fatty,3.0
+387,fruit,3.0
+387,complex,3.5
+387,fruit,3.5
+387,nut,3.5
+387,raisin,3.5
+552,creamy,3.0
+552,mild tobacco,3.0
+552,ham,3.0
+654,dutched?,2.75
+654,intense,2.75
+654,rich cocoa,2.75
+654,sweet,3.25
+654,creamy,3.25
+654,floral,3.25
+654,orange,3.25
+654,dry,3.25
+654,sticky,3.25
+654,brownie,3.25
+1053,creamy,2.75
+1053,sl. burnt,2.75
+1053,roasty,2.75
+1053,floral,2.75
+1053,over roasted,2.75
+1053,harsh,2.75
+1053,sweet,3.25
+1053,vanilla,3.25
+1053,cocoa,3.25
+1053,very spicy,3.5
+1053,roasty,3.5
+1602,nutty,3.75
+1602,black licorice,3.75
+1205,unrefined,2.0
+1205,bitter,2.0
+1205,earthy,2.0
+1197,smokey,2.75
+1197,cherries,2.75
+1197,sour,2.75
+1197,xl nibs,2.75
+1197,sour,2.75
+1197,cardboard,2.75
+1201,molasses,2.75
+1201,sweet,2.75
+1201,long,2.75
+1201,cocoa,2.75
+1201,fatty,3.0
+1201,nutty,3.0
+1201,earthy,3.0
+1201,sandy,3.0
+1201,roasted vegetal,3.0
+1197,chalky,3.25
+1197,berry,3.25
+1197,cocoa,3.25
+1201,muted,3.25
+1201,mild fruit,3.25
+1201,sweet,3.25
+1197,sandy,3.5
+1197,intense,3.5
+1197,cherry,3.5
+166,buttery,2.5
+166,floral,2.5
+166,burnt,2.5
+1327,overyly sweet,2.75
+1327,banana,2.75
+1327,yogurt,2.75
+1327,chewy,3.0
+1327,fatty,3.0
+1327,sweet,3.0
+1327,nutty,3.0
+701,vanilla,3.0
+701,chocolate milk,3.0
+1696,sandy,3.0
+1696,sweet,3.0
+1696,dried fruit,3.0
+1700,rich chocolate,3.5
+1700,sweet edge,3.5
+1700,rich chocolate,3.5
+1700,sandy texture,3.5
+1808,powdery,3.25
+1808,rich,3.25
+1808,coffee,3.25
+1808,roasty,3.25
+2040,flat,3.0
+2040,late tart notes,3.0
+2330,sandy,3.0
+2330,sweet,3.0
+2330,cocoa,3.0
+2270,sandy,3.25
+2270,brownie,3.25
+2270,coconut,3.25
+2382,pungent,2.75
+2382,chemical,2.75
+2378,cocoa,3.25
+2378,fatty,3.25
+2378,fruit,3.25
+2378,earthy,3.5
+2378,dirty,3.5
+2378,dried fruit,3.5
+2606,delicate,3.5
+2606,carame,3.5
+2606,tang,3.5
+1876,powdery,2.75
+1876,vanilla,2.75
+1876,artificial,2.75
+2302,rubber,2.5
+2302,fatty,2.5
+2302,sandy,2.5
+2302,grape,2.5
+2306,sandy,2.5
+2306,fatty,2.5
+2306,chemical,2.5
+2302,nutty,3.0
+2302,sweet,3.0
+2302,fatty,3.0
+2302,sandy,3.0
+1748,pungent raisin,3.25
+1748,metallic,3.25
+1748,mostly earthy,3.5
+1748,mild dried fruit,3.5
+1243,woody,3.0
+1243,earthy,3.0
+1243,medicinal,3.0
+1239,full flavor spectrum,3.5
+1243,nutty,3.75
+1243,butterscotch,3.75
+1243,spicy,3.75
+1243,intense,3.75
+1243,fades fast,3.75
+1744,astringent,3.5
+1744,smoke,3.5
+1744,cream,3.5
+1744,floral,3.5
+1748,strong floral,3.5
+1748,black licorice,3.5
+1744,creamy,3.75
+1744,mild nutty & woody,3.75
+1744,dark berry,4.0
+1744,honey,4.0
+1744,cream,4.0
+1458,too sweet,2.75
+1458,spicy,2.75
+1458,candied,2.75
+1462,sandy,3.5
+1462,sweet,3.5
+1462,mild fruit,3.5
+2614,harsh,2.75
+2614,earthy,2.75
+2614,dirty,2.75
+2614,delicate fruit,3.25
+2614,black tea,3.25
+1546,intense,2.75
+1546,palm,2.75
+1546,earthy,2.75
+1546,sandy,3.0
+1546,tart,3.0
+1546,tangy,3.0
+1546,palm,3.0
+1546,intense,3.0
+1546,palm,3.0
+1546,nutty,3.0
+1550,floral,3.25
+1550,palm,3.25
+1550,sour,3.25
+1550,palm,3.25
+1550,spicy,3.25
+1550,flour,3.25
+2150,light color,2.25
+2150,sour,2.25
+2150,pungent,2.25
+2146,harsh flavor,2.5
+2146,hay,2.5
+2150,sour,2.75
+2150,citrus,2.75
+2150,molasses,2.75
+2150,lemon,3.0
+2150,late sour & molasses,3.0
+2146,fruity,3.5
+2146,tannic,3.5
+2146,coconut,3.5
+1712,sour,2.75
+1712,earthy,2.75
+1712,nutty,2.75
+1712,off notes,2.75
+1712,intense,3.25
+1712,bitter,3.25
+1712,coffee,3.25
+1712,mild caramel,3.5
+1712,honey,3.5
+2426,high acid,3.25
+2426,sweet,3.25
+2426,nut,3.25
+2426,strawberry,3.25
+2450,butterscotch,3.5
+2450,burnt cinnamon,3.5
+414,perfume,2.0
+414,burning,2.0
+414,sandy,2.5
+414,perfume,2.5
+414,nutty,2.5
+414,dry,3.0
+414,floral,3.0
+414,slight musty,3.0
+414,dry,3.25
+414,intense floral,3.25
+414,spciy,3.25
+414,dry,3.5
+414,nutty,3.5
+414,sweet,3.5
+431,dry,2.5
+431,sour,2.5
+431,cheesey,2.5
+431,off,2.5
+431,sandy,2.75
+431,red berry,2.75
+431,sour,2.75
+431,coffee,3.5
+431,red berry,3.5
+431,tart,3.5
+431,red berry,3.75
+431,cocoa,3.75
+431,mild coffee,3.75
+1466,floral,3.5
+1466,roasty,3.5
+1466,coffee,3.5
+1466,rich cocoa,3.5
+1466,fatty,3.5
+1466,creamy,3.5
+1466,nutty,3.5
+1466,tea,3.5
+1466,fatty,3.5
+1466,muted,3.5
+1466,fatty,3.5
+1466,nutty,3.5
+1872,sour,2.75
+1872,raw,2.75
+1872,green,2.75
+1327,true to sugar,2.5
+1327,green,2.5
+1327,fatty,2.5
+1113,pastey,1.75
+1113,bitter,1.75
+1113,unfixable,1.75
+1030,cardamon,4.0
+1654,smoke,2.75
+1654,cocoa,2.75
+1654,fruit,2.75
+1654,fuel,2.75
+2134,dry,2.75
+2134,woody,2.75
+2134,dried fruit,2.75
+2386,sour raisin,3.0
+2386,woody,3.0
+2386,fatty,3.0
+2386,fatty,3.0
+2386,mild bitter,3.0
+2386,banana,3.0
+296,charred,2.5
+296,espresso,2.5
+296,sandy,2.75
+296,sweet,2.75
+296,mild cocoa,2.75
+245,grassy,3.0
+245,tobacco,3.0
+245,intense,3.0
+300,fungal,3.0
+300,mushroom,3.0
+300,mild burn,3.0
+552,spicy,2.75
+552,sour,2.75
+552,burning,2.75
+600,ashey,2.75
+600,woody,2.75
+600,bright red,2.75
+552,earthy,3.0
+552,woody,3.0
+552,sour mint,3.0
+623,mild bitter,3.0
+623,floral,3.0
+623,woody,3.0
+623,nutty,3.0
+623,short,3.0
+623,sweet,3.25
+623,cocoa,3.25
+623,grassy,3.25
+809,sweet,3.5
+809,red berry,3.5
+809,sour,3.5
+1113,candy,2.5
+1113,uncontrolled bitterness,2.5
+1109,spice,2.75
+1109,cocoa,2.75
+1109,tolerable bitter,2.75
+1113,trop. fruit,2.75
+1113,coffee,2.75
+1113,bitter,2.75
+1038,sandy,3.0
+1038,vegetal,3.0
+1038,sour,3.0
+1065,oily,3.0
+1065,leathery,3.0
+1065,intense bitter,3.0
+1065,nutty,3.0
+1065,mild coffee,3.0
+1038,tart,3.5
+1038,fruity,3.5
+1038,intense,3.5
+1065,oily,3.5
+1065,spicy,3.5
+1065,sl. burnt,3.5
+1097,fatty,3.25
+1097,gritty,3.25
+1097,roasty,3.25
+1097,nutty,3.75
+1097,coffee,3.75
+1097,rich,3.75
+1307,intense,3.0
+1307,cherry,3.0
+1307,metallic,3.0
+1311,woody,3.0
+1311,floral,3.0
+1311,metallic,3.0
+1311,earthy,3.0
+1311,metallic edge,3.0
+1387,spicy,3.5
+1387,mild fruit,3.5
+1387,fatty,3.5
+1311,raisins,3.75
+1311,rich choco,3.75
+1542,spicy,3.5
+1542,mild roasty,3.5
+729,creamy,3.25
+729,sour,3.25
+729,raisin,3.25
+737,creamy,3.5
+737,nutty,3.5
+737,muted,3.5
+725,creamy,3.75
+725,cocoa,3.75
+725,lemon,3.75
+725,creamy,3.75
+725,roasted nuts,3.75
+725,fatty,3.75
+733,creamy,3.75
+733,nutty,3.75
+733,cocoa,3.75
+733,creamy,4.0
+733,nutty,4.0
+733,delicate fruit,4.0
+737,creamy,4.0
+737,nutty,4.0
+737,fruity,4.0
+737,peanut,4.0
+737,coffee,4.0
+737,cocoa,4.0
+737,bread,4.0
+737,creamy,4.0
+737,nutty,4.0
+737,earthy,4.0
+1085,fatty,3.75
+1085,rich,3.75
+1085,berry notes,3.75
+1788,sour,2.5
+1788,sweet,2.5
+1788,rubber,2.5
+1255,buttery,3.0
+1255,intense,3.0
+1255,spice,3.0
+1255,roasty,3.0
+2008,molasses,3.25
+2008,roasty,3.25
+943,very sandy,2.75
+943,sweet,2.75
+943,spicy,2.75
+943,sandy,3.0
+943,caramel,3.0
+1279,off notes,2.25
+1279,pungent,2.25
+1279,mild metallic,3.25
+1279,spice,3.25
+1279,tea,3.25
+1279,roasty,3.25
+1279,nutty,3.25
+1279,spicy,3.25
+1275,intense,3.5
+1275,tart,3.5
+1275,earthy,3.5
+2250,woody,2.75
+2250,meaty,2.75
+2250,vegetal,2.75
+1546,intense,2.75
+1546,molasses,2.75
+1546,fruit,2.75
+1542,intense,3.5
+1542,cherry,3.5
+1542,rich,3.5
+1542,metallic,3.5
+5,gritty,2.0
+5,unrefined,2.0
+5,off notes,2.0
+2146,sandy,3.25
+2146,sweet,3.25
+1976,candy like,3.0
+1976,sweet,3.0
+1976,dairy,3.0
+1976,floral,3.0
+1976,tobacco,3.0
+1976,candied,3.0
+1972,dairy,3.5
+1972,nutty,3.5
+1972,butterscotch,3.5
+1976,sweet,3.5
+1976,fruity,3.5
+1976,vanilla,3.5
+1980,floral,3.5
+1980,bourbon,3.5
+1980,salt,3.5
+2008,vanilla,3.5
+2008,gateway,3.5
+2008,full bodied,3.75
+2008,floral,3.75
+2100,gritty,3.0
+2100,coffee,3.0
+2100,sweet,3.0
+2100,hammy,3.0
+2104,complex,3.25
+2104,bold,3.25
+2104,gritty,3.25
+2104,bold,3.25
+2104,spice,3.25
+2104,sour fruit,3.25
+2104,gritty,3.25
+1534,off note,2.75
+1534,vanilla,2.75
+1534,basic cocoa,2.75
+2458,harsh,2.75
+2458,burnt nuts,2.75
+2458,powdery,2.75
+2218,floral,3.0
+2218,earthy,3.0
+2218,grassy,3.0
+2214,nutty,3.5
+2214,cocoa,3.5
+2214,sour veggie,3.5
+2218,herbal,3.5
+2218,tea-like,3.5
+2218,brownie,3.75
+1069,nutty,3.0
+1069,sour milk,3.0
+1069,off note,3.0
+1069,very sweet,3.25
+1069,basic cocoa,3.25
+1073,candy-like,3.25
+1073,peanut butter,3.25
+1061,raisins,3.5
+1061,prunes,3.5
+2498,rich cocoa,3.75
+2498,dried fruit,3.75
+2498,roasty,3.75
+2498,light color,3.75
+2498,nutty,3.75
+2498,caramel,3.75
+2502,banana,3.75
+2502,fall spices,3.75
+2502,earthy,3.75
+2394,sandy,3.0
+2394,sweet,3.0
+2394,acidic,3.0
+2454,creamy,3.0
+2454,black tea,3.0
+2454,vegetal,3.0
+2390,creamy,3.5
+2390,balanced,3.5
+2390,fig,3.5
+2390,cocoa,3.5
+2422,creamy,3.75
+2422,floral,3.75
+2422,dried fruit,3.75
+2454,creamy,3.75
+2454,distinct,3.75
+2454,dried fruit,3.75
+2338,spicy,3.0
+2338,tobacco,3.0
+2338,muted,3.0
+2338,grapes,3.0
+2338,astringent,3.0
+2334,base cocoa,3.25
+2334,fruit,3.25
+2334,fatty,3.25
+387,cocoa,3.75
+387,strong distinct spice,3.75
+837,chewy,2.5
+837,vanilla,2.5
+837,metallic,2.5
+248,crumbly,2.5
+248,vanilla,2.5
+248,bitter,2.5
+263,grassy,2.5
+263,earthy,2.5
+263,coffee,2.5
+245,sweet,2.75
+245,vanilla,2.75
+245,coffee,2.75
+248,creamy,2.75
+248,nutty,2.75
+248,bitter,2.75
+248,flat,2.75
+241,creamy,3.0
+241,mild marshmallow,3.0
+248,spicy,3.0
+248,mild bitter,3.0
+269,fruity,3.0
+269,floral,3.0
+269,cooling sensation,3.0
+241,intense,3.5
+241,mint,3.5
+241,marshmallow,3.5
+404,mild bitter and chemical off,2.75
+423,spicy,2.75
+423,floral,2.75
+423,bitter,2.75
+2708,licorice,3.25
+2708,melon,3.25
+2708,plum,3.5
+2708,molasses,3.5
+1133,fatty,3.75
+1133,dark berry,3.75
+1133,grassy,3.75
+431,sweet,2.0
+431,vanilla domintates,2.0
+431,nut,2.0
+2478,poor finish,3.25
+2478,cocoa,3.25
+2478,grassy,3.25
+1251,gritty,3.0
+1251,overly sweet,3.0
+1251,citrus,3.0
+1968,gritty,3.0
+1968,sour,3.0
+1968,berries,3.0
+1968,sticky,3.0
+1968,molasses,3.0
+1968,sour,3.0
+2016,medium roast,3.25
+2016,nutty,3.25
+2064,roasty,3.0
+2064,nutty,3.0
+2068,nuts,3.25
+2068,dried fruit,3.25
+2068,grassy,3.25
+2044,intense,3.75
+2044,high acidity,3.75
+2286,light color,3.0
+2282,astringent,3.25
+2282,smomkey cocoa,3.25
+1422,intense,2.5
+1422,pungent,2.5
+1422,tangy,2.5
+1422,nutty,2.75
+1422,pungent,2.75
+1422,sour,2.75
+1422,nutty,3.0
+1422,sour milk,3.0
+1422,strawberry,3.25
+1422,intense,3.25
+1422,sour,3.25
+1426,intense,3.25
+1426,spicy,3.25
+1426,pungent,3.25
+1426,spicy,3.25
+1426,molasses,3.25
+1426,earthy,3.25
+1426,earthy,3.25
+1426,fatty,3.25
+1426,tea,3.25
+1852,astringent,2.75
+1852,unbalanced,2.75
+1852,off,2.75
+1840,spicy,3.25
+1840,vanilla,3.25
+1840,dairy,3.25
+1852,creamy,3.75
+1852,mild flavors,3.75
+1852,oranges,3.75
+1359,vanilla,2.5
+1359,earth,2.5
+1359,cardboard,2.5
+1363,intense,2.5
+1363,bourbon,2.5
+1363,vanilla,2.5
+1359,vanilla,3.0
+1359,candy-like,3.0
+1359,sour milk,3.0
+1363,mild vanilla and mild fruit,3.0
+451,rich,3.0
+451,spice,3.0
+451,cheese,3.0
+431,smooth,3.5
+431,rich,3.5
+431,lemon,3.5
+597,cocoa,3.0
+597,nutty,3.0
+597,acidic,3.0
+597,burning,3.0
+576,creamy,3.25
+576,cocoa,3.25
+576,spice,3.25
+576,simple,3.75
+576,rich hot cocoa,3.75
+682,spicy,3.75
+682,roasty,3.75
+682,coffee,3.75
+891,floral,3.25
+891,soapy,3.25
+891,earthy,3.25
+927,berry,3.75
+927,rich cocoa dominates,3.75
+891,creamy,4.0
+891,woody,4.0
+891,nutty,4.0
+2426,unrefined,3.0
+2426,sweet,3.0
+2426,basic cocoa,3.0
+1892,molasses,2.25
+1892,cardboard,2.25
+1892,off note,2.25
+1892,metallic,2.5
+1892,cardboard,2.5
+1892,fruit,2.5
+1892,nutty,3.0
+1892,fatty,3.0
+1892,grit,3.0
+1892,earthy,3.0
+1892,musty,3.0
+2138,anise,3.0
+2138,spicy,3.0
+2138,earthy,3.0
+2138,earthy,3.0
+2138,molasses,3.0
+2138,dried fruit,3.0
+2138,molasses,3.25
+2138,high acidity,3.25
+2138,tart,3.25
+2138,molasses,3.25
+2138,grits,3.25
+2254,fruit,3.5
+2254,cocoa,3.5
+2254,grape,3.5
+2254,dry,3.5
+2254,melon,3.5
+2254,cocoa,3.5
+2358,sandy,3.5
+2358,grapes,3.5
+230,roasty,3.5
+230,dark berry,3.5
+230,rich,3.5
+439,rich,3.0
+439,sweet,3.0
+439,cocoa,3.0
+439,intense,3.0
+346,rich cocoa,3.25
+346,burning sensation,3.25
+346,nutty,3.5
+346,grassy,3.5
+346,rich cocoa,3.5
+445,cocoa,3.75
+445,caramel,3.75
+445,sweet,3.75
+741,rich,3.5
+741,vegetal,3.5
+741,banana,3.5
+741,spice,3.5
+891,nutty,3.5
+891,pear,3.5
+891,sour milk,3.5
+1121,brownie,2.75
+1121,cocoa,2.75
+1121,sour,2.75
+1121,sweet,2.75
+1145,creamy,3.25
+1145,rich,3.25
+1145,dairy,3.25
+1145,nutty,3.25
+1189,sweet,3.25
+1189,nutty,3.25
+1189,cocoa,3.25
+721,peanut butter,2.5
+721,burnt rubber,2.5
+713,sweet,3.25
+713,fudgey,3.25
+713,tang,3.25
+2186,mild hammy,3.0
+2186,roasty,3.0
+2186,sour,3.0
+2182,rich cocoa,3.5
+2182,mild fruit & nut,3.5
+2186,citrus,3.5
+2186,prononced orange,3.5
+1434,fatty,2.75
+1434,roasty,2.75
+1434,coffee,2.75
+1434,off note,2.75
+1438,nutty,2.75
+1438,woody,2.75
+1438,leathery,2.75
+1590,roasty,2.75
+1590,sour,2.75
+1590,cardboard,2.75
+1590,gritty,2.75
+1590,roasty,2.75
+1590,waxy,2.75
+1590,off,2.75
+1590,slight burnt,3.0
+1590,astringent,3.0
+1590,fruit,3.0
+1594,roasty,3.0
+1594,nutty,3.0
+1594,rich cocoa,3.0
+1590,sandy,3.25
+1590,fatty,3.25
+1590,roasty,3.25
+1590,fruit,3.25
+1642,smokey,3.25
+1642,rich cocoa,3.25
+1642,spice,3.25
+1638,rich,3.5
+1638,roasty,3.5
+1638,nutty,3.5
+1638,smoke,3.5
+1642,creamy,3.75
+1642,mild honey,3.75
+1642,floral,3.75
+927,floral,3.5
+927,caramel,3.5
+327,dry,2.5
+327,roasty,2.5
+327,toffee,2.5
+833,chalky,3.0
+833,fatty,3.0
+833,sweet,3.0
+833,chalky,3.0
+833,cocoa,3.0
+833,tangy,3.0
+853,fatty,3.0
+853,nutty,3.0
+853,woody,3.0
+1784,spicy,3.5
+1784,grassy,3.5
+1784,roasty,3.5
+2048,simple,3.0
+2048,earthy,3.0
+2048,cocoa,3.0
+2048,sandy,3.25
+2048,rich cocoa,3.25
+2048,complex,3.5
+2048,dairy,3.5
+2048,roasty,3.5
+1972,well balanced,3.75
+1972,melon,3.75
+2266,sandy,2.75
+2266,off,2.75
+2266,hammy,2.75
+2262,base cocoa,3.25
+2262,mild ham,3.25
+2262,woody,3.25
+2266,sandy,3.5
+2266,light color,3.5
+2266,grape,3.5
+1371,intense,3.5
+1371,sticky,3.5
+1371,cocoa,3.5
+1566,roasty,3.0
+1566,black pepper,3.0
+1566,woody,3.0
+1562,dried fruit,3.25
+1562,nutty,3.25
+1562,mushroom,3.25
+1566,red fruit,3.25
+1566,brownie,3.25
+1562,cocoa,3.5
+1562,spice,3.5
+1562,fruit,3.5
+1566,subtle,3.5
+1566,spicy,3.5
+1566,banana,3.5
+1728,floral,3.25
+1728,black licorice,3.25
+1952,smokey,3.25
+1952,mild berry,3.25
+1952,strong raspberry,3.5
+1952,mocha,3.5
+1984,mild,4.0
+1984,licorice,4.0
+1984,coffee,4.0
+1984,cocoa,4.0
+2122,brownie,3.75
+2338,woody,3.25
+2338,mocha,3.25
+2338,molasses,3.25
+2442,spoiled milk,3.25
+2442,sweet,3.25
+2442,molasses,3.25
+2562,buttery,3.5
+2562,sunflower,3.5
+2562,astringent,3.5
+2562,home baked banana nut bread,3.75
+1231,sandy,3.5
+1231,citrus,3.5
+1856,sweet edge,3.0
+1856,bright fruit,3.0
+1856,off,3.0
+947,grits,2.75
+947,roasted,2.75
+947,nutty,2.75
+947,fatty,3.0
+947,roasty,3.0
+947,cocoa,3.0
+855,creamy,3.5
+855,strawberry,3.5
+855,cocoa,3.5
+903,fatty,3.5
+903,nutty,3.5
+903,melon like,3.5
+947,fatty,3.5
+947,grassy,3.5
+947,cocoa,3.5
+903,rich cocoa,3.75
+903,spicy edge,3.75
+157,harsh burnt,3.0
+157,mild cocoa,3.0
+157,tang,3.0
+2538,grassy,2.5
+2538,rubbery,2.5
+2538,chemical,2.5
+2538,basic cocoa,3.0
+2538,dirty/burnt edge,3.0
+2538,spicy,3.0
+2538,sweet,3.0
+2538,cocoa,3.0
+1049,black pepper,2.5
+1049,vanilla,2.5
+1049,harsh,2.5
+1093,aluminum,3.0
+1093,mild coffee,3.0
+1093,roasty,3.0
+1097,strong,3.0
+1097,brandy,3.0
+1097,smoke,3.0
+1097,sandy,3.5
+1097,floral,3.5
+1097,vanilla,3.5
+1097,candy,3.5
+1395,sweet,3.25
+1395,candy-like,3.25
+1395,nutty,3.25
+1383,spicy,3.75
+1383,candied,3.75
+1383,complex,3.75
+1395,dairy,3.75
+1395,pudding,3.75
+2590,sweet,2.75
+2590,sl. smokiness,2.75
+2590,fruit,2.75
+2586,cherry,3.0
+2586,fatty,3.0
+2586,cocoa,3.0
+1502,multiple off flavors,2.0
+1502,metallic,2.0
+2194,potting soil,2.5
+2194,smokey,3.0
+2194,earthy,3.0
+2194,cocoa,3.0
+2198,nutty,3.25
+2198,mild dairy,3.25
+2198,intense mocha flavor,3.5
+1976,oily,3.25
+1976,burnt,3.25
+1976,earthy,3.25
+2238,rustic,3.0
+2238,basic cocoa,3.0
+2238,earthy,3.0
+2692,mild sweet honey,3.25
+2692,rum,3.25
+2692,off,3.25
+2518,smoke,3.25
+2518,fruit,3.25
+2518,ham,3.25
+2518,fatty,3.25
+552,very sweet,2.75
+552,caramel,2.75
+552,candy,2.75
+552,sticky,3.0
+552,marshmallow,3.0
+552,cocoa,3.0
+552,watered down coffee,3.0
+552,cocoa,3.0
+552,marshmallow,3.5
+552,rich brownie,3.5
+2506,deep cocoa,3.0
+2506,sl. pungent,3.0
+2506,sandy,3.0
+2502,roasted pear,3.25
+2502,cocoa,3.25
+2502,sour,3.25
+2502,fatty,3.25
+2502,dominant roast,3.25
+2502,spice,3.25
+2506,candied,3.25
+2506,sweet cocoa,3.25
+2506,roasty,3.25
+2506,spice,3.5
+2506,coconut,3.5
+552,extremely sweet,2.25
+552,vanilla,2.25
+721,vanilla,1.5
+721,strong chemical,1.5
+2426,gritty,2.5
+2426,roasty,2.5
+2426,rubbery,2.5
+2430,gritty,2.75
+2430,cocoa base,2.75
+2430,ashey,2.75
+284,sandy,3.5
+284,red berry,3.5
+284,cocoa,3.5
+288,sticky,3.5
+288,bitter,3.5
+288,nutty,3.5
+284,sandy,3.75
+284,woody,3.75
+284,peanut butter,3.75
+284,intense,4.0
+284,nutty,4.0
+284,cocoa,4.0
+2664,very sticky,2.5
+2664,nutty,2.5
+2664,woody,2.5
+607,raisiny,2.75
+607,chewy,2.75
+672,sandy,2.5
+672,sweet,2.5
+672,strong vanilla,2.5
+693,sticky,2.75
+693,strong vanilla,2.75
+693,pepper,2.75
+991,creamy,3.25
+991,vanilla,3.25
+991,rich fruit,3.25
+995,creamy,3.25
+995,burnt nuts,3.25
+995,woody,3.25
+995,vanilla,3.5
+995,brownie,3.5
+995,peanut,3.5
+1085,intense vanilla,2.75
+1085,swiss miss,2.75
+1089,fatty,2.75
+1089,vanilla,2.75
+1089,candy-like,2.75
+1089,vanilla,2.75
+1089,earthy,2.75
+1089,caramel,2.75
+1085,strong vanilla,3.5
+1085,nut,3.5
+1085,coffee,3.5
+1940,mild earthy,3.5
+1940,mild cocoa,3.5
+1940,nut,3.5
+300,chalky,2.0
+300,astringent,2.0
+300,vanilla,2.0
+308,creamy,3.0
+308,nutty,3.0
+308,mass market,3.0
+308,nutty,3.25
+308,cooling sensation,3.25
+308,creamy,3.75
+308,hay,3.75
+308,nutty,3.75
+531,strong vanilla,2.0
+531,some spice,2.0
+184,cardboard,2.75
+184,tea-like,2.75
+184,creamy,3.5
+184,sublte grape notes,3.5
+1121,sandy,3.5
+1121,sweet,3.5
+1121,cocoa,3.5
+2226,gummy,2.75
+2226,smokey,2.75
+2226,hammy,2.75
+311,sweet,2.75
+311,vanilla,2.75
+311,easter candy,2.75
+502,creamy,3.5
+502,crunchy,3.5
+502,very sweet,3.5
+1856,hammy,3.0
+1856,unrecognizable,3.0
+821,berry,3.75
+821,nutty,3.75
+821,sour,3.75
+1219,rubber,2.5
+1219,off medicinal,2.5
+1219,nutty,2.75
+1219,green,2.75
+1446,soil,2.5
+1446,wet,2.5
+1446,off notes,2.5
+1331,muted,2.75
+1331,nutty,2.75
+1007,oily,2.75
+1007,tangy,2.75
+1007,fruit,2.75
+1007,earthy,2.75
+1007,banana,3.0
+1007,menthol,3.0
+1007,medicinal,3.0
+1003,molassses,3.25
+1003,intense,3.25
+1003,off,3.25
+1003,herb,3.25
+1007,molasses,3.25
+1007,sweet,3.25
+1007,cocoa,3.25
+1089,orange,3.75
+1089,cocoa,3.75
+1522,smoke,3.5
+1522,fruit,3.5
+1522,dried fruit,3.75
+1522,balanced,3.75
+1522,cocoa,3.75
+2032,sweet,3.25
+2032,fatty,3.25
+2032,fig,3.25
+2442,dried fruit,3.5
+2442,spicy,3.5
+2442,sticky,3.5
+2442,intense,3.5
+871,chewy,3.25
+871,brownie like,3.25
+875,grits,3.25
+875,roaste brownie,3.25
+871,cocoa,3.5
+871,coconut,3.5
+1279,coarse,3.5
+1279,intense,3.5
+1279,nutty,3.5
+1255,nutty,3.75
+1255,intense,3.75
+1255,roasty,3.75
+1848,nutty,3.5
+1848,roasty,3.5
+1844,basic,3.75
+1844,balanced,3.75
+1844,deep cocoa,3.75
+1606,heavy roast,2.75
+1606,few grits,2.75
+1606,rich,2.75
+1610,roasty,2.75
+1610,coffee,2.75
+1610,rubber,2.75
+1610,sweet,3.0
+1610,fatty,3.0
+1610,roasty,3.0
+1474,fruity,3.5
+1474,tangy,3.5
+1474,cocoa,3.5
+1474,delicate,3.5
+1474,caramel,3.5
+1474,peanut,3.5
+1478,coarse,3.5
+1478,floral,3.5
+1478,rum,3.5
+1606,rich,3.5
+1606,bright fruit,3.5
+1606,lemon,3.5
+1606,spicy,3.5
+1606,cocoa,3.5
+1634,grassy,3.5
+1634,woody,3.5
+1634,sweet,3.5
+1896,intense,3.25
+1896,sour,3.25
+1896,tart,3.25
+1956,earthy,3.0
+1956,tobacco,3.0
+1956,ashey,3.0
+2262,off notes,3.0
+2262,rubbery,3.0
+2262,hammy,3.0
+2262,sweet,3.25
+2262,spicy,3.25
+2262,dirty,3.25
+2040,complex,3.5
+2040,creamy,3.5
+2040,cherry,3.5
+1884,smokey,2.75
+1884,dirty,2.75
+1884,sour,2.75
+2610,smoked nuts,3.25
+2610,tang,3.25
+2610,mild orange,3.5
+2610,herbaceous,3.5
+2598,earthy,2.75
+2598,musty,2.75
+2598,sweet,2.75
+2598,floral,2.75
+2598,earthy,2.75
+2598,acidic,2.75
+2598,harsh,2.75
+2598,delicate,3.25
+2598,nutty,3.25
+2598,butterscotch,3.25
+1808,earthy,3.25
+1808,coffee,3.25
+1808,roasty,3.25
+2158,dried fruit,2.75
+2158,woody,2.75
+2158,dirty,2.75
+895,creamy,3.0
+895,fatty,3.0
+895,black pepper,3.0
+845,citrus,3.5
+845,roasty,3.5
+845,coffee,3.5
+845,cocoa,3.5
+845,spice,3.5
+845,late sour,3.5
+849,sticky,3.5
+849,pepper,3.5
+849,cinamon,3.5
+849,rich,3.5
+955,melon,3.5
+955,roasty,3.5
+1149,fatty,3.5
+1149,heavy roast,3.5
+1149,nutty,3.5
+1650,long,3.25
+1650,mild honey,3.25
+1650,rich cocoa,3.25
+1650,roasty,3.5
+1650,rich,3.5
+1650,coffee,3.5
+1650,nut,3.5
+1650,spicy and fragrant,3.75
+2258,fatty,3.5
+2258,roasty,3.5
+2258,nutty,3.5
+537,intense orange,3.0
+537,floral,3.0
+544,chewy,3.0
+544,earthy,3.0
+544,spicy,3.0
+544,cocoa,3.25
+544,earth,3.25
+544,wheat,3.25
+544,intense,3.5
+544,dark berry,3.5
+544,cocoa,3.5
+1189,waxy,2.25
+1189,rubber,2.25
+1189,medicinal,2.25
+1189,fatty,2.5
+1189,rubber,2.5
+1189,medicinal,2.5
+1836,sticky,2.75
+1836,pungent,2.75
+1836,off note,2.75
+1836,sandy,3.0
+1836,earthy,3.0
+1836,sweet edge,3.0
+1836,sandy,3.25
+1836,mild floral,3.25
+1836,mild nutty,3.25
+572,sticky,2.75
+572,woody,2.75
+572,musty,2.75
+572,dry,3.0
+572,sticky,3.0
+572,nutty,3.0
+572,earthy,3.0
+572,sticky,3.25
+572,earthy,3.25
+572,coffee,3.25
+713,gritty,2.75
+713,high astringent,2.75
+713,sour,2.75
+777,gritty,2.75
+777,sticky,2.75
+777,smoke,2.75
+777,hammy,2.75
+701,sandy,3.0
+701,strawberry,3.0
+701,sour,3.0
+709,dry,3.0
+709,sandy,3.0
+709,intense,3.0
+709,berry,3.0
+777,orange,3.0
+777,lemon,3.0
+777,coffee ground,3.0
+777,dry,3.25
+777,gritty,3.25
+777,red berry,3.25
+777,coffee,3.25
+672,rich cocoa,3.5
+672,coffee,3.5
+672,roasty,3.5
+773,gritty,3.5
+773,tangy,3.5
+773,cocoa,3.5
+777,gritty,3.75
+777,raspberry,3.75
+777,sour,3.75
+999,gritty,2.5
+999,overly tart,2.5
+999,sour,2.5
+999,gritty,2.75
+999,sour,2.75
+999,sweet,2.75
+959,gritty,3.5
+959,fruit,3.5
+959,tart,3.5
+959,rich,3.5
+1359,tart,3.75
+1359,deep choco,3.75
+1450,mild bitter,3.0
+1450,citrus,3.0
+1450,intense,3.0
+1450,green,3.25
+1450,vegetal,3.25
+1450,mild spice,3.25
+1177,sticky,3.5
+1177,butterscotch,3.5
+1177,nutty,3.5
+1181,nutty,3.75
+1181,fruity,3.75
+1181,spicy,3.75
+1177,sticky,4.0
+1177,red fruit,4.0
+1177,creamy,4.0
+1177,grassy,4.0
+1177,smoke,4.0
+1177,nut,4.0
+2704,sweet,3.5
+2704,banana,3.5
+2704,mild sour orange,3.5
+1367,heavy roast,3.25
+1367,smoke,3.25
+1367,roasty,3.25
+1367,coffee,3.25
+1430,intense,3.25
+1430,burnt,3.25
+1430,bitter,3.25
+1430,spice,3.25
+1430,sweet,3.5
+1430,cherry,3.5
+1430,cream,3.5
+1430,raisin,3.5
+2482,nutty,3.0
+2482,cheese,3.0
+2482,savory,3.0
+2486,roasty,3.0
+2486,hammy,3.0
+2486,dirty,3.0
+2482,sweet edge,3.25
+2482,sour fruit,3.25
+1728,gritty,3.0
+1728,sweet,3.0
+1728,earthy,3.0
+2474,musty,2.5
+2474,woody,2.5
+2474,rubbery,2.5
+2474,roasty,2.5
+2478,cocoa,3.25
+2478,strawberry,3.25
+1287,pungent,2.5
+1287,off,2.5
+1287,molasses,2.75
+1287,sweet,2.75
+1287,choco,2.75
+1287,spicy,3.0
+1287,metallic,3.0
+1287,molasses,3.0
+1291,fatty,3.0
+1291,sligthly bland,3.0
+1291,earthy,3.0
+1291,high roast,3.5
+1291,nutty,3.5
+1291,deep choco,3.5
+2362,floral,2.5
+2362,earthy,2.5
+2362,bitter,2.5
+2362,dry,2.75
+2362,floral,2.75
+2362,dirty,2.75
+2362,coconut,2.75
+2362,smooth,3.25
+2362,coconut,3.25
+2362,cocoa,3.25
+2362,creamy,3.25
+2362,coconut,3.25
+2362,cocoa,3.25
+837,sticky,2.5
+837,tart,2.5
+837,slight burnt,2.5
+841,uneven,2.5
+841,smokey,2.5
+841,hammy,2.5
+1347,intense,3.25
+1347,ham,3.25
+1347,butterscotch,3.25
+1351,acidic,3.25
+1351,pomegrant,3.25
+1351,brownie,3.25
+1347,intense,3.5
+1347,grassy,3.5
+1347,spicy,3.5
+1347,rich,3.5
+1351,dried fruit,3.5
+1351,rich cocoa,3.5
+1494,fatty,2.75
+1494,bitter,2.75
+1494,woody,2.75
+1494,roasty,2.75
+1494,dairy,3.0
+1494,caramel,3.0
+2250,earthy,2.5
+2250,floral,2.5
+2250,rubbery,2.5
+1267,fatty,3.0
+1267,creamy,3.0
+1267,olive,3.0
+1267,creamy,3.5
+1267,fatty,3.5
+1267,mild cherry,3.5
+2166,roasty/smokey,3.25
+2166,high acidity,3.25
+2170,dried fruit,3.75
+2170,mild hammy,3.75
+1688,accesible,3.5
+1688,simple cocoa note,3.5
+2210,grape,3.5
+2210,mild smoke,3.5
+2210,sandy,3.5
+24,sweet,2.0
+24,crisp nibs,2.0
+24,bitter coffee flavor,2.0
+81,smooth,2.0
+81,bold,2.0
+81,bitter,2.0
+24,creamy,3.0
+24,licorice,3.0
+24,herbs,3.0
+24,creamy,3.75
+24,raisins,3.75
+24,licorice,3.75
+24,grapefruit,3.75
+24,spices,3.75
+24,tropical fruit and mild smoke,3.75
+117,cocoa,3.5
+117,orange,3.5
+135,creamy,3.5
+135,smoke,3.5
+135,raspberry,3.5
+963,raisins,3.75
+963,melon,3.75
+2020,sandy,3.25
+2020,earthy,3.25
+2020,fatty,3.25
+2270,sandy,3.0
+2270,grits,3.0
+2270,nutty,3.0
+2270,vanilla,3.0
+2438,dairy,3.5
+2438,cocoa,3.5
+2438,fatty,3.5
+2438,apple,3.5
+887,chemical,1.5
+887,salt,1.5
+887,wtf,1.5
+887,sticky,2.0
+887,cardboard,2.0
+887,why bother,2.0
+887,leather,2.5
+887,salt,2.5
+1117,molassses,2.5
+1117,palm,2.5
+1117,spicy,2.5
+1117,strawberry,3.25
+1117,cream,3.25
+1117,spice,3.25
+1538,banana,3.25
+1538,melon,3.25
+1538,fatty,3.25
+1490,woody,3.5
+1490,lemon,3.5
+1490,mild bitter,3.5
+1490,black pepper,3.5
+1490,dairy,3.5
+1538,rum,3.5
+1538,herbal,3.5
+1538,rich,3.5
+1490,spicy,3.75
+1490,rich,3.75
+1490,mint,3.75
+1490,nutty,3.75
+1490,grassy,3.75
+1490,woody,3.75
+2112,fatty,3.0
+2112,simple,3.0
+2112,candy spices,3.25
+2112,sweet,3.25
+2114,complex,3.25
+2114,true to origin,3.25
+2112,grape,3.5
+2112,cocoa,3.5
+825,wine,3.5
+825,brownie batter,3.5
+1073,unrefined,2.5
+1073,burnt nuts,2.5
+1073,vanilla,2.5
+2346,sandy,3.0
+2346,nutmeg,3.0
+2346,astringent,3.0
+2346,dry,3.0
+2346,sandy,3.0
+2346,empty,3.0
+2346,sweet,3.0
+2346,dry,3.0
+2346,sandy,3.0
+2346,dirt,3.0
+2346,empty,3.0
+2566,sandy,2.75
+2566,green,2.75
+2566,grassy,2.75
+2566,harsh,2.75
+2570,unripe fruit,3.0
+2570,sour,3.0
+2570,watery,3.0
+2570,sandy,3.0
+2570,bitter,3.0
+2570,sour fruit,3.0
+2214,intense,3.0
+2214,sour,3.0
+2214,hammy,3.0
+2214,cocounut,3.25
+2214,late sour,3.25
+2210,cocoa,3.5
+2210,mild pear,3.5
+2210,sticky,3.5
+2214,grape,3.75
+2214,thick,3.75
+2214,chewy,3.75
+607,dry,2.75
+607,coffee notes from roaster,2.75
+2382,sandy,2.75
+2382,harsh,2.75
+2382,floral,2.75
+1920,gritty,3.5
+1920,sweet,3.5
+1920,earty,3.5
+1960,few grits,3.0
+1960,intense smoke,3.0
+1960,tangy,3.25
+1960,roasty,3.25
+1960,ham,3.25
+1960,sweet,3.5
+1960,licoric,3.5
+1960,slight grainy,3.5
+1960,roasty,3.5
+1960,spicy,3.5
+2370,complex,3.75
+2370,fruit,3.75
+2370,nut,3.75
+2370,rich,3.75
+2458,sour fig,3.5
+2458,cocoa,3.5
+2458,creamy,3.5
+2458,fatty,3.5
+1626,coarse,3.5
+1626,smokey,3.5
+1626,citrus,3.5
+1880,sticky,3.75
+1880,blackberry,3.75
+1880,acidic,3.75
+2354,powdery,3.0
+2354,intense,3.0
+2354,floral,3.0
+955,vanilla,2.5
+955,artificial,2.5
+955,sweet,2.5
+607,rough,2.75
+607,sweet,2.75
+607,dairy,2.75
+607,vanilla,2.75
+1030,strawberry,3.0
+1030,blueberry,3.0
+1026,basic cocoa,3.25
+2198,dirty,2.5
+2198,rubbery,2.5
+2198,spicy,2.5
+2170,earthy,3.0
+2350,roasty,3.0
+2350,honey,3.0
+2350,sweet,3.0
+2338,dark berry,3.5
+2338,earthy,3.5
+2450,cocoa,3.75
+2450,fig,3.75
+2450,classic,3.75
+2648,creamy,2.75
+2648,off note,2.75
+2648,rubbery,2.75
+2648,petro,2.75
+2652,dark fruit,3.25
+2652,slight harsh molasses,3.25
+1618,intense,2.75
+1618,smokey,2.75
+1618,floral,2.75
+1614,overly intense,3.0
+1614,tart,3.0
+1614,red fruit,3.0
+1618,dry,3.25
+1618,nutty,3.25
+1618,fruity,3.25
+661,unrefined,2.75
+661,hay,2.75
+661,sweet,2.75
+661,unrefined,2.75
+661,bright berry,2.75
+661,sweet,2.75
+2142,fatty,3.25
+2142,floral,3.25
+2142,spicy,3.25
+1812,earthy,3.5
+1812,spicy,3.5
+1812,cocoa,3.5
+2680,black tea,3.5
+2680,floral,3.5
+1391,smoke,3.25
+1391,ham,3.25
+1391,sour milk,3.25
+2222,chalky,3.25
+2222,powdery,3.25
+2222,molasses,3.25
+2656,licorice,3.5
+2656,cocoa,3.5
+2542,intense,3.75
+2542,floral,3.75
+2542,cocoa,3.75
+2542,long lasting,3.75
+1654,spicy,3.25
+1654,smoke,3.25
+1654,sour,3.25
+1654,spicy,3.5
+1654,sweet,3.5
+1654,fragrant,3.5
+1658,spicy,3.5
+1658,fragrant,3.5
+1658,bitter,3.5
+2490,light color,3.0
+2490,spicy,3.0
+2490,sweet,3.0
+2490,sour,3.0
+1462,grassy,3.5
+1462,spicy,3.5
+1462,sweet,3.5
+1462,sweet,3.5
+1462,rich,3.5
+2190,fruity,3.5
+2190,roasty,3.5
+1896,gritty,2.75
+1896,sweet,2.75
+1896,earthy,2.75
+1896,dry,2.75
+1896,earthy,2.75
+1896,atypical,2.75
+1900,sweet,2.75
+1900,molasses,2.75
+1900,gritty,2.75
+1900,gritty,3.0
+1900,tart,3.0
+1900,molasses,3.0
+1049,too sweet,2.5
+1049,earthy,2.5
+1049,off notes,2.5
+1049,earthy,3.0
+1049,spicy,3.0
+1049,cocoa,3.0
+867,sandy,2.5
+867,oranges,2.5
+1046,sandy,3.75
+1046,floral,3.75
+1046,spice,3.75
+1046,roasty,3.75
+1133,orange,3.75
+1133,floral,3.75
+1133,caramel,3.75
+1399,coarse,2.75
+1399,sweet,2.75
+1399,minty,2.75
+1399,coarse,3.0
+1399,sweet,3.0
+1379,sandy,3.25
+1379,intense,3.25
+1379,tropical fruit,3.25
+2458,strong,2.75
+2458,rubbery,2.75
+2458,woody,2.75
+2458,sweet,2.75
+2418,bold,3.25
+2418,savory,3.25
+2418,creamy,3.25
+1007,sandy,3.5
+1007,spicy,3.5
+1007,earthy,3.5
+1403,metallic,2.25
+1403,medicinal,2.25
+1403,pungent,2.25
+1403,grassy,2.5
+1403,dirt,2.5
+1403,mild spice,2.5
+1403,intense,2.5
+1403,pungent,2.5
+1403,sour fruit,2.5
+1403,brownie,3.5
+1403,toffee,3.5
+2060,dry,3.25
+2060,sandy,3.25
+2060,sweet,3.25
+2060,acidic,3.25
+15,non descript,2.0
+15,poor aftertaste,2.0
+15,grassy,2.75
+15,earthy,2.75
+15,burnt,2.75
+24,pastey,3.0
+24,complex,3.0
+24,coffee,3.0
+24,vanilla,3.0
+135,pastey,1.0
+135,strong off flavor,1.0
+230,complex,3.75
+230,intense banana,3.75
+531,gritty,2.5
+531,vanilla,2.5
+531,non-descript,2.5
+1526,molasses,2.25
+1526,nut,2.25
+1526,roasty,2.25
+1526,bitter,2.25
+1526,molasses,2.75
+1526,rum,2.75
+1526,tea,2.75
+1526,molasses,3.0
+1526,bright fruit,3.0
+1526,molasses,3.0
+1526,malt,3.0
+1526,raisin,3.0
+2134,notes from sugar,3.0
+1022,spicy,2.75
+1022,red fruit,2.75
+1022,raisins,2.75
+1022,single note,3.5
+1022,spicy,3.5
+2398,floral,3.75
+2398,cocoa,3.75
+2398,creamy,3.75
+2142,pungent,3.0
+2142,grape,3.0
+2142,sour,3.0
+2162,spicy,2.75
+2162,vanilla,2.75
+2162,sweet,2.75
+2158,sweet,3.0
+2158,melon notes,3.0
+2174,basic cocoa,3.0
+2174,sour ending,3.0
+2282,sour,2.75
+2282,rubbery,2.75
+2282,off,2.75
+2394,strong base cocoa,3.25
+2394,rubber,3.25
+1295,nutty,3.0
+1295,high roast,3.0
+1295,spice,3.0
+1299,coconut,3.0
+1299,mild metallic,3.0
+1299,roasty,3.25
+1299,mild orange,3.25
+837,sweet,3.0
+837,candy like,3.0
+837,dairy,3.0
+841,sweet,3.0
+841,spicy,3.0
+841,cocoa,3.0
+935,fatty,2.75
+935,honey,2.75
+935,earthy,2.75
+931,woody,3.0
+931,coffee,3.0
+931,roasted cherry,3.0
+935,sandy,3.25
+935,strawberries,3.25
+1458,earthy,2.75
+1458,roasted nuts,2.75
+1458,intense,3.0
+1458,slightly burnt,3.0
+1458,fruity,3.5
+1458,sour,3.5
+1458,high astringent,3.5
+1454,rich,3.75
+1454,cherry,3.75
+1454,smoke,3.75
+1454,cocoa,3.75
+1470,rich,3.75
+1470,mild smoke,3.75
+1470,red fruit,3.75
+2486,cocoa,3.0
+2486,nut,3.0
+2486,dried fruit,3.0
+2486,rubbery,3.0
+2486,spicy,3.25
+2486,cocoa,3.25
+2486,hammy,3.25
+1876,nutty,3.5
+1876,banana,3.5
+1876,cocoa,3.5
+478,grassy,2.5
+478,vanilla,2.5
+478,burnt,2.5
+1638,creamy,3.75
+1638,roasty,3.75
+1638,mild grape,3.75
+2386,intense grapes,3.75
+2386,sweet cocoa,3.75
+1558,melon,3.75
+1558,earthy,3.75
+1558,tobacco,3.75
+1558,peanut butter,4.0
+1558,raspberry,4.0
+1411,smoke,2.75
+1411,sour fruit,2.75
+1411,hammy,2.75
+1411,smoke,3.0
+1411,sour fruit,3.0
+1411,hammy,3.0
+1411,intense,3.25
+1411,bitter,3.25
+1411,sour,3.25
+1411,smokey,3.25
+1411,smokey,3.5
+1411,intense,3.5
+1411,coffee,3.5
+1760,bitter,2.75
+1760,intense,2.75
+1760,nutty,2.75
+1760,cocoa,3.5
+1760,roasty,3.5
+1760,nutty,3.5
+2490,damp woody,3.0
+2490,leather,3.0
+2490,cocoa,3.0
+2494,sour banana,3.0
+2494,muted,3.0
+2494,dominant hazelnut,3.25
+2494,fudge,3.25
+2494,intense tart,3.25
+2494,sourness,3.25
+2498,walnut,3.25
+2498,tobacco,3.25
+2498,grassy,3.25
+2494,silky smooth,3.75
+2494,cherry,3.75
+2494,cocoa,3.75
+2498,complex,3.75
+2498,cranberry,3.75
+2498,malt,3.75
+2498,vanilla,3.75
+2582,sharp fruit,3.0
+2582,intense,3.0
+2582,sl. sour,3.0
+2704,berries,3.0
+2704,burnt,3.0
+2704,rubbery,3.0
+2704,off,3.0
+2582,burnt fudge,3.25
+2582,nutty,3.25
+2696,deep cocoa,3.25
+2696,cherry,3.25
+2696,slight ashy,3.25
+2704,strong start,3.5
+2704,fruity,3.5
+2704,acidic,3.5
+2566,blackberry,3.75
+2566,tang,3.75
+1594,off notes,2.75
+1594,sour,2.75
+1594,roasty,2.75
+1598,sweet,3.0
+1598,sandy,3.0
+1598,fruit,3.0
+1598,pungent,3.0
+761,rich cocoa,3.5
+761,one dimensional,3.5
+2142,creamy,3.75
+2142,cherry,3.75
+2142,acidic,3.75
+457,sandy,2.75
+457,cheese,2.75
+457,sour,2.75
+457,fatty,3.0
+457,cheese,3.0
+457,musty,3.0
+486,earthy,3.0
+486,cheesy,3.0
+486,gritty,3.0
+486,simple cocoa,3.0
+486,burnt,3.0
+688,intense,2.0
+688,medicinal,2.0
+688,leathery,2.0
+688,rubber,2.75
+688,cocoa,2.75
+688,bitter,2.75
+688,creamy,2.75
+688,medicinal,2.75
+688,mint,2.75
+688,bitter,2.75
+688,sticky,3.0
+688,berry,3.0
+688,bitter,3.0
+693,grits,2.75
+693,strong vanilla,2.75
+693,brownie,2.75
+1247,intensely smokey,3.0
+1247,red berry,3.5
+1247,mild molasses,3.5
+1816,sweet,3.75
+1816,dried fruit,3.75
+1816,gateway,3.75
+2036,intense spice,3.0
+2036,coarse,3.0
+2514,sweet,3.25
+2514,tart,3.25
+2514,raisin,3.25
+2514,sour ending,3.25
+2518,roast dominates,3.25
+2518,spicy,3.25
+2518,astringent,3.25
+2518,sweet edge,3.5
+2518,dried fruit,3.5
+2518,lemon,3.5
+2680,burnt honey,2.75
+2680,rubbery,2.75
+2676,caramel,3.25
+2676,honey,3.25
+2676,roasty,3.25
+2680,grape,3.25
+2680,punchy,3.25
+2680,deep cocoa,3.25
+2676,tart,3.5
+2676,green apple,3.5
+2676,rich,3.5
+1161,sandy,2.75
+1161,ashey,2.75
+1161,mild fruit,2.75
+1165,sandy,2.75
+1165,roasty,2.75
+1165,fruity,2.75
+1165,grits,2.75
+1165,roasty,2.75
+1165,woody,2.75
+1165,sandy,3.0
+1165,cinamon,3.0
+1165,high roast,3.0
+1165,spicy,3.0
+1165,sweet,3.0
+1165,high roast,3.0
+2076,fatty,3.0
+2076,bland,3.0
+2076,some spice,3.0
+331,vegetable and honey,3.0
+341,creamy,3.0
+341,sour banana,3.0
+341,lemon,3.0
+341,rich cocoa,3.25
+341,bread notes,3.25
+733,creamy,3.75
+733,melon,3.75
+733,subtle,3.75
+1438,fatty,2.75
+1438,dates,2.75
+1438,musty,2.75
+1442,creamy,3.25
+1442,mild bitter,3.25
+1442,coffee,3.25
+24,muddy,3.0
+24,pastey,3.0
+24,sweet,3.0
+24,vanilla,3.0
+316,sticky,3.0
+316,tobacco,3.0
+859,dry,3.0
+859,banana,3.0
+859,molasses,3.0
+859,sandy,3.0
+859,molasses,3.0
+859,brownie,3.0
+266,bitter,2.0
+266,earthy,2.0
+224,floral,2.75
+224,rubber,2.75
+224,vanilla,2.75
+224,metallic,2.75
+224,sandy,3.0
+224,rubber,3.0
+224,spice,3.0
+224,floral,3.0
+224,creamy,3.0
+224,sweet,3.0
+224,green,3.0
+266,sandy,3.5
+266,green,3.5
+266,spice,3.5
+266,nuts,3.5
+721,waxy,3.5
+721,sandy,3.5
+721,floral,3.5
+817,spice,2.75
+817,mostly bitter,2.75
+863,light color,4.0
+863,complex,4.0
+863,molasses,4.0
+1415,floral,3.25
+1415,green,3.25
+1415,tannic,3.25
+1415,savory,3.5
+1415,smokey,3.5
+1415,creamy,3.75
+1415,green fruit,3.75
+1415,candied,3.75
+1415,creamy,4.0
+1415,spicy,4.0
+1415,cocoa,4.0
+1848,complex,4.0
+1848,balanced,4.0
+2234,molasses,3.25
+2234,tart,3.25
+2234,vegetal,3.25
+2230,vanilla,3.5
+2230,sweet,3.5
+2230,gateway,3.5
+2234,creamy,3.75
+2234,tobacco,3.75
+2234,cocoa,3.75
+1239,vinegar,2.75
+1239,sour,2.75
+1303,earthy,2.75
+1303,nutty,2.75
+1303,black pepper,2.75
+1399,intense floral,3.5
+1399,slight woody,3.5
+1239,red fruit,3.75
+1239,intense,3.75
+1239,bright,3.75
+1399,mellow,3.75
+1399,fruity,3.75
+1399,brownie,3.75
+1570,slow,3.25
+1570,sweet,3.25
+1570,spicy,3.25
+1570,maple,3.25
+1570,spicy,3.25
+1570,cocoa,3.25
+1574,rich cocoa,3.5
+1574,dried fruit,3.5
+1574,cocoa,3.75
+1574,melon,3.75
+1574,dairy,3.75
+1720,fruity,2.75
+1720,off rubber,2.75
+1720,strawberry,3.0
+1720,savory,3.0
+1992,grape,2.75
+1992,pungent,2.75
+1992,off sour,2.75
+2000,creamy,2.75
+2000,burnt rubber,2.75
+2000,off,2.75
+1992,sticky,3.5
+1992,bold,3.5
+1992,nutty,3.5
+1992,fig,3.5
+2286,intense spicy,3.5
+2286,floral,3.5
+1860,intense,3.0
+1860,bitter,3.0
+1860,spicy,3.0
+2334,harsh,2.75
+2334,tobacco,2.75
+2334,roasty,2.75
+2334,burnt caramel,3.0
+2334,coffee,3.0
+2298,fig,3.25
+2298,sour,3.25
+2298,rubbery,3.25
+2298,fruit,3.25
+2298,sour,3.25
+2298,roasty,3.25
+2302,cocoa,3.25
+2302,earthy,3.25
+2302,roasty,3.25
+2302,sandy,3.5
+2302,fruit,3.5
+2302,cocoa,3.5
+2302,sour,3.5
+1363,mild nutty,3.5
+1363,basic cocoa,3.5
+1251,gritty,3.0
+1251,woody,3.0
+1251,acidic,3.0
+1255,mild spice,3.5
+1255,grapes,3.5
+1542,intense,3.5
+1542,blackberry,3.5
+1542,acidic,3.5
+1856,sour,3.25
+1856,earthy,3.25
+1856,roasty,3.25
+2274,fatty,2.75
+2274,woody,2.75
+2274,poor aftertaste,2.75
+2274,rubbery,2.75
+2274,buttery,2.75
+2274,soil,2.75
+2278,nut,3.0
+2278,roasty,3.0
+2278,high astringent,3.0
+1137,gritty,2.5
+1137,sweet,2.5
+1137,off,2.5
+1137,gritty,2.75
+1137,earthy,2.75
+1137,melon,2.75
+196,mild tart,4.0
+196,wine,4.0
+196,red fruit,4.0
+196,long,4.0
+439,creamy,3.5
+439,fruit forward,3.5
+439,rich,3.5
+439,earthy,3.5
+439,nutty,3.5
+331,simple red berry,4.0
+331,rich,4.0
+331,long,4.0
+636,smooth,3.75
+636,red berry,3.75
+636,cocoa,3.75
+1034,creamy,4.0
+1034,cocoa,4.0
+1034,grapes,4.0
+1271,sticky,2.25
+1271,mild citrus,2.25
+1271,earthy,2.25
+1271,coarse,2.75
+1271,sweet,2.75
+1271,tart,2.75
+1271,earthy,2.75
+1454,coarse,3.0
+1454,earthy,3.0
+1454,sweet,3.0
+2258,mild smokey,3.0
+2258,black licorice,3.0
+2294,off aroma,3.25
+2294,anise,3.25
+2294,dried fruit,3.25
+93,red fruit,3.0
+93,smokey,3.0
+93,sour,3.0
+93,rich cocoa,3.75
+93,marshmallow,3.75
+81,mild tart,4.0
+81,long and rich,4.0
+166,cinamon,3.5
+166,bitter aftertaste,3.5
+129,creamy,3.75
+129,cocoa,3.75
+129,grassy,3.75
+111,rich cocoa,4.0
+111,tart citrus,4.0
+141,tangy,4.0
+141,floral,4.0
+141,spicy,4.0
+141,cocoa,4.0
+414,smokey,3.0
+414,floral,3.0
+414,mild,3.0
+445,bland,3.0
+445,subtle dairy,3.0
+445,burning,3.0
+478,strong vanilla,3.0
+478,nutty,3.0
+478,spicey,3.0
+531,bitter,3.0
+531,coffee,3.0
+531,cocoa,3.0
+478,berry notes with sweet edge,3.25
+516,chunky,3.75
+516,rich and spicy,3.75
+1658,mild fruit,3.25
+1658,woody,3.25
+2342,powdery,3.0
+2342,roasty,3.0
+2342,off flavor,3.0
+2342,rich cocoa,3.0
+2342,off flavor,3.0
+2700,fruity,3.5
+2700,rich,3.5
+2700,grassy,3.5
+2462,swiss miss,3.0
+2462,pistachio,3.0
+2462,rich,3.0
+2462,sweet,3.5
+2462,cream,3.5
+2462,cherry,3.5
+2462,rich,3.5
+2462,creamy,3.5
+2462,fruity,3.5
+2462,mocha,3.5
+1772,banana,2.5
+1772,earthy ending,2.5
+1315,intense smoke,2.5
+1315,medicinal,2.5
+1311,intense,3.25
+1311,dried fruit,3.25
+1311,roasty,3.25
+1319,tobacco,3.25
+1319,woody,3.25
+1319,rum,3.25
+1319,intense,3.5
+1319,floral,3.5
+1319,leather,3.5
+1506,coarse,2.5
+1506,earthy,2.5
+1506,metal,2.5
+1506,sweet,2.5
+1506,dry,2.75
+1506,sandy,2.75
+1506,earthy,2.75
+1506,leathery,2.75
+1510,metal,2.75
+1510,earthy,2.75
+1510,pungent,2.75
+1510,metal,2.75
+1510,molasses,2.75
+1510,roasty,2.75
+1510,chunky,3.25
+1510,dairy,3.25
+1510,nutty,3.25
+1510,rich,3.25
+2530,sandy,3.0
+2530,dried fruit,3.0
+2530,earthy,3.0
+2530,slightly bitter,3.0
+2530,earthy,3.0
+2530,fruity,3.0
+2530,raisins,3.25
+2530,grapes,3.25
+2530,tart,3.25
+829,molasses,2.5
+829,banana,2.5
+829,chemical,2.5
+829,dry,2.75
+829,red berry,2.75
+829,off note,2.75
+2582,sweet,2.75
+2582,spoiled milk,2.75
+2582,vegetal,2.75
+2582,tart with woody undertones,3.0
+2586,extra sweet,3.0
+2586,nutty,3.0
+2586,deep cocoa,3.0
+607,bright red fruit,3.75
+607,smoke,3.75
+607,powerful,3.75
+789,grassy,2.75
+789,earthy,2.75
+654,fudgey,3.0
+654,mild smoke,3.0
+647,grass,3.5
+647,chewy,3.5
+647,nibs add bitterness,3.5
+789,mint,3.5
+789,candied,3.5
+1387,mildy nutty,3.75
+1387,cocoa,3.75
+1387,spice,3.75
+1820,dense,3.75
+1820,rich,3.75
+1820,nuanced,3.75
+2076,marshmallow,4.0
+2076,distinquished,4.0
+2538,light cocoa,3.75
+2538,dairy,3.75
+2538,faint cinnamon,3.75
+2622,anise,3.75
+2622,cocoa,3.75
+2622,dried fruit,3.75
+40,smoke dominates,3.0
+40,mild fruit,3.0
+99,earthy,3.0
+99,tobacco,3.0
+99,mushroom,3.0
+99,sandy,3.0
+99,roasty,3.0
+99,cocoa,3.0
+105,creamy,3.0
+105,fatty,3.0
+105,burnt,3.0
+99,tart,3.5
+99,fruit,3.5
+99,cocoa,3.5
+32,creamy,3.75
+32,spicy,3.75
+93,vegetal,3.75
+93,fruit,3.75
+93,smoke,3.75
+162,large nibs,4.0
+162,spicy,4.0
+162,cocoa,4.0
+280,sandy,2.0
+280,sour,2.0
+202,fatty,3.0
+202,mild fruit,3.0
+202,bitter,3.0
+202,smoke,3.0
+280,complex,3.5
+280,herbal,3.5
+280,sour,3.5
+451,creamy,2.0
+451,burnt,2.0
+451,ashey,2.0
+451,lemon,2.0
+486,nutty,3.5
+486,red berry,3.5
+486,rich,3.5
+717,burnt nuts,3.25
+717,subtle fruit,3.25
+1446,subdued,3.25
+1446,floral,3.25
+1446,nutty,3.25
+1446,fatty,3.25
+2406,complex,3.0
+2406,smoke,3.0
+2406,intense,3.0
+2406,ham,3.0
+2410,fruit,3.0
+2410,woody,3.0
+2410,ashey,3.0
+2410,fatty,3.0
+2410,roasty,3.0
+2410,black licorice,3.0
+2410,rubbery,3.0
+2414,high acidity,3.0
+2414,roasty,3.0
+2414,sour,3.0
+2414,chalky,3.0
+2418,sandy,3.0
+2418,coffee,3.0
+2418,sweet,3.0
+2418,roasty,3.0
+2410,tobacco,3.25
+2410,deep cocoa,3.25
+2410,sl. burnt,3.25
+2414,rich cocoa,3.25
+2414,fatty,3.25
+2414,roasty,3.25
+2410,deep cocoa,3.5
+2410,fatty,3.5
+2410,mild ashey,3.5
+2414,spicy,3.5
+2414,cocoa,3.5
+2418,dried fruit,3.5
+2418,floral,3.5
+2118,sour palm,3.25
+2118,rich cocoa,3.25
+2118,fruit,3.25
+2118,molasses,3.25
+2118,coffee,3.25
+2118,cocoa,3.25
+2318,fruit,2.75
+2318,tart,2.75
+2318,fertilzer,2.75
+1223,nutty,2.75
+1223,fuel,2.75
+1223,intense,2.75
+1227,floral,2.75
+1227,slightly burnt,2.75
+1227,intense,2.75
+1223,perfume,3.0
+1223,roasted caramel,3.0
+1223,long,3.25
+1223,mellow,3.25
+1223,buttery,3.25
+1688,chunky,2.75
+1688,earthy,2.75
+1688,rubber,2.75
+1502,dark berry,3.5
+1502,mild floral,3.5
+1530,dairy,3.5
+1530,butterscotch,3.5
+1530,caramel,3.5
+1872,floral,3.5
+1872,grain,3.5
+1872,deep cocoa,3.5
+1956,sticky,3.75
+1956,mild,3.75
+1956,hay,3.75
+1956,honey,3.75
+2166,dominant savory,3.25
+931,fatty,2.75
+931,vanilla,2.75
+931,orange,2.75
+1988,few grits,3.25
+1988,strong floral,3.25
+1988,intense smoke,3.25
+1984,intense,3.5
+1984,fig,3.5
+1984,roasty,3.5
+1984,citrus,3.5
+1988,spice,3.5
+1988,sunflower,3.5
+1988,peanut,3.75
+1988,soy,3.75
+1988,sunflower,3.75
+935,sweet,3.0
+935,intense banana,3.0
+935,muted,3.25
+935,banana,3.25
+935,hot cocoa,3.25
+1069,creamy,2.75
+1069,too sweet,2.75
+1069,sour,2.75
+1057,sticky,3.25
+1057,intense,3.25
+1057,roasty,3.25
+1057,fruit,3.25
+1069,tannic,3.25
+1069,fruity,3.25
+1069,cocoa,3.25
+1057,mild bitter,3.5
+1057,banana,3.5
+1057,citrus,3.5
+2238,pungent,3.0
+2238,grapes,3.0
+2426,bold,3.75
+2426,nutty,3.75
+2426,floral,3.75
+2426,wine,3.75
+2470,intense plum,3.5
+2470,harsh woody,3.5
+2506,grapes and honey,4.0
+2594,bold,3.75
+2594,fig w/ floral undertone,3.75
+1796,gritty,2.75
+1796,waxy,2.75
+1796,leather,2.75
+1800,waxy,3.0
+1800,gritty,3.0
+1800,spicy,3.0
+1800,hammy,3.0
+785,creamy,3.5
+785,pasty,3.5
+785,bitter,3.5
+785,cocoa,3.5
+959,gritty,3.25
+959,sticky,3.25
+959,candied,3.25
+1708,refined,2.75
+1708,honey,2.75
+1708,rubber,2.75
+1788,pungent,3.0
+1788,green,3.0
+1788,citrus,3.0
+2032,green,3.25
+2032,basic cocoa,3.5
+470,easter candy,2.75
+470,burnt,2.75
+565,slightly dry and super spicey,3.0
+1558,oily,2.5
+1558,intense vinegar,2.5
+1562,fruity,3.25
+1562,melon,3.25
+1562,dried fruit,3.5
+1562,raisins,3.5
+1562,nutty,3.5
+2668,fruit,3.25
+2668,yogurt,3.25
+2668,astringent,3.25
+1872,fatty,3.25
+1872,cocoa,3.25
+2166,floral,3.5
+2166,malt,3.5
+2166,high astringcy,3.5
+2158,creamy,3.75
+2158,complex,3.75
+2158,maple,3.75
+2158,dominant spice,3.75
+2330,floral,3.5
+2330,roasted cacao,3.5
+2330,dirty,3.5
+2334,grassy,3.5
+2334,earthy,3.5
+2334,roasty,3.5
+2334,dirty,3.5
+2618,gateway,3.5
+2618,nutty,3.5
+2618,rich cocoa,3.5
+867,smooth,2.5
+867,green,2.5
+867,vegetal,2.5
+147,cinamon,3.0
+147,hazelnut,3.0
+147,roasty,3.0
+147,creamy,3.5
+147,caramel,3.5
+147,dairy,3.5
+170,vanilla,3.75
+170,dark roast,3.75
+170,spicy,3.75
+439,strong rubber,2.5
+439,off chemical,2.5
+494,strong spicey,3.25
+494,earthy green,3.25
+745,dark berry,3.5
+745,woody,3.5
+745,astringent,3.5
+967,dried fruit,3.25
+967,nut,3.25
+967,bitter,3.25
+967,roasty,3.25
+979,orange,3.5
+979,heavy roast,3.5
+891,dark berry,4.0
+891,tropical,4.0
+891,nutty,4.0
+1181,intense,3.0
+1181,roasty,3.0
+1181,spice,3.0
+1089,thick,3.75
+1089,slow,3.75
+1089,pure,3.75
+1466,mild bitter,3.5
+1466,woody,3.5
+1466,bourbon,3.5
+1466,sticky,3.5
+1466,woody,3.5
+1860,floral,3.75
+1860,bourbon,3.75
+1860,balanced,3.75
+2008,smooth,3.75
+2008,coffee,3.75
+2008,rich cocoa,3.75
+2282,complex,3.5
+2282,honey,3.5
+2282,fruit,3.5
+2282,nut,3.5
+2418,rich brownie,3.5
+2418,dried fruit,3.5
+2514,tart fruit,3.5
+2514,roasty,3.5
+2080,muted,3.0
+2080,heavy roast,3.0
+2354,fatty,2.5
+2354,rubbery,2.5
+2354,nutty,2.5
+2354,fatty,2.5
+2354,rubbery,2.5
+2354,off,2.5
+1844,dried fruit,3.25
+1844,intense,3.25
+1844,fatty,3.25
+1844,honey,3.25
+1844,slight sour,3.25
+1844,roasty,3.25
+1844,coffee,3.25
+1844,intense,3.25
+1061,rich cocoa,3.25
+1061,nutty,3.25
+1061,basic cocoa,3.25
+1061,large nibs,3.25
+923,earthy,3.5
+923,mild nutty,3.5
+213,nutty,2.75
+213,earthy,2.75
+213,mild off note,2.75
+213,sandy,2.75
+213,heavy roast,2.75
+213,woody,2.75
+213,raisins,3.0
+213,sour,3.0
+213,roasty,3.0
+213,dry,3.0
+213,honey,3.0
+213,roasty,3.0
+327,mint,3.5
+327,sweet spices,3.5
+565,smooth,3.75
+565,intense,3.75
+565,fruit,3.75
+565,complex,3.75
+793,rich brownie,3.0
+793,roasty,3.0
+793,sour,3.0
+979,floral,3.75
+979,bourbon,3.75
+979,mocha,3.75
+1038,creamy,3.5
+1038,heavy roast,3.5
+1038,citrus,3.5
+1081,sticky,3.5
+1081,earthy,3.5
+1081,smokey,3.5
+1193,intense,3.75
+1193,dark berry,3.75
+1193,spice,3.75
+1081,smooth,4.0
+1081,banana,4.0
+1081,tart,4.0
+1081,roasty,4.0
+1209,red fruit,3.75
+1209,intense,3.75
+1209,earthy,3.75
+1566,roasty,3.25
+1566,dried fruit,3.25
+1566,sour,3.25
+1446,deep,3.75
+1446,rich,3.75
+1446,nutty,3.75
+1446,roasty,3.75
+1748,robust,3.75
+1748,tart,3.75
+1748,roasty,3.75
+717,intense,2.5
+717,burnt,2.5
+717,chemical,2.5
+765,smokey,2.75
+765,nutty,2.75
+765,fat residue,2.75
+713,fatty,3.5
+713,roasty,3.5
+713,coffee,3.5
+717,uneven melt,3.5
+717,cashew,3.5
+871,fatty,2.25
+871,burnt,2.25
+871,nut,2.25
+871,vegetal,2.25
+809,fatty,2.5
+809,chemical,2.5
+809,roasty,2.5
+871,buttery,2.5
+871,sour tang,2.5
+871,off notes,2.5
+2004,nuts,3.75
+2004,chocolate,3.75
+2004,mellow,3.75
+2672,blackberry,3.75
+2672,mild floral,3.75
+1964,off note,2.75
+1964,vegetal,2.75
+1964,nibby,2.75
+2036,cocoa base,3.0
+2036,spice,3.0
+2036,complex,3.5
+2036,coarse,3.5
+2036,astringent,3.5
+2668,mild smoke,2.75
+2668,tart,2.75
+2668,spice,2.75
+2668,harsh,2.75
+2660,clean,3.5
+2660,pure cocoa,3.5
+2660,cherry,3.5
+2660,gritty,3.5
+615,sticky,1.5
+615,intense,1.5
+615,very bitter,1.5
+615,fudgey,3.0
+615,astringent,3.0
+615,sour,3.0
+607,sandy,3.5
+607,subtle fruit then cocoa,3.5
+615,fatty,3.5
+615,cocoa,3.5
+615,nutty,3.5
+615,sandy,3.5
+615,sweet,3.5
+615,spice,3.5
+813,grassy,2.75
+813,strong bitter,2.75
+813,grassy,3.25
+813,maple,3.25
+288,creamy,3.5
+288,vanilla,3.5
+288,rich,3.5
+288,nutty,3.5
+288,spicy,3.5
+288,floral,3.5
+288,nutty,3.5
+288,basic cocoa,3.5
+292,floral,3.5
+292,spicey,3.5
+2004,few grits,3.25
+2004,basic,3.25
+2004,gateway,3.25
+32,too sweet,2.0
+32,candy-like,2.0
+32,sweet,3.0
+32,cherry,3.0
+32,marshmallow,3.0
+32,rustic,3.75
+32,cherry,3.75
+32,marshmallow,3.75
+404,roasty,2.75
+404,rich cocoa,2.75
+404,marshmallow,2.75
+414,sweet,3.0
+414,marshmallow,3.0
+761,perfume,2.75
+761,vanilla,2.75
+15,dry,2.0
+15,bitter,2.0
+15,poor aftertaste,2.0
+40,fruity,2.0
+40,smokey,2.0
+40,burnt,2.0
+56,fresh nibs,2.0
+56,chocolate base off,2.0
+56,tobacco,3.0
+56,sweet,3.0
+56,dairy,3.0
+15,cherry,3.5
+15,mild bitter,3.5
+117,strong smokey tobacco,3.0
+135,sweet,3.0
+135,base cocoa,3.0
+188,smooth,3.0
+188,complex,3.0
+188,cocoa base,3.0
+135,complex,3.75
+135,strawberry,3.75
+135,tart,3.75
+227,grassy,3.0
+227,black pepper,3.0
+227,smoke,3.0
+336,smooth,3.75
+336,tart,3.75
+336,earthy,3.75
+445,creamy,3.75
+445,grassy,3.75
+445,banana,3.75
+445,tart,3.75
+336,simple,4.0
+336,delicate cocoa,4.0
+336,long,4.0
+464,smooth,3.5
+464,grassy,3.5
+464,minty,3.5
+464,clingy,3.75
+464,subtle,3.75
+464,tangy,3.75
+464,citrus,3.75
+781,cherry,3.75
+781,wine,3.75
+781,rich,3.75
+781,smoke,3.75
+959,banana,4.0
+959,pear,4.0
+959,spice,4.0
+959,cheese,4.0
+1658,rustic,2.75
+1658,vegetal,2.75
+1658,earthy,2.75
+1658,off,2.75
+1658,sweet,2.75
+1658,orange,2.75
+1658,rubber,2.75
+2104,dry,2.75
+2104,earthy,2.75
+2104,surface mark,2.75
+2108,earthy,3.0
+2108,mild fruit,3.0
+2108,sticky,3.0
+2104,sticky,3.25
+2104,cherry,3.25
+2104,cocoa,3.25
+2446,sharp,2.75
+2446,raw,2.75
+2446,metallic,2.75
+2446,cocoa,3.5
+2446,roasty,3.5
+2446,sticky,3.5
+2660,sl roasty,3.25
+2660,woody,3.25
+2660,melon,3.25
+2660,spicy,3.25
+2590,orange,3.5
+2590,fig,3.5
+2590,cocoa,3.5
+2594,blueberry & cocoa dominate,3.5
+2660,sticky,3.5
+2660,dark berry,3.5
+2660,roasty edge,3.5
+2370,spicy,3.0
+2370,rich cocoa,3.0
+2370,sweet,3.0
+2370,black pepper,3.0
+2370,astringent,3.0
+2366,full cocoa flavor,3.5
+1335,coffee,3.0
+1335,nutty,3.0
+1335,fruity,3.25
+1335,blueberry,3.25
+1466,smoked ham,2.75
+1466,tangy,2.75
+1466,berry,2.75
+1450,sticky,3.25
+1450,dried fruit,3.25
+1450,smoke,3.25
+1450,chewy,3.5
+1450,smoke,3.5
+1450,fruit,3.5
+1450,cocoa,3.5
+1466,grapes,3.5
+1466,tangy,3.5
+1466,cocoa,3.5
+713,sticky,2.0
+713,earthy,2.0
+713,medicinal,2.0
+721,perfume,2.5
+721,floral,2.5
+721,chemical,2.5
+757,strong spice,3.5
+757,perfume,3.5
+757,roasty,3.5
+1884,earthy,3.25
+1884,roasty,3.25
+1884,vegetal,3.25
+1586,gritty,3.25
+1586,fatty,3.25
+1586,coffee,3.25
+1586,gritty,3.5
+1586,bold,3.5
+1586,black pepper,3.5
+911,sandy,2.5
+911,sweet,2.5
+911,vanilla,2.5
+717,fatty,3.0
+717,cocoa,3.0
+717,spicy,3.0
+741,fatty,3.0
+741,salty,3.0
+741,caramel,3.0
+725,nutty,3.25
+725,salty,3.25
+729,fatty,3.25
+729,sweet,3.25
+729,salty,3.25
+1339,tart,3.75
+1339,sweet edge,3.75
+1339,intense fruity,3.75
+1339,mild sour,3.75
+1343,intense,3.75
+1343,rich,3.75
+1343,burnt,3.75
+1343,licorice,3.75
+1502,creamy,3.0
+1502,tart,3.0
+1502,bitter,3.0
+1506,floral,3.0
+1506,bourbon,3.0
+1506,bitter,3.0
+1614,waxy,3.0
+1614,earthy,3.0
+1614,cocoa,3.0
+1614,roasty,3.0
+1614,waxy,3.25
+1614,maple,3.25
+1614,flat,3.25
+1650,oily,3.25
+1650,medium roasted cocoa,3.25
+1788,sticky,3.5
+1788,raisins,3.5
+1788,fudgey,3.5
+1856,basic cocoa,3.5
+1856,gateway,3.5
+1860,rich cocoa,3.75
+1860,spicy,3.75
+1996,caramel,3.75
+1996,anise,3.75
+1996,dried fruit,3.75
+2652,bland,3.0
+2652,sour,3.0
+2652,lacks development,3.0
+2652,butterscotch,3.25
+2652,slight burnt note,3.25
+1454,sweet,2.75
+1454,vanilla,2.75
+1454,cocoa,2.75
+1454,mold,2.75
+1462,mild,3.0
+1462,nutty,3.0
+1462,vanilla,3.0
+1462,cocoa,3.0
+1626,floral,2.75
+1626,intense,2.75
+1626,pungent,2.75
+1666,light brown,3.0
+1666,grits,3.0
+1666,floral,3.0
+1618,few grits,3.25
+1618,sweet,3.25
+1618,orange,3.25
+1622,few grits,3.5
+1622,bold,3.5
+1622,dark berry,3.5
+1662,smokey,3.5
+1662,tart,3.5
+1662,astringent,3.5
+1622,bold cherry,3.75
+1622,rich cooa,3.75
+1622,cigar,3.75
+1622,tobacco,3.75
+1622,grass,3.75
+1622,spice,3.75
+1666,mild cacao and fruit notes,3.75
+1622,creamy,4.0
+1622,pistachio,4.0
+1622,floral,4.0
+1864,creamy,3.0
+1864,molasses,3.0
+1864,off note,3.0
+1908,gummy,3.25
+1908,fatty,3.25
+1908,earthy,3.25
+1740,creamy,3.75
+1740,fruit,3.75
+1740,cocoa,3.75
+1756,apple,3.75
+1756,mild cherry,3.75
+1864,delicate,3.75
+1864,smooth,3.75
+1864,dairy,3.75
+1740,ligt color,4.0
+1740,creamy,4.0
+1740,peanut,4.0
+1940,cherry,3.5
+1940,rich choco,3.5
+1952,complex,3.5
+1952,earthy,3.5
+1952,melon,3.5
+502,mild cocoa,3.0
+502,fruity,3.0
+502,fudgey then spicy,3.25
+502,vanilla,3.25
+693,perfume,1.5
+693,strong chemical,1.5
+2112,nuts,3.25
+2112,fruit,3.25
+2112,cocoa,3.25
+1968,grassy,2.75
+1968,hammy,2.75
+1518,tangy,3.0
+1518,sour,3.0
+1518,intense,3.0
+1812,intense,3.5
+1812,simple,3.5
+1812,floral,3.5
+1812,earthy,3.5
+1840,sticky,2.75
+1840,hammy,2.75
+1840,bitter,2.75
+1840,sticky,2.75
+1840,sandy,2.75
+1840,pungent,2.75
+2366,intense,2.5
+2366,dirty,2.5
+2366,floral,2.5
+2366,medicinal,2.5
+1792,sweet,3.25
+1792,roasty,3.25
+1792,spicy,3.25
+1796,spicy,3.25
+1796,roasted,3.25
+1796,fresh nibs,3.25
+1157,dry,3.0
+1157,molasses,3.0
+1157,sour,3.0
+1157,dairy,3.0
+1157,cheese,3.0
+1157,molasses,3.0
+1161,intense,3.25
+1161,leathery,3.25
+1161,cocoa,3.25
+1161,molasses,3.25
+1161,grape,3.25
+1161,sour,3.25
+1161,creamy,3.5
+1161,nutty,3.5
+1161,cocoa,3.5
+1335,molasses,3.0
+1335,licorice,3.0
+1335,muted,3.0
+1992,sticky,3.25
+1992,strong molasses,3.25
+2068,molasses undertone,3.25
+2068,tangy,3.25
+2660,molasses,3.5
+2660,raisins,3.5
+2660,astringent,3.5
+377,sticky,3.0
+377,few grits,3.0
+377,mild fruit,3.0
+377,sour,3.0
+387,slow to develop,3.0
+387,nutty,3.0
+377,earthy,3.5
+377,woody,3.5
+377,vegetal,3.5
+387,smokey,3.5
+387,mushroom,3.5
+387,woodsy,3.5
+387,subtle red berry,3.75
+387,complex,3.75
+387,black tea,3.75
+607,complex,3.75
+607,nut,3.75
+607,dried fruit,3.75
+607,earth,3.75
+676,super temper,2.75
+676,astringent,2.75
+676,burn,2.75
+676,earthy,3.5
+676,mild tannic,3.5
+676,woody,3.5
+688,strawberry,3.5
+688,green mint,3.5
+682,dried fruit,3.75
+682,tart,3.75
+676,strawberry,4.0
+676,cocoa,4.0
+676,nutty,4.0
+676,complex,4.0
+676,spice,4.0
+676,caramel,4.0
+676,cocoa,4.0
+817,uneven,3.25
+817,grassy,3.25
+817,roasty,3.25
+951,sandy,3.5
+951,earthy,3.5
+951,tangy wine,3.5
+967,smoke,3.5
+967,tobacco,3.5
+967,black pepper,3.5
+983,mild smoke,3.5
+983,fruit,3.5
+983,mild burnt,3.5
+833,cranberries,3.75
+833,cocoa,3.75
+951,intense,3.75
+951,rich burnt caramel,3.75
+867,creamy,4.0
+867,raisin,4.0
+867,lemon,4.0
+867,creamy,4.0
+867,complex,4.0
+867,peanut,4.0
+1073,creamy,2.75
+1073,medicinal,2.75
+1073,mild fruit,2.75
+1030,creamy,3.25
+1030,smokey,3.25
+1030,some fruit,3.25
+1077,grassy,3.25
+1077,dairy,3.25
+1077,mild fatty,3.25
+1173,creamy,3.25
+1173,nutty,3.25
+1173,roasty,3.25
+1019,smoke,3.75
+1019,burnt caramel,3.75
+1019,citrus,3.75
+1073,creamy,3.75
+1073,brownie mix,3.75
+1073,roasty,3.75
+1077,nutty,3.75
+1077,chocolate ice cream,3.75
+1077,pronounced berry,4.0
+1077,mild smoke,4.0
+1077,delicate,4.0
+1077,nutty,4.0
+1077,cocoa,4.0
+1077,dairy,4.0
+1081,roasted nuts,4.0
+1081,burnt brownie,4.0
+1177,floral,4.0
+1177,berry,4.0
+1177,clove,4.0
+1307,spicy,3.25
+1307,woodsy,3.25
+1339,tart,3.25
+1339,mild sour,3.25
+1227,basic chocolate,3.5
+1227,accessible,3.5
+1307,robust,3.5
+1307,nutty,3.5
+1307,brownie,3.5
+1259,creamy,3.75
+1259,sour orange,3.75
+1307,creamy,3.75
+1307,smokey,3.75
+1307,rich cocoa,3.75
+1594,roasted nuts,3.5
+1594,dried fruit,3.5
+1594,balanced,4.0
+1594,nuts,4.0
+1594,strawberry,4.0
+1832,nutty,3.25
+1832,banana,3.25
+1832,harsh ending,3.25
+1820,creamy,3.5
+1820,sweet,3.5
+1820,deep choco,3.5
+1820,robust dark tropical fruit,3.5
+1828,creamy,3.5
+1828,diluted,3.5
+1828,mild choco,3.5
+1828,evolves black pepper to citrus,3.75
+1828,banana,3.75
+1828,nutty,3.75
+1828,creamy,4.0
+1828,honey,4.0
+1828,blackberry,4.0
+2016,creamy,3.25
+2016,roasty,3.25
+2016,woody,3.25
+2016,creamy,4.0
+2016,honey,4.0
+2016,marshmallow,4.0
+2068,sweet edge,3.0
+2068,lemon,3.0
+2068,muted,3.0
+2242,creamy,4.0
+2242,acidic,4.0
+2242,balanced,4.0
+2242,nutty,4.0
+2242,cocoa,4.0
+2680,sweet,3.25
+2680,cocoa,3.25
+2680,candy like,3.25
+2638,red fruit,3.5
+2638,peanut butter,3.5
+2638,cocoa,3.5
+2638,spice,3.5
+2638,sour malt,3.5
+2638,woody,3.5
+2700,cinamon,4.0
+2700,nutmeg,4.0
+2700,hot cocoa,4.0
+1367,earthy,3.25
+1367,dried fruit,3.25
+1367,complex,3.25
+1395,intense,3.5
+1395,tannic,3.5
+1395,choco,3.5
+1395,earthy,3.5
+1932,few grits,3.25
+1932,sweet,3.25
+1932,cocoa,3.25
+1936,dry,3.25
+1936,floral,3.25
+1936,earthy,3.25
+1936,sandy,3.25
+1936,smokey,3.25
+1936,fruit,3.25
+1936,sour,3.25
+1936,tart,3.5
+1936,sour,3.5
+1936,basic,3.5
+1936,dry,3.5
+1936,earthy,3.5
+1936,roasty,3.5
+1940,sticky,3.5
+1940,mild fruit,3.5
+1940,brownie,3.5
+793,oily,3.0
+793,floral,3.0
+793,dairy,3.0
+793,fatty,3.0
+793,muted strawberry,3.0
+793,oily,3.25
+793,floral,3.25
+1434,bready,2.75
+1434,sour milk,2.75
+1434,fatty,2.75
+1792,spicy,3.5
+1792,chocolatey,3.5
+1792,floral,3.75
+1792,sandy,3.75
+1792,powdery,3.75
+1792,cherry,3.75
+1792,astringent,3.75
+1932,floral,2.75
+1932,earthy,2.75
+1932,burnt rubber,2.75
+1932,floral,3.5
+1932,astringent,3.5
+1932,sandy,3.75
+1932,robust,3.75
+1932,grapes,3.75
+1932,malt,3.75
+2684,strong roast,3.25
+2684,tart raspberry,3.25
+2684,plum,3.5
+2684,roasty undertone,3.5
+2684,sour,3.5
+2684,dairy,3.5
+2684,cocoa,3.5
+2684,well balanced,3.5
+1057,fatty,3.0
+1057,mild fruit,3.0
+1057,off note,3.0
+1121,gritty,2.25
+1121,intense coffee,2.25
+1121,metallic,2.25
+1113,unrefined,3.0
+1113,sweet,3.0
+1113,mild coffee,3.0
+1634,coconut,3.0
+1634,mild vanilla,3.0
+1692,coconut,3.0
+1692,cocoa,3.0
+1692,few grits,3.0
+1692,dried fruit,3.0
+1692,coconut,3.0
+1692,few grits,3.0
+1692,brownie,3.0
+1692,few grits,3.0
+1692,sandy,3.0
+1696,red fruit,3.0
+1696,coconut,3.0
+729,peanut butter,3.25
+729,vanilla,3.25
+729,artificial,3.25
+859,creamy,2.75
+859,vanilla,2.75
+859,moldy,2.75
+1291,floral,3.5
+1291,hints of fruit,3.5
+1291,oily surface,3.5
+1291,floral,3.5
+1291,earthy,3.5
+2012,fatty,2.5
+2012,rubber,2.5
+2012,off notes,2.5
+939,vanilla,2.5
+939,sweet,2.5
+943,dry,2.5
+943,sweet,2.5
+943,vanilla(n),2.5
+943,bland,2.75
+943,earthy,2.75
+1157,molasses,2.75
+1157,sour,2.75
+1157,astringent,2.75
+1157,intense,3.25
+1157,rich,3.25
+1157,dark berry,3.25
+1800,sandy,2.5
+1800,sweet,2.5
+1800,vanilla,2.5
+1800,powdery,3.0
+1800,vanilla,3.0
+1800,earthy,3.0
+1796,sticy,2.75
+1796,nutty,2.75
+1796,roasty,2.75
+1796,off notes,2.75
+1796,sticky,3.0
+1796,sweet,3.0
+1796,nutty,3.0
+1796,roasty,3.0
+1618,ham,2.75
+1618,sour,2.75
+1618,intense,2.75
+2434,fruit,2.75
+2434,burnt,2.75
+2434,harsh,2.75
+2634,overly roasty,3.0
+2634,spicy,3.0
+2634,earthy,3.0
+2634,roasty,3.0
+2634,hammy,3.0
+2634,melon,3.5
+2634,mocha,3.5
+2634,herbal,3.75
+2634,tea,3.75
+2634,dried fruit,3.75
+2242,pungent,2.5
+2242,molasses,2.5
+2242,sour,2.5
+2234,fatty,2.75
+2234,sour,2.75
+2234,off notes,2.75
+2234,buttery,3.0
+2234,cheesy,3.0
+2242,cardboard,3.0
+2242,cheesy,3.0
+2230,acidic,3.25
+2230,cocoa,3.25
+2230,dried fruit,3.25
+2474,dried fig,3.0
+2474,earthy,3.0
+2474,dirty,3.0
+2470,burnt black licorice,3.25
+2470,intense,3.25
+2482,savory lemon,3.25
+2482,ham,3.25
+761,rustic,3.0
+761,sugar dominates,3.0
+939,rustic,3.25
+939,large unground pieces,3.25
+939,rustic,3.25
+939,bright fruit,3.25
+939,sweet,3.75
+939,spicy,3.75
+1193,sour milk,3.25
+1193,hot cocoa,3.25
+1185,light color,3.5
+1185,sandy,3.5
+1185,fruity,3.5
+1185,dark color,3.5
+1185,sandy,3.5
+1185,fruity,3.5
+1263,sandy,3.5
+1263,earthy,3.5
+1263,spice,3.5
+1263,nutty,3.5
+1263,sandy,3.75
+1263,banana,3.75
+1668,sweet,3.25
+1668,brownie,3.25
+1668,sour,3.25
+1704,rustic,3.25
+1704,spicy,3.25
+1704,earthy,3.25
+1704,sour orange,3.25
+1704,fatty,3.25
+1708,smokey,3.25
+1708,mild citrus,3.25
+1708,rustic,3.5
+1708,earthy,3.5
+1708,tea,3.5
+1704,coarse,3.75
+1704,spicy cinnamon,3.75
+1105,vanilla,2.5
+1105,fuel,2.5
+1105,earthy,2.5
+1101,licorice,2.75
+1101,dried fruit,2.75
+1101,burnt fuel,2.75
+1101,oily,2.75
+1101,cardboard,2.75
+1101,sour,2.75
+1105,vanilla,3.0
+1105,fatty,3.0
+1105,vegetal,3.0
+1105,mint,3.0
+1680,intense,2.75
+1680,grassy,2.75
+1680,smokey,2.75
+1450,flat,3.0
+1450,smoke,3.0
+1450,marshmallow,3.0
+1450,creamy,3.25
+1450,smoke,3.25
+1450,ham,3.25
+1450,vanilla,3.25
+1450,butter,3.25
+1450,caramel,3.25
+2286,cocoa,2.75
+2286,sweet,2.75
+2286,fatty,2.75
+2286,cardboard,2.75
+2286,intense cocoa,3.0
+2286,fatty,3.0
+2286,sticky,3.0
+1868,earthy,3.25
+1868,floral,3.25
+1868,dry,3.25
+2262,vanilla,3.0
+2262,fatty,3.0
+2326,blackberry,3.25
+2326,dirt,3.25
+2326,high roast,3.25
+2326,fig,4.0
+1646,berry,3.0
+1646,spices,3.0
+1646,smoke,3.0
+2306,nutty,3.0
+2306,off,3.0
+2306,roasty,3.0
+2306,fatty,3.0
+2306,nutty,3.25
+2306,fruit,3.25
+2306,sour,3.25
+2306,floral,3.25
+2566,earthy,2.75
+2566,fatty,2.75
+2566,gritty,2.75
+180,sandy,3.0
+180,sour banana,3.0
+180,sweet,3.0
+451,rustic,2.75
+451,sweet,2.75
+451,earthy,2.75
+785,grainy,3.25
+785,blueberries,3.25
+785,bitter,3.25
+1271,coarse,3.0
+1271,watering,3.0
+1271,sweet,3.0
+199,gritty,2.5
+199,sweet,2.5
+199,swiss miss,2.5
+199,vanilla,2.5
+280,tangy,2.5
+280,off,2.5
+280,musty,2.5
+280,sour,2.5
+284,dry,2.5
+284,musty,2.5
+284,flat,2.5
+280,dry,2.75
+280,red berry,2.75
+280,off note,2.75
+387,tea,2.75
+387,sweet,2.75
+387,astringent,2.75
+387,nutty,3.0
+387,candy-like,3.0
+915,spicy,3.25
+915,ginger,3.25
+915,bitter,3.25
+1716,strong vanilla,2.0
+1716,sweet,2.0
+1716,fatty,2.0
+821,perfume,2.0
+821,chemical,2.0
+821,soapy,2.0
+801,molasses,2.75
+801,off notes,2.75
+829,candy,2.75
+829,peanut butter,2.75
+829,caramel,2.75
+967,flat,2.75
+967,cardboard,2.75
+967,metallic,2.75
+801,molasses,3.0
+801,caramel,3.0
+801,spice,3.0
+805,molasses,3.0
+805,caramel,3.0
+805,fruity,3.0
+829,sticky,3.0
+829,caramel,3.0
+971,earthy,3.0
+971,savory,3.0
+971,hammy,3.0
+817,gritty,3.25
+817,rum,3.25
+817,molasses,3.25
+825,molasses,3.25
+825,fruit,3.25
+825,floral,3.25
+833,molasses,3.25
+833,caramel,3.25
+971,green apple,3.25
+971,sweet,3.25
+805,molasses,3.5
+805,caramel,3.5
+971,honey,3.5
+971,pepper,3.5
+971,charcoal,3.5
+1323,intense,3.25
+1323,mild coffee and rum,3.25
+1323,sweet,3.75
+1323,rich,3.75
+1323,tannic,3.75
+1323,fruity,3.75
+1323,creamy,3.75
+1323,almond,3.75
+1323,butter,3.75
+1478,spicy,2.75
+1478,black pepper,2.75
+1478,intense,2.75
+1482,floral,3.25
+1482,earthy,3.25
+1482,bourbon,3.25
+1554,spicy,3.5
+1554,black pepper,3.5
+1554,bold,3.5
+1478,nutty,3.75
+1478,raspberry,3.75
+1478,metallic,3.75
+1478,bright fruit,3.75
+1478,mild sour,3.75
+1558,walnuts,3.75
+1558,cocoa,3.75
+1558,easy melt,3.75
+2374,harsh,2.75
+2374,tobacco,2.75
+2358,berries,3.0
+2358,licorice,3.0
+2358,cocoa,3.0
+2358,bitter,3.0
+2370,muted,3.25
+2370,roasted banana,3.25
+1614,sandy,3.0
+1614,sweet,3.0
+1614,raisins,3.0
+188,dry,2.0
+188,very bland,2.0
+188,mild bitter,2.0
+184,dry,2.5
+184,gritty,2.5
+184,hint of fruit,2.5
+184,sour,2.5
+184,dry,3.0
+184,slightly tart,3.0
+184,bitter,3.0
+188,sandy,3.0
+188,sweet,3.0
+188,fruity,3.0
+162,sandy,3.5
+162,sweet,3.5
+162,blueberry,3.5
+903,sweet,3.25
+903,vanilla,3.25
+903,cocoa,3.25
+1684,peanut butter,3.25
+1684,sour milk,3.25
+2414,pure,3.5
+2414,bold,3.5
+2414,floral,3.5
+2182,floral,3.0
+2182,vegetal,3.0
+2182,spicy,3.25
+2182,marshmallow,3.25
+1836,bright fruit,3.75
+1836,cashew,3.75
+2358,bland,2.75
+2358,mild honey,2.75
+2358,sour,2.75
+2510,strong floral,3.25
+2510,oily,3.25
+2510,bold,3.25
+2510,grassy,3.25
+1418,waxy,3.25
+1418,mild fruit,3.25
+1418,floral,3.25
+895,smooth,4.0
+895,wild berries,4.0
+789,peanut butter,2.75
+789,soapy,2.75
+789,pronounced fruit,3.0
+789,sour,3.0
+927,sandy,3.0
+927,sweet,3.0
+2064,metallic,2.75
+2064,astringent,2.75
+2060,spicy,3.0
+2060,cocoa,3.0
+2060,sweet,3.0
+2060,honey,3.5
+2060,caramel,3.5
+2270,dull,2.75
+2270,chewy,2.75
+2270,sweet,2.75
+2314,nutty,3.5
+2314,floral,3.5
+1239,baked,3.0
+1239,roasty,3.0
+1239,coffee,3.0
+907,sandy,2.75
+907,strawberry,2.75
+907,coconut,2.75
+821,heavy roast,3.25
+821,black licorice,3.25
+2526,high acidity,3.25
+2526,toffee,3.25
+2526,spicy,3.25
+2526,dominating roast,3.25
+2526,deep cocoa,3.25
+2530,bright fruit,3.75
+2530,heavy roast,3.75
+2530,smooth,3.75
+2664,sticky,3.25
+2664,butterscotch,3.25
+2664,sl. hammy,3.25
+2210,powdery,3.0
+2210,complex,3.0
+2210,rubber,3.0
+2218,sweet,3.5
+2218,pungent grape,3.5
+2218,acidic,3.5
+2490,tart,2.75
+2490,sweet,2.75
+2490,sour,2.75
+2490,savory,2.75
+2490,woody,2.75
+2490,sweet,2.75
+2490,unrefined,2.75
+2470,very sandy,3.0
+2470,spicey,3.0
+2470,sweet,3.0
+753,cocoa,3.5
+753,mild fruit,3.5
+753,roasty,2.75
+753,woody,2.75
+753,rubber off,2.75
+1026,roasty,2.5
+1026,bitter,2.5
+1026,caramel,2.5
+1026,dairy,2.5
+1022,roasty,3.25
+1022,sligt burnt,3.25
+1022,red fruit,3.25
+1235,intense,3.5
+1235,red berry,3.5
+1700,spicy,2.75
+1700,sour,2.75
+1700,off note,2.75
+1700,intense,3.5
+1700,floral,3.5
+1996,dry,3.25
+1996,floral,3.25
+1996,woody,3.25
+1740,coarse,3.0
+1740,sweet,3.0
+1740,lemon,3.0
+709,spicy and rich,3.75
+2000,dry,2.75
+2000,coarse,2.75
+2000,hay,2.75
+2000,off,2.75
+2004,dry,3.0
+2004,coarse,3.0
+2004,sweet,3.0
+2004,earthy,3.0
+2004,dry,3.25
+2004,coarse,3.25
+2004,sour,3.25
+1438,creamy,2.75
+1438,woody,2.75
+1438,green,2.75
+1438,rubber,2.75
+1438,tart,3.0
+1438,tangy,3.0
+1438,mild cocoa,3.0
+1752,sweet,3.0
+1752,acidic,3.0
+1752,tart,3.0
+1752,sandy,3.25
+1752,sweet,3.25
+1752,peach,3.25
+1327,intense,3.25
+1327,nutty,3.25
+1327,mild rubber,3.25
+1968,spice,3.75
+1968,melon,3.75
+1968,nutty,3.75
+2210,roasty cocoa,3.75
+2478,roasted strawberry,3.5
+2478,bold,3.5
+75,nutty,2.5
+75,vegetal,2.5
+75,sweet,2.5
+63,slight bitter,3.0
+63,woody,3.0
+75,modest,3.0
+75,creamy,3.0
+75,cocoa,3.0
+75,red berry,3.5
+75,rich cocoa,3.5
+63,subtle,3.75
+63,smooth,3.75
+63,earthy,3.75
+63,long,3.75
+147,creamy,1.5
+147,fatty,1.5
+147,very bitter,1.5
+153,berries,2.5
+153,tart,2.5
+153,bitter,2.5
+157,nutty and bitter dominate,2.75
+117,creamy,3.0
+117,rich,3.0
+117,licorice,3.0
+162,creamy,3.25
+162,cherry,3.25
+129,sandy,3.75
+129,vegetal,3.75
+129,cocoa,3.75
+129,creamy,4.0
+129,blueberry,4.0
+129,raspberry,4.0
+395,creamy,3.5
+395,cocoa,3.5
+395,bread,3.5
+327,cocoa dominates,3.75
+327,woodsy,3.75
+370,rich cocoa,3.75
+370,hot spice,3.75
+709,intense sweet,3.25
+709,nut,3.25
+709,orange,3.25
+757,creamy,4.0
+757,honey,4.0
+757,peanut butter,4.0
+931,green,4.0
+931,unripened fruit,4.0
+931,banana,4.0
+1145,yogurt,3.5
+1145,lemon,3.5
+1145,licorice,3.5
+1153,complex,3.5
+1153,herbs,3.5
+1153,fruit,3.5
+1153,dairy,3.5
+1510,intense,4.0
+1510,dark berry,4.0
+1510,grapes,4.0
+1972,intense,3.25
+1972,rich,3.25
+1972,sweet,3.25
+963,sour vanila,2.5
+963,heavy roast,2.5
+963,oily,2.75
+963,"caramel ""rolo""",2.75
+963,sweet,2.75
+404,fatty,2.75
+404,bland,2.75
+404,very astringent,2.75
+404,fatty,2.75
+404,sour,2.75
+404,spoiled,2.75
+404,fatty,2.75
+404,bitter,2.75
+404,sour,2.75
+404,oily,3.0
+404,fatty,3.0
+404,citrus,3.0
+404,oily,3.0
+404,nutty,3.0
+404,fatty,3.0
+404,sandy,3.25
+404,mild citrus,3.25
+404,sweet,3.25
+1470,peanut butter,3.25
+1470,coffee,3.25
+1470,mint,3.25
+1470,complex,3.25
+1470,nibs too soft,3.25
+2186,smokey,2.75
+2186,earthy,2.75
+2186,nutty,2.75
+2186,earthy,3.0
+2186,sour,3.0
+2186,intense,3.0
+2190,dark berry,3.25
+2190,roasty,3.25
+991,sweet,3.25
+991,fruity,3.25
+991,heavy roast,3.25
+1117,mellow fruit,3.75
+1117,tart,3.75
+1117,mild bitter,3.75
+1211,intense,3.25
+1211,cocoa,3.25
+1211,spicy,3.25
+1211,fruit,3.25
+1211,spicy,3.5
+1211,roasty,3.5
+1211,acidic,3.5
+1211,dairy,3.5
+1227,spicy,3.5
+1227,nutmeg,3.5
+1227,brownie,3.5
+2578,earthy,2.75
+2578,harsh,2.75
+2578,acidic,2.75
+2578,roasty,3.0
+2578,berry notes,3.0
+2578,nutty,3.5
+2578,grassy,3.5
+2578,cocoa,3.5
+2578,floral & fruit,3.5
+951,spicy,3.5
+951,dairy,3.5
+1205,sandy,3.0
+1205,sweet,3.0
+1205,nutty,3.0
+153,bland,2.0
+153,mild fruit,2.0
+153,strong bitter,2.0
+153,some fruit,2.0
+153,strong bitter,2.0
+153,cocoa,3.0
+153,earthy,3.0
+153,very astringent,3.0
+153,sticky,3.0
+153,cocoa,3.0
+153,earthy,3.0
+1458,intense,2.75
+1458,tart,2.75
+1458,sour,2.75
+1458,raisin,2.75
+1502,creamy,2.75
+1502,cocoa,2.75
+1502,pungent,2.75
+1458,mild metallic,3.0
+1458,brownie,3.0
+1458,earth,3.0
+1458,intense,3.0
+1458,mild bitter,3.0
+1458,roasty,3.0
+1458,chalky,3.25
+1458,peach,3.25
+1458,bland,3.25
+1720,pungent,2.5
+1720,metallic,2.5
+1720,nutty,2.5
+1720,off notes,2.5
+1724,sweet,3.0
+1724,simple,3.0
+1724,cocoa,3.0
+2178,earthy,2.5
+2178,vanilla,2.5
+2182,vanilla,2.5
+2182,late cocoa notes,2.5
+1756,dry,3.5
+1756,rich,3.5
+1756,roasty,3.5
+1756,grapes,3.5
+1756,pungent,3.5
+2012,earthy,3.0
+2012,roasty,3.0
+2092,nuts,3.0
+2092,fruit,3.0
+2092,poor aftertaste,3.0
+2096,creamy,3.0
+2096,fruit,3.0
+2096,poor aftertaste,3.0
+2626,nutty,3.5
+2626,roasted cherry,3.5
+2626,coffee,3.5
+2626,nutty,3.5
+2626,cocoa,3.5
+2626,yogurt,3.5
+2622,brownie,3.75
+2622,nutty,3.75
+2622,roasty,3.75
+2622,complex,3.75
+2622,mild tobacco,3.75
+2622,nut,3.75
+2622,fruit,3.75
+733,sticky,2.5
+733,dry,2.5
+733,vanilla dominates,2.5
+1169,light color,2.5
+1169,grit,2.5
+1169,metallic,2.5
+1169,slow develop,2.75
+1169,bitter,2.75
+1169,metallic,2.75
+1173,mild,2.75
+1173,metallic,2.75
+1169,sandy,3.25
+1169,sweet,3.25
+1169,coffee,3.25
+457,sandy,3.0
+457,rich,3.0
+457,earthy,3.0
+457,creamy,3.25
+457,earthy,3.25
+457,nutty,3.25
+593,dry,3.0
+593,mild fruit,3.0
+593,dry,3.5
+593,nutty,3.5
+593,cocoa,3.5
+593,smokey,3.75
+593,fruity,3.75
+593,sour,3.75
+1109,fruit,2.25
+1109,strong smoke,2.25
+1109,bitter,2.25
+1227,mild nutty and fruit,3.0
+1227,savory,3.0
+1848,rich cocoa,4.0
+1848,spicy,4.0
+1848,cinamon,4.0
+1912,nutty,3.0
+1912,rubber,3.0
+1912,nutty,3.5
+1912,fig,3.5
+1912,short length,3.5
+1916,strong malt,3.75
+1916,choco pudding,3.75
+2406,flat,3.25
+2406,molasses,3.25
+2406,creamy,3.25
+2346,intense,3.5
+2346,creamy,3.5
+2346,nutty,3.5
+2652,dairy,3.5
+2652,caramel,3.5
+2652,brownie,3.5
+2652,nutty,3.5
+769,brownie,3.5
+769,fruit,3.5
+769,fudge,3.5
+741,nutty,4.0
+741,tart,4.0
+741,coffee,4.0
+825,mild fruit,2.5
+825,chemical off,2.5
+825,roasty,3.0
+825,metallic,3.0
+825,coffee,3.0
+951,melon,3.25
+1042,intense,3.25
+1042,bourbon,3.25
+1042,creamy,3.5
+1042,woody,3.5
+1042,mild metallic,3.5
+1243,sandy,3.0
+1243,intense,3.0
+1243,mild nutty,3.0
+2656,short,3.0
+2656,tart,3.0
+2656,fruit,3.0
+2656,sweet edge,3.0
+1057,salt noticeable,3.0
+1057,vanilla,3.0
+2374,overly sweet,2.75
+2374,dirty,2.75
+2378,coarse,3.0
+2378,sweet,3.0
+2378,candy,3.0
+2378,licorice,3.0
+2374,nutty,3.25
+2374,basic cocoa,3.25
+2522,sandy,3.25
+2522,earthy,3.25
+2522,hint of tang,3.25
+2518,burnt caramel,3.5
+2518,grapes,3.5
+2522,sandy,3.5
+2522,roasty,3.5
+2522,fig,3.5
+2522,late spiciness,3.5
+1948,spciy,2.5
+1948,cardamom,2.5
+1948,off flavor,2.5
+1948,sour milk,2.75
+1948,molasses,2.75
+1948,sweet,2.75
+2618,nutty,3.25
+2618,fruity,3.25
+2618,sweet,3.25
+2618,tart,3.5
+2618,cherry,3.5
+2618,cocoa,3.5
+2618,mild sour,3.5
+2618,sweet,3.5
+2618,rich,3.5
+2618,cocoa,3.5
+2618,fruity,3.5
+2700,sweet,3.0
+2700,tart,3.0
+2700,sour,3.0
+1574,heavy smoke,3.0
+1574,fruit,3.0
+1574,ham,3.0
+1582,very sweet,3.0
+1582,heavy roast,3.0
+1582,nuts,3.0
+1578,nutty,3.25
+1578,earthy,3.25
+1578,hammy,3.25
+1578,sandy,3.25
+1578,mild sour,3.25
+1578,mild fruit,3.25
+1578,sandy,3.25
+1578,nutty,3.25
+1578,mocha,3.25
+1578,rich base cocoa,3.5
+1578,sweet,3.5
+1824,sticky,2.75
+1824,off notes of rubber,2.75
+1824,sticky,2.75
+1824,strong bitter,2.75
+1824,spice,2.75
+1824,melon,3.0
+1824,mild tart,3.0
+1824,bitter,3.0
+1824,fatty,3.0
+1820,sticky,3.5
+1820,mellow choco,3.5
+1820,dairy,3.5
+1824,smoke,3.5
+1824,tart,3.5
+1824,burnt cocoa,3.5
+1880,tobacco,3.5
+1880,over roasted,3.5
+697,oily,3.5
+697,honey,3.5
+697,light rum,3.5
+701,toffee,3.5
+701,caramel,3.5
+701,butterscotch,3.5
+701,intense prune and berry,3.75
+1780,oily,3.25
+1780,sweet,3.25
+1780,choco,3.25
+1780,nutty,3.25
+1716,smokey,3.75
+1716,dried fruit,3.75
+1716,balanced,3.75
+2044,intense earthy,3.0
+2230,fatty,3.0
+2230,herbal,3.0
+2230,earthy,3.0
+2064,sandy,3.25
+2064,basic cocoa,3.25
+2048,large grits,3.75
+2048,sweet,3.75
+2048,dried fruit,3.75
+486,woody,3.0
+486,butterscotch,3.0
+749,dairy,3.0
+749,salt,3.0
+749,caramel,3.0
+781,oily,3.25
+781,subdued,3.25
+781,caramel,3.25
+781,salt,3.25
+749,creamy,3.5
+749,masculine,3.5
+749,earthy,3.5
+647,creamy,3.75
+647,fatty,3.75
+647,mild nutty,3.75
+875,woody,3.0
+875,toast,3.0
+875,pepper,3.0
+879,creamy,3.0
+879,nutty,3.0
+879,bready,3.0
+879,hint of smoke,3.0
+879,fruit,3.0
+879,smooth,3.25
+879,intense blueberry,3.25
+883,creamy,3.25
+883,caramel,3.25
+883,salt,3.25
+883,sweet,3.25
+801,oily,3.5
+801,earthy,3.5
+801,caramel,3.5
+801,salty,3.5
+801,dairy,3.5
+801,burnt caramel,3.5
+801,coffee,3.5
+875,butterscotch,3.5
+875,pepper,3.5
+883,smooth,3.5
+883,spicy,3.5
+883,floral,3.5
+875,spice,3.75
+875,caramel,3.75
+875,toffee,3.75
+875,salty,3.75
+879,strawberry,3.75
+879,cadbury egg,3.75
+1205,waxy,2.75
+1205,cloying,2.75
+1205,vegetal,2.75
+1996,strong nutty,3.75
+1996,marshmallow,3.75
+2036,fatty,3.0
+2036,earthy,3.0
+2036,cocoa,3.0
+2170,fatty,3.25
+2170,mild nuts,3.25
+2170,mild fruit,3.25
+2170,muted,3.5
+2170,roasty,3.5
+2170,accessible,3.5

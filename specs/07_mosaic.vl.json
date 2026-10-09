@@ -1,0 +1,145 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 7. Mosaic chart: one column per maker region. Column width = number of bars from that region. Each column is split into the five rating bands, so the dark top section shows the share of outstanding bars. Regions with fewer than 5% of all bars (Asia, Oceania, Central America & Caribbean, Africa) are combined into 'Other regions' so every column is wide enough to read.",
+  "width": "container",
+  "height": 300,
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [
+    {"filter": "isValid(datum.maker_region) && datum.maker_region != ''"},
+    {"joinaggregate": [{"op": "count", "as": "all_bars"}]},
+    {"joinaggregate": [{"op": "count", "as": "raw_region_n"}], "groupby": ["maker_region"]},
+    {
+      "calculate": "datum.raw_region_n / datum.all_bars < 0.05 ? 'Other regions' : datum.maker_region",
+      "as": "maker_region"
+    },
+    {
+      "aggregate": [{"op": "count", "as": "n"}],
+      "groupby": ["maker_region", "rating_band", "rating_band_order"]
+    },
+    {"joinaggregate": [{"op": "sum", "field": "n", "as": "region_n"}], "groupby": ["maker_region"]},
+    {
+      "stack": "n",
+      "groupby": [],
+      "sort": [
+        {"field": "region_n", "order": "descending"},
+        {"field": "maker_region"},
+        {"field": "rating_band_order"}
+      ],
+      "offset": "normalize",
+      "as": ["cell_x0", "cell_x1"]
+    },
+    {
+      "joinaggregate": [
+        {"op": "min", "field": "cell_x0", "as": "x0"},
+        {"op": "max", "field": "cell_x1", "as": "x1"}
+      ],
+      "groupby": ["maker_region"]
+    },
+    {
+      "stack": "n",
+      "groupby": ["maker_region"],
+      "sort": [{"field": "rating_band_order", "order": "descending"}],
+      "offset": "normalize",
+      "as": ["y0", "y1"]
+    },
+    {"calculate": "datum.n / datum.region_n", "as": "share"},
+    {"calculate": "(datum.x0 + datum.x1) / 2", "as": "x_mid"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rect", "stroke": "#FFFDF9", "strokeWidth": 1.5, "cursor": "pointer"},
+      "encoding": {
+        "x": {"field": "x0", "type": "quantitative", "axis": null, "scale": {"domain": [0, 1]}},
+        "x2": {"field": "x1"},
+        "y": {
+          "field": "y0",
+          "type": "quantitative",
+          "title": "Share of the region's bars",
+          "axis": {"format": ".0%", "tickCount": 5}
+        },
+        "y2": {"field": "y1"},
+        "color": {
+          "field": "rating_band",
+          "type": "nominal",
+          "title": "Rating band",
+          "scale": {
+            "domain": [
+              "Outstanding",
+              "Highly recommended",
+              "Recommended",
+              "Disappointing",
+              "Unpleasant"
+            ],
+            "range": ["#4E2A16", "#8E5531", "#C48A57", "#E0B98A", "#EFD5B2"]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "title": null,
+            "labelLimit": 170,
+            "columns": 3,
+            "offset": 44
+          }
+        },
+        "tooltip": [
+          {"field": "maker_region", "title": "Maker region"},
+          {"field": "rating_band", "title": "Rating band"},
+          {"field": "n", "title": "Bars in this band"},
+          {"field": "share", "title": "Share of the region's bars", "format": ".1%"},
+          {"field": "region_n", "title": "All bars from this region", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Region names under each column. The last (narrow) column is labelled on a second line, right-aligned, so labels never overlap.",
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "max", "field": "x_mid", "as": "x_mid"},
+            {"op": "max", "field": "region_n", "as": "region_n"}
+          ],
+          "groupby": ["maker_region"]
+        },
+        {
+          "window": [{"op": "row_number", "as": "col_rank"}],
+          "sort": [{"field": "region_n", "order": "descending"}]
+        },
+        {"joinaggregate": [{"op": "count", "as": "n_cols"}]}
+      ],
+      "layer": [
+        {
+          "transform": [{"filter": "datum.col_rank < datum.n_cols"}],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "dy": 8,
+            "fontSize": 12,
+            "fontWeight": 600,
+            "color": "#2B1D14"
+          },
+          "encoding": {
+            "x": {"field": "x_mid", "type": "quantitative"},
+            "y": {"datum": 0},
+            "text": {"field": "maker_region"}
+          }
+        },
+        {
+          "transform": [{"filter": "datum.col_rank == datum.n_cols"}],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "top",
+            "dy": 26,
+            "fontSize": 12,
+            "fontWeight": 600,
+            "color": "#2B1D14"
+          },
+          "encoding": {"x": {"datum": 1}, "y": {"datum": 0}, "text": {"field": "maker_region"}}
+        }
+      ]
+    }
+  ],
+  "autosize": {"type": "fit-x", "contains": "padding"}
+}

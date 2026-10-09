@@ -1,0 +1,57 @@
+iso3,bean_country,n_bars,avg_rating
+AUS,Australia,3,3.25
+BLZ,Belize,76,3.234
+BOL,Bolivia,80,3.181
+BRA,Brazil,78,3.263
+CHN,China,1,3.5
+CIV,Côte d'Ivoire,7,2.857
+CMR,Cameroon,3,3.083
+COD,DR Congo,1,3.0
+COG,Congo,11,3.318
+COL,Colombia,79,3.196
+CRI,Costa Rica,43,3.151
+CUB,Cuba,12,3.292
+DOM,Dominican Republic,226,3.216
+ECU,Ecuador,219,3.164
+FJI,Fiji,16,3.062
+GAB,Gabon,1,3.25
+GHA,Ghana,41,3.134
+GRD,Grenada,19,3.026
+GTM,Guatemala,62,3.258
+HND,Honduras,25,3.24
+HTI,Haiti,30,3.267
+IDN,Indonesia,22,3.114
+IND,India,35,3.164
+JAM,Jamaica,24,3.198
+LBR,Liberia,3,3.083
+LCA,St Lucia,10,2.95
+LKA,Sri Lanka,2,2.875
+MDG,Madagascar,177,3.267
+MEX,Mexico,55,3.168
+MMR,Myanmar,1,3.0
+MTQ,Martinique,1,2.75
+MYS,Malaysia,8,3.094
+NGA,Nigeria,3,3.0
+NIC,Nicaragua,100,3.255
+PAN,Panama,9,3.111
+PER,Peru,244,3.198
+PHL,Philippines,24,3.125
+PNG,Papua New Guinea,50,3.28
+PRI,Puerto Rico,7,2.714
+SLB,Solomon Islands,10,3.45
+SLE,Sierra Leone,4,2.75
+SLV,El Salvador,6,3.0
+STP,São Tomé and Príncipe,17,3.103
+SUR,Suriname,1,3.25
+TGO,Togo,3,3.083
+THA,Thailand,5,3.3
+TTO,Trinidad and Tobago,44,3.261
+TWN,Taiwan,2,2.875
+TZA,Tanzania,79,3.234
+UGA,Uganda,19,3.066
+USA,United States,33,3.242
+VCT,St Vincent and the Grenadines,1,2.75
+VEN,Venezuela,253,3.231
+VNM,Vietnam,73,3.288
+VUT,Vanuatu,13,3.115
+WSM,Samoa,3,3.083

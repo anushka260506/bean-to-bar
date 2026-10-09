@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 12. Ridgeline plot: one smoothed 'hill' per group of review years, showing where ratings bunch up. A taller hump means more bars got that score. Hills are shaded by the average rating for those years.",
+  "data": {"url": "data/processed/chocolate.csv"},
+  "transform": [
+    {"joinaggregate": [{"op": "max", "field": "review_year", "as": "last_year"}]},
+    {"calculate": "2006 + floor((datum.review_year - 2006) / 3) * 3", "as": "period_start"},
+    {
+      "calculate": "datum.period_start + '–' + min(datum.period_start + 2, datum.last_year)",
+      "as": "period"
+    },
+    {
+      "joinaggregate": [
+        {"op": "mean", "field": "rating", "as": "period_avg"},
+        {"op": "count", "as": "period_n"}
+      ],
+      "groupby": ["period"]
+    },
+    {
+      "density": "rating",
+      "groupby": ["period", "period_start", "period_avg", "period_n"],
+      "bandwidth": 0.18,
+      "extent": [1, 5],
+      "steps": 160,
+      "as": ["value", "density"]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone",
+    "fillOpacity": 0.92,
+    "stroke": "#FFFDF9",
+    "strokeWidth": 1.2,
+    "cursor": "pointer",
+    "clip": true
+  },
+  "width": 470,
+  "height": 34,
+  "encoding": {
+    "row": {
+      "field": "period",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "period_start"},
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelAnchor": "start",
+        "labelOrient": "left",
+        "labelPadding": 6,
+        "labelFontSize": 12,
+        "labelColor": "#2B1D14"
+      }
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Rating (out of 5)",
+      "scale": {"domain": [1.5, 4.5]},
+      "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false}
+    },
+    "y": {"field": "density", "type": "quantitative", "axis": null, "scale": {"range": [34, -30]}},
+    "fill": {
+      "field": "period_avg",
+      "type": "quantitative",
+      "title": "Average rating",
+      "scale": {"domain": [2.9, 3.35], "range": ["#E0B98A", "#C48A57", "#4E2A16"], "clamp": true},
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "gradientLength": 160,
+        "format": ".2f",
+        "values": [2.9, 3.1, 3.3]
+      }
+    },
+    "tooltip": [
+      {"field": "period", "title": "Review years"},
+      {"field": "period_avg", "title": "Average rating", "format": ".2f"},
+      {"field": "period_n", "title": "Bars reviewed", "format": ","}
+    ]
+  },
+  "config": {"facet": {"spacing": 0}, "view": {"stroke": null}}
+}
