@@ -126,3 +126,21 @@ footer a { color: var(--accent); }
   border: 1px solid var(--rule); border-radius: 6px; padding: 4px 8px;
 }
 .vega-bind input:focus-visible, .vega-bind select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- Full-width dark chocolate header ---------- */
+.hero { background: #2B1D14; color: #F6EFE6; padding: 56px 0 44px; border-bottom: 5px solid var(--accent); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gutter); align-items: end; }
+.hero h1 { color: #FFF8EE; }
+.hero .kicker { color: #E7A867; }
+.hero .lede { color: #E8DCCB; }
+.hero .byline { color: #C9B6A2; }
+.hero-facts { margin-top: 0; }
+.hero-facts .fact { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.16); }
+.hero-facts .fact b { color: #F0C27B; }
+.hero-facts .fact span { color: #E8DCCB; }
+
+/* ---------- One-line takeaway under each chart ---------- */
+.insight { border-top: 1px solid var(--rule); margin: 12px 0 0; padding-top: 10px; font-size: 0.97rem; max-width: none; }
+.insight b { color: var(--accent); }
+
+@media (max-width: 900px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } }
