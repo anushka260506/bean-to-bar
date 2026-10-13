@@ -1,7 +1,7 @@
 # From Bean to Bar: What Makes a Great Chocolate Bar?
 
 A scrollable data story about expert chocolate bar reviews and where cocoa comes from,
-built with Vega-Lite and Vega for FIT3179 Data Visualisation 2 (Monash University).
+built with Vega-Lite and Vega for FIT3179 Data Visualisation 2.
 
 **Author:** Anushka Khunteta · **Created:** October 2026
 
