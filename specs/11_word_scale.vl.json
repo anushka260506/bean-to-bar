@@ -87,7 +87,7 @@
       ],
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#B5652B", "strokeDash": [4, 3], "strokeWidth": 1.5},
+          "mark": {"type": "rule", "color": "#B0304A", "strokeDash": [4, 3], "strokeWidth": 1.5},
           "encoding": {"x": {"field": "avg", "type": "quantitative"}}
         },
         {
@@ -99,7 +99,7 @@
             "dy": -4,
             "fontSize": 12,
             "fontWeight": 600,
-            "color": "#B5652B"
+            "color": "#B0304A"
           },
           "encoding": {
             "x": {"field": "avg", "type": "quantitative"},

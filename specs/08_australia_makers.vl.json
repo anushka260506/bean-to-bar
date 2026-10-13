@@ -71,7 +71,7 @@
     },
     {
       "description": "World average reference line and its label",
-      "mark": {"type": "rule", "color": "#B5652B", "strokeDash": [4, 3], "strokeWidth": 1.5},
+      "mark": {"type": "rule", "color": "#B0304A", "strokeDash": [4, 3], "strokeWidth": 1.5},
       "encoding": {
         "x": {"aggregate": "max", "field": "world_avg", "type": "quantitative"},
         "y": null
@@ -89,7 +89,7 @@
         "baseline": "top",
         "fontSize": 12,
         "fontWeight": 600,
-        "color": "#B5652B"
+        "color": "#B0304A"
       },
       "encoding": {
         "x": {"field": "world_avg", "type": "quantitative"},
@@ -98,5 +98,6 @@
       }
     }
   ],
-  "autosize": {"type": "fit-x", "contains": "padding"}
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "padding": {"left": 24, "right": 6, "top": 6, "bottom": 6}
 }

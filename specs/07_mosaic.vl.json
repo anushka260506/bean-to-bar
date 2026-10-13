@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Chart 7. Mosaic chart: one column per maker region. Column width = number of bars from that region. Each column is split into the five rating bands, so the dark top section shows the share of outstanding bars. Regions with fewer than 5% of all bars (Asia, Oceania, Central America & Caribbean, Africa) are combined into 'Other regions' so every column is wide enough to read.",
   "width": "container",
-  "height": 300,
+  "height": 260,
   "data": {"url": "data/processed/chocolate.csv"},
   "transform": [
     {"filter": "isValid(datum.maker_region) && datum.maker_region != ''"},
@@ -77,9 +77,11 @@
             "direction": "horizontal",
             "symbolType": "square",
             "title": null,
-            "labelLimit": 170,
-            "columns": 3,
-            "offset": 44
+            "labelLimit": 220,
+            "columns": 5,
+            "offset": 62,
+            "columnPadding": 22,
+            "symbolSize": 120
           }
         },
         "tooltip": [
@@ -105,7 +107,11 @@
           "window": [{"op": "row_number", "as": "col_rank"}],
           "sort": [{"field": "region_n", "order": "descending"}]
         },
-        {"joinaggregate": [{"op": "count", "as": "n_cols"}]}
+        {"joinaggregate": [{"op": "count", "as": "n_cols"}]},
+        {
+          "calculate": "[datum.maker_region, format(datum.region_n, ',') + ' bars']",
+          "as": "label_lines"
+        }
       ],
       "layer": [
         {
@@ -122,7 +128,7 @@
           "encoding": {
             "x": {"field": "x_mid", "type": "quantitative"},
             "y": {"datum": 0},
-            "text": {"field": "maker_region"}
+            "text": {"field": "label_lines"}
           }
         },
         {
@@ -131,12 +137,12 @@
             "type": "text",
             "align": "right",
             "baseline": "top",
-            "dy": 26,
+            "dy": 34,
             "fontSize": 12,
             "fontWeight": 600,
             "color": "#2B1D14"
           },
-          "encoding": {"x": {"datum": 1}, "y": {"datum": 0}, "text": {"field": "maker_region"}}
+          "encoding": {"x": {"datum": 1}, "y": {"datum": 0}, "text": {"field": "label_lines"}}
         }
       ]
     }

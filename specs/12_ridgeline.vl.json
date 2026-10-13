@@ -6,7 +6,7 @@
     {"joinaggregate": [{"op": "max", "field": "review_year", "as": "last_year"}]},
     {"calculate": "2006 + floor((datum.review_year - 2006) / 3) * 3", "as": "period_start"},
     {
-      "calculate": "datum.period_start + '–' + min(datum.period_start + 2, datum.last_year)",
+      "calculate": "min(datum.period_start + 2, datum.last_year) == datum.period_start ? '' + datum.period_start : datum.period_start + '–' + min(datum.period_start + 2, datum.last_year)",
       "as": "period"
     },
     {
@@ -20,7 +20,7 @@
       "density": "rating",
       "groupby": ["period", "period_start", "period_avg", "period_n"],
       "bandwidth": 0.18,
-      "extent": [1, 5],
+      "extent": [1.5, 4.5],
       "steps": 160,
       "as": ["value", "density"]
     }
@@ -31,11 +31,10 @@
     "fillOpacity": 0.92,
     "stroke": "#FFFDF9",
     "strokeWidth": 1.2,
-    "cursor": "pointer",
-    "clip": true
+    "cursor": "pointer"
   },
-  "width": 470,
-  "height": 34,
+  "width": 930,
+  "height": 38,
   "encoding": {
     "row": {
       "field": "period",
@@ -59,7 +58,7 @@
       "scale": {"domain": [1.5, 4.5]},
       "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false}
     },
-    "y": {"field": "density", "type": "quantitative", "axis": null, "scale": {"range": [34, -30]}},
+    "y": {"field": "density", "type": "quantitative", "axis": null, "scale": {"range": [38, -34]}},
     "fill": {
       "field": "period_avg",
       "type": "quantitative",

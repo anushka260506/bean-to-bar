@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart 6. Proportional symbol map of chocolate makers: one circle per country where the bars were made. Circle area = number of bars reviewed. Circle colour = average rating (grey = fewer than 5 bars). Australia is outlined in teal.",
+  "width": "container",
+  "height": 330,
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "data/processed/world-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [{"filter": "datum.properties.iso3 != 'ATA'"}],
+      "mark": {"type": "geoshape", "fill": "#EFE7DC", "stroke": "#FFFDF9", "strokeWidth": 0.5}
+    },
+    {
+      "data": {
+        "url": "data/processed/maker_countries.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "n_bars": "number",
+            "n_makers": "number",
+            "avg_rating": "number",
+            "lon": "number",
+            "lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {"filter": "isValid(datum.lon)"},
+        {"joinaggregate": [{"op": "sum", "field": "n_bars", "as": "all_bars"}]},
+        {"calculate": "datum.n_bars / datum.all_bars", "as": "share"},
+        {
+          "calculate": "datum.n_bars >= 5 ? format(datum.avg_rating, '.2f') : format(datum.avg_rating, '.2f') + ' (only ' + datum.n_bars + ' bars)'",
+          "as": "rating_text"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "circle", "opacity": 0.88, "cursor": "pointer"},
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "size": {
+              "field": "n_bars",
+              "type": "quantitative",
+              "title": "Bars made there",
+              "scale": {"range": [12, 2600]},
+              "legend": {
+                "orient": "bottom-left",
+                "values": [10, 100, 500, 1000],
+                "symbolFillColor": "#C9B8A6",
+                "symbolStrokeWidth": 0
+              }
+            },
+            "color": {
+              "condition": {"test": "datum.n_bars < 5", "value": "#CFC4B8"},
+              "field": "avg_rating",
+              "type": "quantitative",
+              "title": "Average rating",
+              "scale": {
+                "domain": [2.8, 3.5],
+                "range": ["#EFD5B2", "#C48A57", "#4E2A16"],
+                "clamp": true
+              },
+              "legend": {
+                "orient": "bottom-right",
+                "direction": "horizontal",
+                "gradientLength": 140,
+                "format": ".1f",
+                "values": [2.8, 3, 3.2, 3.4]
+              }
+            },
+            "stroke": {
+              "condition": {"test": "datum.iso3 == 'AUS'", "value": "#2E7D7A"},
+              "value": "#FFFDF9"
+            },
+            "strokeWidth": {"condition": {"test": "datum.iso3 == 'AUS'", "value": 3}, "value": 1},
+            "order": {"field": "n_bars", "sort": "descending"},
+            "tooltip": [
+              {"field": "maker_country", "title": "Bars made in"},
+              {"field": "n_makers", "title": "Number of makers"},
+              {"field": "n_bars", "title": "Bars reviewed"},
+              {"field": "share", "title": "Share of all bars", "format": ".1%"},
+              {"field": "rating_text", "title": "Average rating"}
+            ]
+          }
+        },
+        {
+          "description": "Label the biggest maker country",
+          "transform": [
+            {"joinaggregate": [{"op": "max", "field": "n_bars", "as": "top"}]},
+            {"filter": "datum.n_bars == datum.top"},
+            {
+              "calculate": "datum.maker_country + ': ' + format(datum.n_bars, ',') + ' bars (' + format(datum.share, '.0%') + ' of all)'",
+              "as": "label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 28,
+            "dy": 4,
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2B1D14"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "text": {"field": "label"}
+          }
+        },
+        {
+          "description": "Label Australia",
+          "transform": [
+            {"filter": "datum.iso3 == 'AUS'"},
+            {
+              "calculate": "datum.maker_country + ': ' + format(datum.n_bars, ',') + ' bars (' + format(datum.share, '.0%') + ' of all)'",
+              "as": "label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -14,
+            "dy": -14,
+            "fontSize": 12.5,
+            "fontWeight": 700,
+            "color": "#2E7D7A"
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "text": {"field": "label"}
+          }
+        }
+      ]
+    }
+  ]
+}

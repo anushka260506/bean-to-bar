@@ -25,6 +25,6 @@ const CHOC_THEME = {
 const CHOC_COLOURS = {
   bands: ["Outstanding", "Highly recommended", "Recommended", "Disappointing", "Unpleasant"],
   bandColours: ["#4E2A16", "#8E5531", "#C48A57", "#E0B98A", "#EFD5B2"],
-  accent: "#B5652B",
+  accent: "#B0304A",
   australia: "#2E7D7A"
 };
