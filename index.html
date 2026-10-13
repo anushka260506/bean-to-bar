@@ -19,15 +19,24 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
 </head>
 <body>
-<div class="page">
-
-  <!-- ===================== HEADER ===================== -->
-  <header class="hero">
-    <p class="kicker">Product reviews · A data story</p>
+<header class="hero">
+  <div class="page hero-grid">
+    <div class="hero-text">
+<p class="kicker">Product reviews · A data story</p>
     <h1>From Bean to Bar</h1>
     <p class="lede">What makes a great chocolate bar? We look at thousands of expert reviews and the countries where cocoa grows to find out.</p>
     <p class="byline">By Anushka Khunteta · Created October 2026 · FIT3179 Data Visualisation, Monash University</p>
-  </header>
+    </div>
+        <div class="facts hero-facts">
+          <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
+          <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
+          <div class="fact"><b>1</b><span>expert taster</span></div>
+        </div>
+  </div>
+</header>
+<div class="page">
+
+
 
   <!-- ===================== SECTION 1 ===================== -->
   <section class="section" id="s1">
@@ -37,16 +46,12 @@
         <p>One expert has tasted and rated <span data-fact="bars">2,500</span> dark chocolate bars since 2006. How many of them are actually worth buying?</p>
         <p>Each bar is scored from 1 to 5. Anything from 4 up is <b>outstanding</b>, and anything under 3 is <b>disappointing</b>.</p>
         <p>The answer: only about <b>4 in every 100 bars</b> reach outstanding, while about <b>1 in 5</b> is a disappointment.</p>
-        <div class="facts">
-          <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
-          <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
-          <div class="fact"><b>1</b><span>expert taster</span></div>
-        </div>
       </div>
       <figure class="chart span-7" id="c01">
         <h3>Out of every 100 bars, how many are outstanding?</h3>
         <p class="chart-intro">Each square stands for 1 in every 100 bars reviewed. Darker squares are better bars.</p>
         <div class="vis" id="vis01"></div>
+        <p class="insight"><b>Key insight:</b> Only about 4 in every 100 bars are outstanding. Almost three quarters land in the two middle bands.</p>
         <figcaption class="source">Data: Flavors of Cacao chocolate database (Brady Brelinski).</figcaption>
       </figure>
     </div>
@@ -63,6 +68,7 @@
         <h3>Average rating by the country where the beans grew</h3>
         <p class="chart-intro">Darker countries produced better-rated bars. Drag the slider to see only recent reviews.</p>
         <div class="vis" id="vis02"><div class="pending">Chart 2 · Choropleth map · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> The top-rated beans come from small growers such as the Solomon Islands, Vietnam and Papua New Guinea, not from West Africa's giant producers.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
     </div>
@@ -103,6 +109,7 @@
         <h3>Where Australian makers get their beans</h3>
         <p class="chart-intro">Each line joins a bean country to the maker's country. Thicker lines mean more bars. Pick another maker country from the list.</p>
         <div class="vis" id="vis05"><div class="pending">Chart 5 · Flow map · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> Papua New Guinea supplies more Australian-made bars than any other country, and about a third of them use beans from our Pacific neighbours.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
     </div>
@@ -111,12 +118,14 @@
         <h3>Where are the makers? Continent, then country</h3>
         <p class="chart-intro">Each box is one country where chocolate makers are based. Bigger boxes mean more bars reviewed. Darker boxes mean better average ratings. Hover over a box for details.</p>
         <div class="vis" id="vis06"><div class="pending">Chart 6 · Treemap · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> The United States alone makes about 45% of all the bars reviewed.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
       <figure class="chart span-6" id="c07">
         <h3>Which regions make the most outstanding bars?</h3>
         <p class="chart-intro">Each column is a maker region, and wider columns mean more bars. Each column is split by rating band, so the dark strip at the top shows the share of outstanding bars. Regions with under 5% of all bars are grouped as “Other regions”.</p>
         <div class="vis" id="vis07"><div class="pending">Chart 7 · Mosaic chart · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> Europe has the biggest share of outstanding bars (6%), ahead of North America (4%).</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
     </div>
@@ -125,6 +134,7 @@
         <h3>Australia's chocolate makers</h3>
         <p class="chart-intro">Each dot is an Australian maker's average rating. The line runs from the average of all bars, so dots to the right beat the average. Makers with only one or two bars reviewed are less certain.</p>
         <div class="vis" id="vis08"><div class="pending">Chart 8 · Bar chart · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> Half of Australia's makers beat the all-bar average. The Smooth Chocolator does it across 17 bars, the most of any Australian maker.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
       <aside class="callout aus span-5">
@@ -145,12 +155,14 @@
         <h3>Is darker chocolate better?</h3>
         <p class="chart-intro">Each column is a cocoa content band and adds up to 100%. Read across the top row to compare how often each band produces an outstanding bar.</p>
         <div class="vis" id="vis09"><div class="pending">Chart 9 · Heatmap · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> Bars with 80% cocoa or more are the most likely to disappoint (about 4 in 10) and are almost never outstanding.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
       <figure class="chart span-6" id="c10">
         <h3>Which recipes score best?</h3>
         <p class="chart-intro">Each row is a recipe used in at least 20 bars. Filled dots show the ingredients it contains. The bar shows the average rating, and the best recipe is at the top.</p>
         <div class="vis" id="vis10"><div class="pending">Chart 10 · Recipe matrix · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> The simplest recipes score best. Recipes with added vanilla sit near the bottom.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
     </div>
@@ -167,6 +179,7 @@
         <h3>Words used for the best and worst bars</h3>
         <p class="chart-intro">These are the 24 words the taster used most often. Words further right describe better-rated bars. Bigger dots mean the word was used more often.</p>
         <div class="vis" id="vis11"><div class="pending">Chart 11 · Word scale · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> “Creamy”, “rich” and “cocoa” describe the best bars, while “bitter” and “vanilla” describe the worst.</p>
         <figcaption class="source">Data: Flavors of Cacao ("most memorable characteristics").</figcaption>
       </figure>
     </div>
@@ -183,12 +196,14 @@
         <h3>How ratings have shifted over the years</h3>
         <p class="chart-intro">Each hill shows how ratings were spread in a group of years. A taller hump means more bars got that score. Darker hills have a higher average rating.</p>
         <div class="vis" id="vis12"><div class="pending">Chart 12 · Ridgeline plot · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> The hills have moved right: the average rating rose from 3.03 in 2006–2008 to 3.32 in the latest reviews.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
       <figure class="chart span-5" id="c13">
         <h3>How many bars were reviewed each year</h3>
         <p class="chart-intro">Years with fewer reviews tell us less, so keep this in mind when reading the hills beside it.</p>
         <div class="vis" id="vis13"><div class="pending">Chart 13 · Line chart · coming in Step 6</div></div>
+        <p class="insight"><b>Key insight:</b> Reviews peaked in 2015. Years with fewer reviews give less reliable averages.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
     </div>
