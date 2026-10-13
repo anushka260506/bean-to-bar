@@ -10,7 +10,7 @@
   --ink:       #2B1D14;   /* dark chocolate: headings and body text */
   --muted:     #6E5A4B;   /* captions, sources, axis labels */
   --rule:      #E3D6C6;   /* thin lines and borders */
-  --accent:    #B5652B;   /* caramel: highlights and annotations */
+  --accent:    #B0304A;   /* raspberry: highlights and annotations, stands out from the browns */
   --aus:       #2E7D7A;   /* teal: always means "Australia" on every chart */
 
   /* Rating scale, light to dark (one hue, so it is colour-blind safe) */
@@ -49,7 +49,7 @@ body {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: var(--gutter);
   margin-bottom: var(--gutter);
-  align-items: start;
+  align-items: stretch;   /* cards side by side get the same height, so no ragged gaps */
 }
 .span-3  { grid-column: span 3; }
 .span-4  { grid-column: span 4; }
@@ -95,7 +95,7 @@ p  { margin: 0 0 0.8em; max-width: 68ch; }
 }
 
 /* ---------- Callout boxes (takeaways, spotlight) ---------- */
-.callout { background: #FBF3E6; border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 16px 18px; }
+.callout { background: #FBF1F2; border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 16px 18px; }
 .callout.aus { border-left-color: var(--aus); background: #EEF6F5; }
 .callout h3 { margin-bottom: 6px; }
 
@@ -131,7 +131,7 @@ footer a { color: var(--accent); }
 .hero { background: #2B1D14; color: #F6EFE6; padding: 56px 0 44px; border-bottom: 5px solid var(--accent); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gutter); align-items: end; }
 .hero h1 { color: #FFF8EE; }
-.hero .kicker { color: #E7A867; }
+.hero .kicker { color: #F2A3B1; }
 .hero .lede { color: #E8DCCB; }
 .hero .byline { color: #C9B6A2; }
 .hero-facts { margin-top: 0; }
@@ -140,7 +140,19 @@ footer a { color: var(--accent); }
 .hero-facts .fact span { color: #E8DCCB; }
 
 /* ---------- One-line takeaway under each chart ---------- */
-.insight { border-top: 1px solid var(--rule); margin: 12px 0 0; padding-top: 10px; font-size: 0.97rem; max-width: none; }
-.insight b { color: var(--accent); }
+.insight { margin: 14px 0 0; padding: 2px 0 2px 12px; border-left: 3px solid var(--accent); font-size: 0.98rem; font-weight: 600; color: var(--ink); max-width: none; }
 
 @media (max-width: 900px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Wide charts scroll inside their card on small screens instead of making the page scroll sideways */
+.vis.wide { overflow-x: auto; }
+.vis.wide svg { overflow: hidden; }
+
+/* Australia spotlight: big numbers fill the card next to the chart */
+.spotlight { display: flex; flex-direction: column; gap: 6px; }
+.spot-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 8px 0 12px; }
+.spot-stats div { background: #FFFFFF; border-radius: 8px; padding: 10px 12px; }
+.spot-stats b { display: block; font-family: var(--font-display); font-size: 1.9rem; line-height: 1.1; color: var(--aus); }
+.spot-stats span { font-size: var(--size-small); color: var(--muted); }
+.spot-list { font-size: 0.93rem; color: var(--muted); margin-top: auto; padding-top: 10px; border-top: 1px solid #CFE3E1; }
+.spot-list b { color: var(--ink); }

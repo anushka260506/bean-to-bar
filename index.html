@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>From Bean to Bar: What Makes a Great Chocolate Bar?</title>
   <meta name="author" content="Anushka Khunteta">
-  <meta name="description" content="A data story about 2,700 expert chocolate bar reviews and where cocoa comes from. FIT3179 Data Visualisation 2.">
+  <meta name="description" content="A data story about thousands of expert chocolate bar reviews and where cocoa comes from.">
 
   <!-- Fonts: Fraunces (headings) + Source Sans 3 (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,38 +19,38 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
 </head>
 <body>
+
+<!-- ===================== HEADER ===================== -->
 <header class="hero">
   <div class="page hero-grid">
     <div class="hero-text">
-<p class="kicker">Product reviews · A data story</p>
-    <h1>From Bean to Bar</h1>
-    <p class="lede">What makes a great chocolate bar? We look at thousands of expert reviews and the countries where cocoa grows to find out.</p>
+      <p class="kicker">Product reviews · A data story</p>
+      <h1>From Bean to Bar</h1>
+      <p class="lede">I love dark chocolate, but I never know if the $12 bar is actually better than the $4 one. So I went through thousands of expert reviews to find out what really makes a good bar.</p>
     </div>
-        <div class="facts hero-facts">
-          <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
-          <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
-          <div class="fact"><b>1</b><span>expert taster</span></div>
-        </div>
+    <div class="facts hero-facts">
+      <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
+      <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
+      <div class="fact"><b>1</b><span>very busy taster</span></div>
+    </div>
   </div>
 </header>
+
 <div class="page">
-
-
 
   <!-- ===================== SECTION 1 ===================== -->
   <section class="section" id="s1">
     <div class="row">
       <div class="span-5">
         <h2 class="section-head"><span class="num">1</span>The verdict on <span data-fact="bars">2,500</span> bars</h2>
-        <p>One expert has tasted and rated <span data-fact="bars">2,500</span> dark chocolate bars since 2006. How many of them are actually worth buying?</p>
-        <p>Each bar is scored from 1 to 5. Anything from 4 up is <b>outstanding</b>, and anything under 3 is <b>disappointing</b>.</p>
-        <p>The answer: only about <b>4 in every 100 bars</b> reach outstanding, while about <b>1 in 5</b> is a disappointment.</p>
+        <p>Since 2006, one taster, Brady Brelinski, has rated <span data-fact="bars">2,500</span> dark chocolate bars on a scale from 1 to 5. A 4 or above means outstanding. Anything under 3 is a disappointment.</p>
+        <p>I expected lots of great bars. There aren't. Only about <b>4 in every 100</b> make it to outstanding, and roughly <b>1 in 5</b> lets you down.</p>
       </div>
       <figure class="chart span-7" id="c01">
         <h3>Out of every 100 bars, how many are outstanding?</h3>
-        <p class="chart-intro">Each square stands for 1 in every 100 bars reviewed. Darker squares are better bars.</p>
+        <p class="chart-intro">Each square is 1% of all the bars reviewed. Darker squares are better bars.</p>
         <div class="vis" id="vis01"></div>
-        <p class="insight"><b>Key insight:</b> Only about 4 in every 100 bars are outstanding. Almost three quarters land in the two middle bands.</p>
+        <p class="insight">Most bars are fine rather than amazing. Nearly three quarters land in the two middle groups.</p>
         <figcaption class="source">Data: Flavors of Cacao chocolate database (Brady Brelinski).</figcaption>
       </figure>
     </div>
@@ -60,39 +60,31 @@
   <section class="section" id="s2">
     <div class="section-head">
       <h2><span class="num">2</span>Where do the beans come from?</h2>
-      <p>Cocoa only grows in a narrow belt near the equator. Do the countries that grow the most cocoa also grow the best?</p>
+      <p>Cocoa only grows in a narrow strip either side of the equator. I wanted to know if the places that grow the most cocoa also grow the best.</p>
     </div>
     <div class="row">
       <figure class="chart span-12" id="c02">
         <h3>Average rating by the country where the beans grew</h3>
-        <p class="chart-intro">Darker countries produced better-rated bars. Drag the slider to see only recent reviews.</p>
-        <div class="vis" id="vis02"><div class="pending">Chart 2 · Choropleth map · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> The top-rated beans come from small growers such as the Solomon Islands, Vietnam and Papua New Guinea, not from West Africa's giant producers.</p>
+        <p class="chart-intro">Darker countries made better-rated bars. The colour scale only runs from 2.8 to 3.5, because that's where almost every country sits, so small gaps look bigger than they are. Hover to see how many bars each average is based on (grey means fewer than 5). The slider lets you look at recent reviews only.</p>
+        <div class="vis" id="vis02"></div>
+        <p class="insight">Of the countries with at least 20 bars, Vietnam, Papua New Guinea and Madagascar come out on top. West Africa, where most of the world's cocoa comes from, sits below the average.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
     </div>
     <div class="row">
-      <figure class="chart span-8" id="c03">
-        <h3>Who grows the most cocoa?</h3>
-        <p class="chart-intro">Bigger circles mean more cocoa grown. Circle colour shows the average rating of bars made from that country's beans.</p>
-        <div class="vis" id="vis03"><div class="pending">Chart 3 · Proportional symbol map<br>Appears once the newest FAO production figures are added</div></div>
-        <figcaption class="source">Data: FAOSTAT, Food and Agriculture Organization of the United Nations; Flavors of Cacao.</figcaption>
+      <figure class="chart span-7" id="c03">
+        <h3>Big growers, small presence</h3>
+        <p class="chart-intro">On the left is each country's share of all the cocoa grown in 2024. On the right is how often its beans show up in the bars reviewed. A rising line means craft makers love it more than its size would suggest.</p>
+        <div class="vis" id="vis03"></div>
+        <p class="insight">Côte d'Ivoire grows over a third of the world's cocoa, yet it's in fewer than 1 in 100 of these bars. Venezuela is the opposite: under 1% of the cocoa, but about 1 in 10 bars.</p>
+        <figcaption class="source">Data: FAOSTAT (FAO), 2024, via Our World in Data; Flavors of Cacao.</figcaption>
       </figure>
-      <aside class="callout span-4">
-        <h3>The takeaway</h3>
-        <p>Great beans often come from small growers. Papua New Guinea, Vietnam and Madagascar all beat the 3.20 average. Côte d'Ivoire grows about a third of the world's cocoa, yet its few reviewed bars average only 2.86.</p>
-      </aside>
-    </div>
-    <div class="row">
-      <div class="span-5">
-        <p>Do the biggest growers make the best chocolate? The chart on the right compares how much cocoa each country grows with how well its bars are rated.</p>
-        <p>The countries growing the most cocoa are not the ones with the best-rated beans. Most of the world's cocoa goes into everyday chocolate, not craft bars.</p>
-      </div>
-      <figure class="chart span-7" id="c04">
-        <h3>Big growers vs top-rated growers</h3>
-        <p class="chart-intro">Each dot is a cocoa-growing country. Further right means it grows more cocoa, and higher up means its beans make better-rated bars.</p>
-        <div class="vis" id="vis04"><div class="pending">Chart 4 · Scatterplot<br>Appears once the newest FAO production figures are added</div></div>
-        <figcaption class="source">Data: FAOSTAT; Flavors of Cacao.</figcaption>
+      <figure class="chart span-5" id="c04">
+        <h3>Do the biggest growers make the best bars?</h3>
+        <p class="chart-intro">Each dot is a growing country with at least 5 bars reviewed. Further right means it grows more cocoa. Higher up means its bars score better.</p>
+        <div class="vis" id="vis04"></div>
+        <p class="insight">Not really. The three biggest growers here all fall below the 3.20 average, and the best scores come from countries growing under 50,000 tonnes a year.</p>
+        <figcaption class="source">Data: FAOSTAT (FAO), 2024, via Our World in Data; Flavors of Cacao.</figcaption>
       </figure>
     </div>
   </section>
@@ -101,44 +93,53 @@
   <section class="section" id="s3">
     <div class="section-head">
       <h2><span class="num">3</span>Who makes the bars?</h2>
-      <p>Beans rarely become bars where they are grown. They travel across the world to craft makers, including several here in Australia.</p>
+      <p>Most beans leave the country they're grown in. They end up with small craft makers, mostly in the US and Europe, but there are a handful here in Australia too.</p>
     </div>
     <div class="row">
       <figure class="chart span-12" id="c05">
         <h3>Where Australian makers get their beans</h3>
-        <p class="chart-intro">Each line joins a bean country to the maker's country. Thicker lines mean more bars. Pick another maker country from the list.</p>
-        <div class="vis" id="vis05"><div class="pending">Chart 5 · Flow map · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> Papua New Guinea supplies more Australian-made bars than any other country, and about a third of them use beans from our Pacific neighbours.</p>
+        <p class="chart-intro">Lines join the country where the beans grew to the country where the bar was made. A thicker line means more bars. You can switch to another maker country from the menu below the map.</p>
+        <div class="vis" id="vis05"></div>
+        <p class="insight">Papua New Guinea supplies more Australian bars than anywhere else, and about a third of our makers' beans come from Pacific neighbours.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
     </div>
     <div class="row">
-      <figure class="chart span-6" id="c06">
-        <h3>Where are the makers? Continent, then country</h3>
-        <p class="chart-intro">Each box is one country where chocolate makers are based. Bigger boxes mean more bars reviewed. Darker boxes mean better average ratings. Hover over a box for details.</p>
-        <div class="vis" id="vis06"><div class="pending">Chart 6 · Treemap · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> The United States alone makes about 45% of all the bars reviewed.</p>
-        <figcaption class="source">Data: Flavors of Cacao.</figcaption>
+      <figure class="chart span-12" id="c06">
+        <h3>Where the makers are</h3>
+        <p class="chart-intro">Bigger circles mean more bars were made in that country. Darker circles score better on average. Australia has a teal ring.</p>
+        <div class="vis" id="vis06"></div>
+        <p class="insight">The United States alone made about 45% of all the bars reviewed. Australia is small, but it holds its own on quality.</p>
+        <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
-      <figure class="chart span-6" id="c07">
+    </div>
+    <div class="row">
+      <figure class="chart span-12" id="c07">
         <h3>Which regions make the most outstanding bars?</h3>
-        <p class="chart-intro">Each column is a maker region, and wider columns mean more bars. Each column is split by rating band, so the dark strip at the top shows the share of outstanding bars. Regions with under 5% of all bars are grouped as “Other regions”.</p>
-        <div class="vis" id="vis07"><div class="pending">Chart 7 · Mosaic chart · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> Europe has the biggest share of outstanding bars (6%), ahead of North America (4%).</p>
+        <p class="chart-intro">Wider columns mean more bars. The dark strip at the top is the share rated outstanding. Asia, Oceania, Africa and Central America are grouped as "Other regions" because each is small.</p>
+        <div class="vis" id="vis07"></div>
+        <p class="insight">Europe has the biggest outstanding strip, about 6% of its bars, against about 4% for North America.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
     </div>
     <div class="row">
       <figure class="chart span-7" id="c08">
         <h3>Australia's chocolate makers</h3>
-        <p class="chart-intro">Each dot is an Australian maker's average rating. The line runs from the average of all bars, so dots to the right beat the average. Makers with only one or two bars reviewed are less certain.</p>
-        <div class="vis" id="vis08"><div class="pending">Chart 8 · Bar chart · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> Half of Australia's makers beat the all-bar average. The Smooth Chocolator does it across 17 bars, the most of any Australian maker.</p>
+        <p class="chart-intro">Each dot is one Australian maker. The line starts at the average for all bars, so a dot on the right is above average. Treat makers with only one or two bars with care.</p>
+        <div class="vis" id="vis08"></div>
+        <p class="insight">Half of our makers beat the average. The Smooth Chocolator does it over 17 bars, more than any other Australian maker.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
-      <aside class="callout aus span-5">
+      <aside class="callout aus spotlight span-5">
         <h3>Spotlight: Australia</h3>
-        <p>Australian makers average <b>3.36</b>, above the 3.20 average for all bars. They lean on our neighbours: 19 of their 48 single-origin bars use beans from Oceania, such as Papua New Guinea, Vanuatu and the Solomon Islands.</p>
+        <div class="spot-stats">
+          <div><b data-fact="au-makers">12</b><span>makers</span></div>
+          <div><b data-fact="au-bars">53</b><span>bars reviewed</span></div>
+          <div><b data-fact="au-avg">3.36</b><span>average rating</span></div>
+        </div>
+        <p>That average is above the <span data-fact="all-avg">3.20</span> for every bar in the database, so Australian chocolate punches above its weight.</p>
+        <p>Our makers also buy close to home. Papua New Guinea, Vanuatu and the Solomon Islands are some of their favourite origins.</p>
+        <p class="spot-list"><b>Most-used bean origins</b><br>Papua New Guinea (7 bars) · Madagascar (6) · Vanuatu (4) · Ecuador (4) · Solomon Islands (4)</p>
       </aside>
     </div>
   </section>
@@ -147,21 +148,21 @@
   <section class="section" id="s4">
     <div class="section-head">
       <h2><span class="num">4</span>What's inside the bar?</h2>
-      <p>Is darker chocolate better? And do extras like vanilla or added cocoa butter help or hurt?</p>
+      <p>The wrapper usually tells you two things: how much cocoa is in it, and what else went in. Does either of them matter?</p>
     </div>
     <div class="row">
       <figure class="chart span-6" id="c09">
         <h3>Is darker chocolate better?</h3>
-        <p class="chart-intro">Each column is a cocoa content band and adds up to 100%. Read across the top row to compare how often each band produces an outstanding bar.</p>
-        <div class="vis" id="vis09"><div class="pending">Chart 9 · Heatmap · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> Bars with 80% cocoa or more are the most likely to disappoint (about 4 in 10) and are almost never outstanding.</p>
+        <p class="chart-intro">Each column is a cocoa band and adds up to 100%. Read along the top row to see which band gives the most outstanding bars.</p>
+        <div class="vis" id="vis09"></div>
+        <p class="insight">Going really dark doesn't pay off. At 80% and above, about 4 in 10 bars disappoint and almost none are outstanding.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
       <figure class="chart span-6" id="c10">
         <h3>Which recipes score best?</h3>
-        <p class="chart-intro">Each row is a recipe used in at least 20 bars. Filled dots show the ingredients it contains. The bar shows the average rating, and the best recipe is at the top.</p>
-        <div class="vis" id="vis10"><div class="pending">Chart 10 · Recipe matrix · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> The simplest recipes score best. Recipes with added vanilla sit near the bottom.</p>
+        <p class="chart-intro">Each row is a recipe used in at least 20 bars. Filled dots show what's in it, and the best recipe is at the top.</p>
+        <div class="vis" id="vis10"></div>
+        <p class="insight">Beans, sugar and cocoa butter is the winning recipe. The ones with added vanilla sit near the bottom.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
     </div>
@@ -171,14 +172,14 @@
   <section class="section" id="s5">
     <div class="section-head">
       <h2><span class="num">5</span>How do experts describe great chocolate?</h2>
-      <p>Every review lists the bar's most memorable qualities. Some words keep appearing on the best bars.</p>
+      <p>For every bar, the taster notes down a few words he remembers about it. Some words keep turning up on the good ones.</p>
     </div>
     <div class="row">
       <figure class="chart span-12" id="c11">
         <h3>Words used for the best and worst bars</h3>
-        <p class="chart-intro">These are the 24 words the taster used most often. Words further right describe better-rated bars. Bigger dots mean the word was used more often.</p>
-        <div class="vis" id="vis11"><div class="pending">Chart 11 · Word scale · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> “Creamy”, “rich” and “cocoa” describe the best bars, while “bitter” and “vanilla” describe the worst.</p>
+        <p class="chart-intro">These are the 24 words he used most. Words further right describe better bars, and a bigger dot means the word comes up more often.</p>
+        <div class="vis" id="vis11"></div>
+        <p class="insight">If a review says creamy, rich or cocoa, it's probably a good bar. Bitter and vanilla are warning signs.</p>
         <figcaption class="source">Data: Flavors of Cacao ("most memorable characteristics").</figcaption>
       </figure>
     </div>
@@ -188,37 +189,44 @@
   <section class="section" id="s6">
     <div class="section-head">
       <h2><span class="num">6</span>Has chocolate got better over time?</h2>
-      <p>Craft chocolate has boomed since 2006. Have the ratings risen with it? Mostly, yes: bars reviewed in 2006–2008 averaged 3.03, while bars from the most recent reviews average 3.32.</p>
+      <p>Craft chocolate has really taken off since 2006. Have the ratings gone up with it?</p>
     </div>
     <div class="row">
-      <figure class="chart span-7" id="c12">
+      <figure class="chart span-12" id="c12">
         <h3>How ratings have shifted over the years</h3>
-        <p class="chart-intro">Each hill shows how ratings were spread in a group of years. A taller hump means more bars got that score. Darker hills have a higher average rating.</p>
-        <div class="vis" id="vis12"><div class="pending">Chart 12 · Ridgeline plot · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> The hills have moved right: the average rating rose from 3.03 in 2006–2008 to 3.32 in the latest reviews.</p>
+        <p class="chart-intro">Each hill shows how the scores were spread over a few years. A taller hump means more bars got that score, and darker hills have a higher average.</p>
+        <div class="vis wide" id="vis12"></div>
+        <p class="insight">Yes, slowly. The hills drift to the right, and the average went from 3.03 in 2006–2008 to 3.32 in the latest reviews.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
-      <figure class="chart span-5" id="c13">
+    </div>
+    <div class="row">
+      <figure class="chart span-7" id="c13">
         <h3>How many bars were reviewed each year</h3>
-        <p class="chart-intro">Years with fewer reviews tell us less, so keep this in mind when reading the hills beside it.</p>
-        <div class="vis" id="vis13"><div class="pending">Chart 13 · Line chart · coming in Step 6</div></div>
-        <p class="insight"><b>Key insight:</b> Reviews peaked in 2015. Years with fewer reviews give less reliable averages.</p>
+        <p class="chart-intro">Some years had far fewer reviews, so their averages are less reliable.</p>
+        <div class="vis" id="vis13"></div>
+        <p class="insight">Reviews peaked in 2015, with 284 bars tasted that year.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
       </figure>
+      <aside class="callout span-5">
+        <h3>A note on the data</h3>
+        <p>All of these ratings come from one person, so in the end they reflect his taste. I think that's actually a strength: every bar was judged the same way, by someone who has tasted thousands of them.</p>
+        <p>It also means a single bar can move a small country's average a lot. That's why the charts point out when a number is based on only a few bars.</p>
+      </aside>
     </div>
   </section>
 
   <!-- ===================== SECTION 7 ===================== -->
   <section class="section" id="s7">
     <div class="section-head">
-      <h2><span class="num">7</span>Your chocolate aisle guide</h2>
-      <p>Four things to look for next time you buy a bar.</p>
+      <h2><span class="num">7</span>My chocolate aisle guide</h2>
+      <p>Four things I'll look for next time I'm standing in front of the chocolate shelf.</p>
     </div>
     <div class="row">
-      <aside class="callout span-3"><h3>Aim for 65–79% cocoa</h3><p>Bars with 80% or more were disappointing almost 4 times in 10 and were almost never outstanding.</p></aside>
-      <aside class="callout span-3"><h3>Keep it simple</h3><p>Beans, sugar and cocoa butter scored best. Recipes with added vanilla scored lowest.</p></aside>
-      <aside class="callout span-3"><h3>Choose a single origin</h3><p>Blends of beans from several countries averaged 3.04, below the 3.21 for single-origin bars.</p></aside>
-      <aside class="callout span-3"><h3>Try Pacific beans</h3><p>Papua New Guinea, Vietnam and the Solomon Islands are among the best-rated origins, right on Australia's doorstep.</p></aside>
+      <aside class="callout span-3"><h3>Stay between 65% and 79%</h3><p>Above 80% cocoa, about 4 in 10 bars disappoint.</p></aside>
+      <aside class="callout span-3"><h3>Keep it simple</h3><p>Beans, sugar and cocoa butter. I'd skip bars with added vanilla.</p></aside>
+      <aside class="callout span-3"><h3>Pick a single origin</h3><p>Blends averaged 3.04, while single-origin bars averaged 3.21.</p></aside>
+      <aside class="callout span-3"><h3>Try Pacific beans</h3><p>Papua New Guinea, Vietnam and the Solomon Islands are among the best rated, and they're right next door.</p></aside>
     </div>
   </section>
 
@@ -229,13 +237,13 @@
         <h3>Data sources</h3>
         <ul>
           <li>Chocolate bar ratings: Brady Brelinski, <a href="https://flavorsofcacao.com/chocolate_database.html">Flavors of Cacao chocolate database</a> (<span data-fact="data-note">version to be confirmed</span>).</li>
-          <li>Cocoa bean production: <a href="https://www.fao.org/faostat/en/#data/QCL">FAOSTAT, Crops and livestock products</a>, Food and Agriculture Organization of the United Nations.</li>
+          <li>Cocoa bean production, 2024: <a href="https://www.fao.org/faostat/en/#data/QCL">FAOSTAT</a>, Food and Agriculture Organization of the United Nations, via <a href="https://ourworldindata.org/grapher/cocoa-bean-production">Our World in Data</a>.</li>
           <li>Country shapes: <a href="https://www.naturalearthdata.com/">Natural Earth</a>, via <a href="https://github.com/topojson/world-atlas">world-atlas</a>.</li>
         </ul>
       </div>
       <div class="span-6">
         <h3>About this page</h3>
-        <p>Created by Anushka Khunteta, October 2026, for FIT3179 Data Visualisation. Charts and maps built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://vega.github.io/vega/">Vega</a>. Chart specifications are in the <a href="specs/">specs folder</a> of this repository.</p>
+        <p>Created by Anushka Khunteta, October 2026, for FIT3179 Data Visualisation. Charts and maps built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a>. Chart specifications are in the <a href="specs/">specs folder</a> of this repository.</p>
         <p><b>Use of AI:</b> Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the data files and check the grammar of the text. All design choices and final text were reviewed by the author.</p>
       </div>
     </div>

@@ -247,7 +247,9 @@ summary.to_csv(OUT / "bean_country_summary.csv", index=False)
 # ---------------------------------------------------------------------------
 # 4. FAO cocoa bean production (if downloaded)
 # ---------------------------------------------------------------------------
-fao_file = RAW / "fao_cocoa_production.csv"
+fao_file = RAW / "fao_cocoa_production.csv"                 # direct FAOSTAT download
+owid_file = RAW / "fao_cocoa_production_owid_2024.csv"     # FAOSTAT figures as published by Our World in Data
+fao = None
 if fao_file.exists():
     fao = pd.read_csv(fao_file)
     fao = fao[(fao["Element"] == "Production") & (fao["Item"].str.contains("Cocoa", case=False))]
@@ -259,15 +261,61 @@ if fao_file.exists():
             if c: return c.alpha_3
         return to_iso3(row["Area"])
     fao["iso3"] = fao.apply(fao_iso3, axis=1)
-    fao = fao.dropna(subset=["iso3", "Value"])
-    fao = fao.rename(columns={"Year": "year", "Value": "tonnes"})[["iso3", "year", "tonnes"]]
-    fao = fao.groupby(["iso3", "year"], as_index=False)["tonnes"].sum()
+    fao = fao.dropna(subset=["iso3", "Value"]).rename(columns={"Year": "year", "Value": "tonnes"})
+elif owid_file.exists():
+    fao = pd.read_csv(owid_file).rename(columns={"code": "iso3", "cocoa_beans_production_tonnes": "tonnes"})
+    fao = fao[fao["iso3"].str.len() == 3]        # drop regions such as "World" or "Africa"
+
+if fao is not None:
+    fao = fao[["iso3", "year", "tonnes"]].groupby(["iso3", "year"], as_index=False)["tonnes"].sum()
     fao["country"] = fao["iso3"].map(display_name)
     fao = fao.merge(pts[["iso3", "lon", "lat"]], on="iso3", how="left")
     fao.to_csv(OUT / "fao_cocoa_production.csv", index=False)
     print(f"FAO: {fao['iso3'].nunique()} countries, years {fao['year'].min()}–{fao['year'].max()}")
+
+    # Growers compared: share of the world's cocoa vs share of the single-origin bars reviewed
+    latest = fao[fao["year"] == fao["year"].max()].copy()
+    latest["world_share"] = latest["tonnes"] / latest["tonnes"].sum()
+    single = df.dropna(subset=["bean_iso3"])
+    bar_share = single.groupby("bean_iso3").size() / len(single)
+    latest["bar_share"] = latest["iso3"].map(bar_share).fillna(0)
+    top = set(latest.nlargest(6, "world_share")["iso3"]) | set(latest.nlargest(5, "bar_share")["iso3"])
+    comp = latest[latest["iso3"].isin(top)].copy()
+    comp["direction"] = comp.apply(lambda r: "More popular with craft makers" if r["bar_share"] > r["world_share"]
+                                   else "Less popular with craft makers", axis=1)
+
+    def spread(values, gap, rounds=200):
+        """Push label positions apart (both up and down) until they are at least `gap` apart."""
+        pos = list(values)
+        order = sorted(range(len(pos)), key=lambda i: pos[i])
+        for _ in range(rounds):
+            moved = False
+            for a, b in zip(order, order[1:]):
+                d = pos[b] - pos[a]
+                if d < gap:
+                    shift = (gap - d) / 2
+                    pos[a] -= shift; pos[b] += shift; moved = True
+            if not moved:
+                break
+        return pos
+    # Only label the end of a line where the share is big enough to matter (5% or more); the rest show on hover
+    for side, col in [("left", "world_share"), ("right", "bar_share")]:
+        show = comp[col] >= 0.05
+        gap = max(comp["world_share"].max(), comp["bar_share"].max()) * 0.05   # both sides share one scale
+        comp[f"label_{side}"] = None
+        comp.loc[show, f"label_{side}"] = spread(list(comp.loc[show, col]), gap)
+    comp = comp[["iso3", "country", "year", "tonnes", "world_share", "bar_share", "direction", "label_left", "label_right"]]
+    comp.sort_values("world_share", ascending=False).to_csv(OUT / "grower_compare.csv", index=False)
 else:
-    print("NOTE: FAO file not found yet (data/raw/fao_cocoa_production.csv). Skipping production data.")
+    print("NOTE: no FAO file found in data/raw. Skipping production data.")
+
+# Makers by country, for the maker map
+makers = (df.dropna(subset=["maker_iso3"]).groupby(["maker_iso3", "maker_country", "maker_region"])
+            .agg(n_bars=("rating", "size"), avg_rating=("rating", "mean"), n_makers=("maker", "nunique"))
+            .reset_index().rename(columns={"maker_iso3": "iso3"}))
+makers["avg_rating"] = makers["avg_rating"].round(3)
+makers = makers.merge(pts[["iso3", "lon", "lat"]], on="iso3", how="left")
+makers.to_csv(OUT / "maker_countries.csv", index=False)
 
 # Keep the year slider on the choropleth in step with the newest review year
 spec_path = ROOT / "specs" / "02_choropleth.vl.json"

@@ -87,7 +87,7 @@
       }
     },
     {
-      "description": "Annotation: circle and label the top-rated bean country (at least 10 bars). It moves with the slider.",
+      "description": "Annotation: circle and label the top-rated bean country with at least 20 bars reviewed. It moves with the slider.",
       "data": {"url": "data/processed/chocolate.csv"},
       "transform": [
         {
@@ -100,7 +100,7 @@
           ],
           "groupby": ["bean_iso3", "bean_country"]
         },
-        {"filter": "datum.n_bars >= 10"},
+        {"filter": "datum.n_bars >= 20"},
         {
           "window": [{"op": "row_number", "as": "rank"}],
           "sort": [{"field": "avg_rating", "order": "descending"}]
@@ -115,7 +115,7 @@
           }
         },
         {
-          "calculate": "'Top rated: ' + datum.bean_country + ' (' + format(datum.avg_rating, '.2f') + ')'",
+          "calculate": "'Top rated: ' + datum.bean_country + ' (' + format(datum.avg_rating, '.2f') + ', ' + datum.n_bars + ' bars)'",
           "as": "label"
         }
       ],
@@ -129,7 +129,7 @@
             "type": "circle",
             "size": 260,
             "fillOpacity": 0,
-            "stroke": "#B5652B",
+            "stroke": "#B0304A",
             "strokeWidth": 2
           }
         },
