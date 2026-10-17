@@ -1,15 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 7. Mosaic chart: one column per maker region. Column width = number of bars from that region. Each column is split into the five rating bands, so the dark top section shows the share of outstanding bars. Regions with fewer than 5% of all bars (Asia, Oceania, Central America & Caribbean, Africa) are combined into 'Other regions' so every column is wide enough to read.",
+  "description": "Chart 7. Mosaic chart: one column per maker region. Column width = number of bars from that region. Each column is split into the five rating bands, so the dark top section shows the share of outstanding bars. The four small regions (Asia, Oceania, Central America & Caribbean, Africa) are combined into 'Other regions' so every column is wide enough to read.",
   "width": "container",
   "height": 260,
   "data": {"url": "data/processed/chocolate.csv"},
   "transform": [
     {"filter": "isValid(datum.maker_region) && datum.maker_region != ''"},
-    {"joinaggregate": [{"op": "count", "as": "all_bars"}]},
-    {"joinaggregate": [{"op": "count", "as": "raw_region_n"}], "groupby": ["maker_region"]},
     {
-      "calculate": "datum.raw_region_n / datum.all_bars < 0.05 ? 'Other regions' : datum.maker_region",
+      "calculate": "indexof(['North America', 'Europe', 'South America'], datum.maker_region) < 0 ? 'Other regions' : datum.maker_region",
       "as": "maker_region"
     },
     {
@@ -137,7 +135,7 @@
             "type": "text",
             "align": "right",
             "baseline": "top",
-            "dy": 34,
+            "dy": 40,
             "fontSize": 12,
             "fontWeight": 600,
             "color": "#2B1D14"

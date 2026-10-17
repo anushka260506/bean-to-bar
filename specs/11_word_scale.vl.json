@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 11. Tasting words: the 24 words used most often to describe bars, sorted by the average rating of the bars they describe. Each line starts at the average for all bars, so words on the right side belong to better-than-average bars. Dot size = how many bars the word describes.",
+  "description": "Chart 11. Tasting words: the 25 words used most often to describe bars, sorted by the average rating of the bars they describe. Each line starts at the average for all bars, so words on the right side belong to better-than-average bars. Dot size = how many bars the word describes.",
   "width": "container",
   "height": {"step": 17},
   "autosize": {"type": "fit-x", "contains": "padding"},
@@ -21,7 +21,7 @@
           "window": [{"op": "row_number", "as": "rank"}],
           "sort": [{"field": "n_bars", "order": "descending"}]
         },
-        {"filter": "datum.rank <= 24"}
+        {"filter": "datum.rank <= 25"}
       ],
       "encoding": {
         "y": {

@@ -49,7 +49,7 @@ print(r[r["count"] >= 20].sort_values("mean", ascending=False).round(3))
 
 print("\n== Section 5 ==")
 w = pd.read_csv(P / "tasting_words.csv").groupby("word").rating.agg(["mean", "count"])
-top = w.sort_values("count", ascending=False).head(24).sort_values("mean")
+top = w.sort_values("count", ascending=False).head(25).sort_values("mean")
 print("lowest:", top.head(3).round(2).to_dict("index"))
 print("highest:", top.tail(3).round(2).to_dict("index"))
 
