@@ -44,6 +44,7 @@ Preview locally: `python -m http.server 8000`, then open http://localhost:8000
   mosaic, heatmap, recipe matrix (UpSet-style), ridgeline. Basic: scatter, two lollipop charts, line.
 - 3 map idioms: choropleth (02), flow map (05), proportional symbol map (06).
 - The treemap was removed on tutor feedback and replaced by the maker map (06).
+- Layout follows the unit's two-column grid template in places: text in a side column next to the chart (mosaic 07 and tasting words 11), alternating sides.
 
 ## What is done
 
