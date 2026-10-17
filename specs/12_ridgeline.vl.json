@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 12. Ridgeline plot: one smoothed 'hill' per group of review years, showing where ratings bunch up. A taller hump means more bars got that score. Hills are shaded by the average rating for those years.",
+  "description": "Chart 12. Ridgeline plot: one smoothed 'hill' per group of review years, showing where ratings bunch up. A taller hump means more bars got that score. A thin baseline joins each hill to its year label, and a white line with a number marks that period's average rating, so you can see the hills move right over time.",
   "data": {"url": "data/processed/chocolate.csv"},
   "transform": [
     {"joinaggregate": [{"op": "max", "field": "review_year", "as": "last_year"}]},
@@ -25,17 +25,7 @@
       "as": ["value", "density"]
     }
   ],
-  "mark": {
-    "type": "area",
-    "interpolate": "monotone",
-    "fillOpacity": 0.92,
-    "stroke": "#FFFDF9",
-    "strokeWidth": 1.2,
-    "cursor": "pointer"
-  },
-  "width": 930,
-  "height": 38,
-  "encoding": {
+  "facet": {
     "row": {
       "field": "period",
       "type": "nominal",
@@ -46,37 +36,125 @@
         "labelAlign": "left",
         "labelAnchor": "start",
         "labelOrient": "left",
-        "labelPadding": 6,
+        "labelPadding": 12,
         "labelFontSize": 12,
         "labelColor": "#2B1D14"
       }
-    },
-    "x": {
-      "field": "value",
-      "type": "quantitative",
-      "title": "Rating (out of 5)",
-      "scale": {"domain": [1.5, 4.5]},
-      "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false}
-    },
-    "y": {"field": "density", "type": "quantitative", "axis": null, "scale": {"range": [38, -34]}},
-    "fill": {
-      "field": "period_avg",
-      "type": "quantitative",
-      "title": "Average rating",
-      "scale": {"domain": [2.9, 3.35], "range": ["#E0B98A", "#C48A57", "#4E2A16"], "clamp": true},
-      "legend": {
-        "orient": "bottom",
-        "direction": "horizontal",
-        "gradientLength": 160,
-        "format": ".2f",
-        "values": [2.9, 3.1, 3.3]
+    }
+  },
+  "spacing": 0,
+  "spec": {
+    "width": 930,
+    "height": 38,
+    "layer": [
+      {
+        "description": "Baseline that joins the year label to its hill",
+        "mark": {"type": "rule", "color": "#C9B8A6", "strokeWidth": 1},
+        "encoding": {"y": {"datum": 0, "type": "quantitative", "axis": null}}
+      },
+      {
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "fillOpacity": 0.92,
+          "stroke": "#FFFDF9",
+          "strokeWidth": 1.2,
+          "cursor": "pointer"
+        },
+        "encoding": {
+          "x": {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Rating (out of 5)",
+            "scale": {"domain": [1.5, 4.5]},
+            "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false}
+          },
+          "y": {
+            "field": "density",
+            "type": "quantitative",
+            "axis": null,
+            "scale": {"range": [38, -34]}
+          },
+          "fill": {
+            "field": "period_avg",
+            "type": "quantitative",
+            "title": "Average rating",
+            "scale": {
+              "domain": [2.9, 3.35],
+              "range": ["#E0B98A", "#C48A57", "#4E2A16"],
+              "clamp": true
+            },
+            "legend": {
+              "orient": "bottom",
+              "direction": "horizontal",
+              "gradientLength": 160,
+              "format": ".2f",
+              "values": [2.9, 3.1, 3.3]
+            }
+          },
+          "tooltip": [
+            {"field": "period", "title": "Review years"},
+            {"field": "period_avg", "title": "Average rating", "format": ".2f"},
+            {"field": "period_n", "title": "Bars reviewed", "format": ","}
+          ]
+        }
+      },
+      {
+        "description": "Average rating for the period: a white line through the hill",
+        "transform": [
+          {
+            "aggregate": [
+              {"op": "max", "field": "period_avg", "as": "period_avg"},
+              {"op": "max", "field": "density", "as": "peak"}
+            ],
+            "groupby": ["period"]
+          }
+        ],
+        "mark": {"type": "rule", "color": "#FFFDF9", "strokeWidth": 2, "strokeDash": [3, 2]},
+        "encoding": {
+          "x": {
+            "field": "period_avg",
+            "type": "quantitative",
+            "title": "Rating (out of 5)",
+            "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false},
+            "scale": {"domain": [1.5, 4.5]}
+          },
+          "y": {"field": "peak", "type": "quantitative", "axis": null},
+          "y2": {"datum": 0}
+        }
+      },
+      {
+        "description": "The average written at the right-hand end of each row",
+        "transform": [
+          {
+            "aggregate": [{"op": "max", "field": "period_avg", "as": "period_avg"}],
+            "groupby": ["period"]
+          },
+          {"calculate": "'average ' + format(datum.period_avg, '.2f')", "as": "avg_label"}
+        ],
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "bottom",
+          "dy": -3,
+          "fontSize": 11.5,
+          "fontWeight": 600,
+          "color": "#2B1D14"
+        },
+        "encoding": {
+          "x": {
+            "datum": 4.5,
+            "type": "quantitative",
+            "title": "Rating (out of 5)",
+            "axis": {"values": [1.5, 2, 2.5, 3, 3.5, 4, 4.5], "grid": false},
+            "scale": {"domain": [1.5, 4.5]}
+          },
+          "y": {"datum": 0, "type": "quantitative", "axis": null},
+          "text": {"field": "avg_label"}
+        }
       }
-    },
-    "tooltip": [
-      {"field": "period", "title": "Review years"},
-      {"field": "period_avg", "title": "Average rating", "format": ".2f"},
-      {"field": "period_n", "title": "Bars reviewed", "format": ","}
     ]
   },
+  "resolve": {"scale": {"y": "shared"}},
   "config": {"facet": {"spacing": 0}, "view": {"stroke": null}}
 }
