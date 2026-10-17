@@ -59,6 +59,9 @@ OVERRIDES = {
     "U.K.": "GBR", "UK": "GBR", "Scotland": "GBR", "Wales": "GBR", "England": "GBR", "Northern Ireland": "GBR",
     "U.A.E.": "ARE", "UAE": "ARE", "Amsterdam": "NLD", "Netherlands": "NLD",
     "Martinique": "MTQ", "Puerto Rico": "PRI", "Turkey": "TUR",
+    # Names used in the 2026 export
+    "France (Martinique)": "MTQ", "France (Reunion)": "REU", "U.S.A. (Puerto Rico)": "PRI",
+    "Nicaraqua": "NIC",   # spelling mistake in the source
 }
 # Short, familiar display names for an Australian audience.
 DISPLAY = {
@@ -229,6 +232,7 @@ ISLANDS = pd.DataFrame([
     ("MTQ", -61.02, 14.64), ("WSM", -172.10, -13.76), ("SGP", 103.82, 1.35), ("TTO", -61.22, 10.45),
     ("DMA", -61.37, 15.41), ("MUS", 57.55, -20.35), ("PRI", -66.50, 18.22), ("FJI", 178.07, -17.71),
     ("VUT", 167.95, -15.38), ("SLB", 160.16, -9.64), ("BRB", -59.54, 13.19), ("COM", 43.87, -11.88),
+    ("REU", 55.54, -21.12),
 ], columns=["iso3", "lon", "lat"])
 pts = pd.concat([pts[~pts["iso3"].isin(ISLANDS["iso3"])], ISLANDS], ignore_index=True)
 pts["country"] = pts["iso3"].map(display_name)

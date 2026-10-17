@@ -1,57 +1,59 @@
 iso3,bean_country,n_bars,avg_rating
 AUS,Australia,3,3.25
-BLZ,Belize,76,3.234
-BOL,Bolivia,80,3.181
-BRA,Brazil,78,3.263
-CHN,China,1,3.5
+BEN,Benin,1,2.75
+BLZ,Belize,86,3.241
+BOL,Bolivia,85,3.171
+BRA,Brazil,83,3.256
+CHN,China,2,3.0
 CIV,Côte d'Ivoire,7,2.857
-CMR,Cameroon,3,3.083
+CMR,Cameroon,4,2.938
 COD,DR Congo,1,3.0
 COG,Congo,11,3.318
-COL,Colombia,79,3.196
-CRI,Costa Rica,43,3.151
-CUB,Cuba,12,3.292
-DOM,Dominican Republic,226,3.216
-ECU,Ecuador,219,3.164
+COL,Colombia,89,3.18
+CRI,Costa Rica,46,3.147
+CUB,Cuba,15,3.233
+DOM,Dominican Republic,244,3.222
+ECU,Ecuador,230,3.176
 FJI,Fiji,16,3.062
 GAB,Gabon,1,3.25
-GHA,Ghana,41,3.134
-GRD,Grenada,19,3.026
-GTM,Guatemala,62,3.258
-HND,Honduras,25,3.24
-HTI,Haiti,30,3.267
-IDN,Indonesia,22,3.114
-IND,India,35,3.164
-JAM,Jamaica,24,3.198
+GHA,Ghana,48,3.141
+GRD,Grenada,21,3.048
+GTM,Guatemala,69,3.254
+HND,Honduras,30,3.192
+HTI,Haiti,38,3.217
+IDN,Indonesia,28,3.134
+IND,India,46,3.207
+JAM,Jamaica,27,3.204
 LBR,Liberia,3,3.083
 LCA,St Lucia,10,2.95
 LKA,Sri Lanka,2,2.875
-MDG,Madagascar,177,3.267
-MEX,Mexico,55,3.168
+MDG,Madagascar,198,3.263
+MEX,Mexico,75,3.14
 MMR,Myanmar,1,3.0
-MTQ,Martinique,1,2.75
-MYS,Malaysia,8,3.094
+MTQ,Martinique,2,2.625
+MYS,Malaysia,10,3.05
 NGA,Nigeria,3,3.0
-NIC,Nicaragua,100,3.255
+NIC,Nicaragua,109,3.257
 PAN,Panama,9,3.111
-PER,Peru,244,3.198
-PHL,Philippines,24,3.125
+PER,Peru,289,3.215
+PHL,Philippines,32,3.156
 PNG,Papua New Guinea,50,3.28
-PRI,Puerto Rico,7,2.714
+PRI,Puerto Rico,9,2.778
+REU,Réunion,1,2.75
 SLB,Solomon Islands,10,3.45
 SLE,Sierra Leone,4,2.75
-SLV,El Salvador,6,3.0
+SLV,El Salvador,8,2.969
 STP,São Tomé and Príncipe,17,3.103
 SUR,Suriname,1,3.25
 TGO,Togo,3,3.083
-THA,Thailand,5,3.3
-TTO,Trinidad and Tobago,44,3.261
-TWN,Taiwan,2,2.875
-TZA,Tanzania,79,3.234
-UGA,Uganda,19,3.066
-USA,United States,33,3.242
+THA,Thailand,12,3.271
+TTO,Trinidad and Tobago,46,3.239
+TWN,Taiwan,3,2.833
+TZA,Tanzania,95,3.268
+UGA,Uganda,27,3.176
+USA,United States,40,3.244
 VCT,St Vincent and the Grenadines,1,2.75
-VEN,Venezuela,253,3.231
-VNM,Vietnam,73,3.288
-VUT,Vanuatu,13,3.115
+VEN,Venezuela,271,3.225
+VNM,Vietnam,90,3.236
+VUT,Vanuatu,15,3.083
 WSM,Samoa,3,3.083
