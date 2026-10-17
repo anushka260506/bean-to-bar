@@ -78,9 +78,9 @@
             "symbolType": "square",
             "title": null,
             "labelLimit": 220,
-            "columns": 5,
+            "columns": 3,
             "offset": 62,
-            "columnPadding": 22,
+            "columnPadding": 16,
             "symbolSize": 120
           }
         },

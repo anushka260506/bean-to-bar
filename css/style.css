@@ -174,3 +174,8 @@ footer a { color: var(--accent); }
 /* Big maps sit straight on the page instead of inside a card */
 .chart.bare { background: transparent; border: none; padding: 0; }
 .chart.bare .insight { max-width: 760px; }
+
+/* Text beside a chart, like the unit's two-column grid template */
+.side-text { align-self: center; padding: 8px 4px; }
+.side-text h3 { font-size: 1.35rem; margin-bottom: 10px; }
+.side-text p { color: var(--ink); }
