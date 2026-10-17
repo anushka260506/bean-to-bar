@@ -4,6 +4,7 @@ ARG,-64.738,-34.57,Argentina,South America
 AUS,134.225,-25.618,Australia,Oceania
 AUT,14.06,47.621,Austria,Europe
 BEL,4.588,50.653,Belgium,Europe
+BEN,2.336,9.642,Benin,Africa
 BLZ,-88.704,17.195,Belize,Central America & Caribbean
 BOL,-64.655,-16.704,Bolivia,South America
 BRA,-53.173,-10.655,Brazil,South America
@@ -24,11 +25,13 @@ DNK,9.303,56.21,Denmark,Europe
 DOM,-70.462,18.885,Dominican Republic,Central America & Caribbean
 ECU,-78.384,-1.454,Ecuador,South America
 ESP,-3.624,40.321,Spain,Europe
+EST,25.831,58.641,Estonia,Europe
 FIN,26.142,64.261,Finland,Europe
 FJI,178.07,-17.71,Fiji,Oceania
 FRA,2.349,46.559,France,Europe
 GAB,11.687,-0.647,Gabon,Africa
 GBR,-2.566,53.769,United Kingdom,Europe
+GEO,43.499,42.168,Georgia,Asia
 GHA,-1.237,7.923,Ghana,Africa
 GRD,-61.68,12.12,Grenada,Central America & Caribbean
 GTM,-90.372,15.696,Guatemala,Central America & Caribbean
@@ -65,6 +68,8 @@ PNG,144.322,-6.645,Papua New Guinea,Oceania
 POL,19.344,52.134,Poland,Europe
 PRI,-66.5,18.22,Puerto Rico,Central America & Caribbean
 PRT,-8.061,39.607,Portugal,Europe
+REU,55.54,-21.12,Réunion,Africa
+ROU,24.954,45.853,Romania,Europe
 RUS,95.718,65.943,Russia,Europe
 SGP,103.82,1.35,Singapore,Asia
 SLB,160.16,-9.64,Solomon Islands,Oceania

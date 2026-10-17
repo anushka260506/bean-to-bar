@@ -3,62 +3,68 @@ ARE,United Arab Emirates,Asia,5,3.4,1,54.2,23.871
 ARG,Argentina,South America,9,3.306,2,-64.738,-34.57
 AUS,Australia,Oceania,53,3.358,12,134.225,-25.618
 AUT,Austria,Europe,30,3.258,3,14.06,47.621
-BEL,Belgium,Europe,63,3.103,14,4.588,50.653
+BEL,Belgium,Europe,78,3.064,22,4.588,50.653
+BEN,Benin,Africa,1,2.75,1,2.336,9.642
 BOL,Bolivia,South America,2,3.25,1,-64.655,-16.704
-BRA,Brazil,South America,25,3.28,10,-53.173,-10.655
-CAN,Canada,North America,177,3.304,32,-97.859,58.45
-CHE,Switzerland,Europe,44,3.318,10,8.116,46.793
+BRA,Brazil,South America,27,3.269,11,-53.173,-10.655
+CAN,Canada,North America,193,3.313,36,-97.859,58.45
+CHE,Switzerland,Europe,47,3.303,12,8.116,46.793
 CHL,Chile,South America,2,3.75,1,-71.238,-35.882
-COL,Colombia,South America,29,3.198,8,-73.073,3.916
-CRI,Costa Rica,Central America & Caribbean,9,3.139,3,-84.173,9.966
+CHN,China,Asia,10,3.175,5,103.424,36.748
+COL,Colombia,South America,31,3.194,10,-73.073,3.916
+CRI,Costa Rica,Central America & Caribbean,10,3.075,4,-84.173,9.966
 CZE,Czechia,Europe,3,3.0,2,15.343,49.78
-DEU,Germany,Europe,42,3.208,11,10.27,51.077
-DNK,Denmark,Europe,31,3.339,4,9.303,56.21
+DEU,Germany,Europe,52,3.245,11,10.27,51.077
+DNK,Denmark,Europe,35,3.364,4,9.303,56.21
 DOM,Dominican Republic,Central America & Caribbean,11,3.114,4,-70.462,18.885
 ECU,Ecuador,South America,58,3.039,17,-78.384,-1.454
-ESP,Spain,Europe,36,3.264,8,-3.624,40.321
+ESP,Spain,Europe,42,3.256,12,-3.624,40.321
+EST,Estonia,Europe,1,3.25,1,25.831,58.641
 FIN,Finland,Europe,2,3.25,2,26.142,64.261
 FJI,Fiji,Oceania,4,3.25,1,178.07,-17.71
-FRA,France,Europe,176,3.259,25,2.349,46.559
-GBR,United Kingdom,Europe,145,3.083,33,-2.566,53.769
+FRA,France,Europe,193,3.242,33,2.349,46.559
+GBR,United Kingdom,Europe,150,3.093,34,-2.566,53.769
+GEO,Georgia,Asia,1,3.0,1,43.499,42.168
 GHA,Ghana,Africa,1,2.75,1,-1.237,7.923
 GRD,Grenada,Central America & Caribbean,3,2.833,1,-61.68,12.12
 GTM,Guatemala,Central America & Caribbean,10,3.35,2,-90.372,15.696
-HND,Honduras,Central America & Caribbean,6,3.208,1,-86.593,14.825
-HUN,Hungary,Europe,26,3.221,3,19.343,47.204
-IND,India,Asia,2,2.625,2,79.54,22.819
-IRL,Ireland,Europe,5,2.9,2,-8.017,53.172
+HND,Honduras,Central America & Caribbean,7,3.143,2,-86.593,14.825
+HUN,Hungary,Europe,30,3.242,4,19.343,47.204
+IND,India,Asia,3,2.833,3,79.54,22.819
+IRL,Ireland,Europe,7,2.964,2,-8.017,53.172
 ISL,Iceland,Europe,4,3.312,1,-18.765,65.08
 ISR,Israel,Asia,9,3.25,1,35.001,31.479
-ITA,Italy,Europe,78,3.231,12,12.367,43.428
-JPN,Japan,Asia,31,3.129,12,136.713,36.008
+ITA,Italy,Europe,91,3.236,14,12.367,43.428
+JAM,Jamaica,Central America & Caribbean,1,2.75,1,-77.324,18.138
+JPN,Japan,Asia,46,3.136,13,136.713,36.008
 KOR,South Korea,Asia,11,3.182,6,127.82,36.419
 LCA,St Lucia,Central America & Caribbean,3,2.75,2,-60.98,13.91
-LTU,Lithuania,Europe,8,3.125,1,23.888,55.283
+LTU,Lithuania,Europe,11,3.227,2,23.888,55.283
 MDG,Madagascar,Africa,17,3.147,6,46.729,-19.301
-MEX,Mexico,North America,10,3.1,7,-102.223,23.913
+MEX,Mexico,North America,19,3.053,12,-102.223,23.913
 MTQ,Martinique,Central America & Caribbean,1,2.75,1,-61.02,14.64
-MYS,Malaysia,Asia,3,2.833,1,114.668,3.548
-NIC,Nicaragua,Central America & Caribbean,10,3.1,3,-85.021,12.847
-NLD,Netherlands,Europe,20,3.238,6,5.5,52.293
+MYS,Malaysia,Asia,5,2.85,2,114.668,3.548
+NIC,Nicaragua,Central America & Caribbean,11,3.159,3,-85.021,12.847
+NLD,Netherlands,Europe,27,3.185,7,5.5,52.293
 NOR,Norway,Europe,3,3.333,1,12.368,64.086
 NZL,New Zealand,Oceania,27,3.213,7,170.597,-43.962
-PER,Peru,South America,23,3.076,11,-74.431,-9.147
+PER,Peru,South America,26,3.135,13,-74.431,-9.147
 PHL,Philippines,Asia,5,3.15,2,121.55,15.742
 POL,Poland,Europe,8,3.375,2,19.344,52.134
 PRI,Puerto Rico,Central America & Caribbean,4,2.625,3,-66.5,18.22
 PRT,Portugal,Europe,3,2.75,1,-8.061,39.607
+ROU,Romania,Europe,2,3.75,1,24.954,45.853
 RUS,Russia,Europe,3,3.25,2,95.718,65.943
 SGP,Singapore,Asia,15,3.2,2,103.82,1.35
-SLV,El Salvador,Central America & Caribbean,3,3.0,1,-88.872,13.726
+SLV,El Salvador,Central America & Caribbean,5,2.95,3,-88.872,13.726
 STP,São Tomé and Príncipe,Africa,8,2.844,2,6.61,0.19
 SUR,Suriname,South America,1,3.25,1,-55.911,4.12
-SWE,Sweden,Europe,6,3.0,4,16.109,62.419
-THA,Thailand,Asia,5,3.3,2,101.002,14.981
+SWE,Sweden,Europe,10,3.15,5,16.109,62.419
+THA,Thailand,Asia,9,3.306,4,101.002,14.981
 TWN,Taiwan,Asia,10,3.1,3,120.972,23.739
-USA,United States,North America,1136,3.191,252,-98.734,39.868
+USA,United States,North America,1276,3.194,276,-98.734,39.868
 VCT,St Vincent and the Grenadines,Central America & Caribbean,1,2.75,1,-61.2,13.25
-VEN,Venezuela,South America,31,3.113,5,-66.153,7.161
-VNM,Vietnam,Asia,16,3.359,4,106.333,16.556
+VEN,Venezuela,South America,32,3.094,6,-66.153,7.161
+VNM,Vietnam,Asia,18,3.264,4,106.333,16.556
 VUT,Vanuatu,Oceania,4,2.75,1,167.95,-15.38
 ZAF,South Africa,Africa,4,2.75,3,25.158,-28.923
