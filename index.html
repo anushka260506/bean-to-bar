@@ -26,13 +26,17 @@
     <div class="hero-text">
       <p class="kicker">Product reviews · A data story</p>
       <h1>From Bean to Bar</h1>
-      <p class="lede">I love dark chocolate, but I never know if the $12 bar is actually better than the $4 one. So I went through thousands of expert reviews to find out what really makes a good bar.</p>
+      <p class="lede">Is a $12 bar of dark chocolate really better than a $4 one? I went through thousands of expert reviews to find out what actually makes a good bar.</p>
+      <p class="hero-line"><b data-fact="bars">2,500</b> bars · <b data-fact="bean-countries">60</b> bean countries · one very busy taster</p>
     </div>
-    <div class="facts hero-facts">
-      <div class="fact"><b data-fact="bars">2,500</b><span>bars reviewed</span></div>
-      <div class="fact"><b data-fact="bean-countries">60</b><span>countries grew the beans</span></div>
-      <div class="fact"><b>1</b><span>very busy taster</span></div>
-    </div>
+    <svg class="hero-bar" viewBox="0 0 220 150" role="img" aria-label="Drawing of a chocolate bar with a bite taken out of the corner">
+      <path d="M18 22 h172 a8 8 0 0 1 8 8 v58 q-14 -6 -20 6 q-12 2 -14 16 q-10 4 -8 18 h-138 a8 8 0 0 1 -8 -8 v-90 a8 8 0 0 1 8 -8 z" fill="#6B3E26" stroke="#3A2015" stroke-width="3" stroke-linejoin="round"/>
+      <g fill="none" stroke="#3A2015" stroke-width="2.5" opacity="0.75">
+        <path d="M18 64 h165"/><path d="M18 104 h145"/><path d="M62 22 v106"/><path d="M106 22 v106"/><path d="M150 22 v98"/>
+      </g>
+      <g fill="#8E5531" opacity="0.55"><rect x="24" y="28" width="32" height="30" rx="4"/><rect x="68" y="28" width="32" height="30" rx="4"/><rect x="112" y="28" width="32" height="30" rx="4"/><rect x="24" y="70" width="32" height="28" rx="4"/></g>
+      <circle cx="190" cy="104" r="3" fill="#3A2015"/><circle cx="178" cy="122" r="2.2" fill="#3A2015"/>
+    </svg>
   </div>
 </header>
 
@@ -44,7 +48,7 @@
       <div class="span-5">
         <h2 class="section-head"><span class="num">1</span>The verdict on <span data-fact="bars">2,500</span> bars</h2>
         <p>Since 2006, one taster, Brady Brelinski, has rated <span data-fact="bars">2,500</span> dark chocolate bars on a scale from 1 to 5. A 4 or above means outstanding. Anything under 3 is a disappointment.</p>
-        <p>I expected lots of great bars. There aren't. Only about <b>4 in every 100</b> make it to outstanding, and roughly <b>1 in 5</b> lets you down.</p>
+        <p>You'd expect plenty of great bars. There aren't. Only about <b>4 in every 100</b> make it to outstanding, and roughly <b>1 in 5</b> lets you down.</p>
       </div>
       <figure class="chart span-7" id="c01">
         <h3>Out of every 100 bars, how many are outstanding?</h3>
@@ -63,9 +67,9 @@
       <p>Cocoa only grows in a narrow strip either side of the equator. I wanted to know if the places that grow the most cocoa also grow the best.</p>
     </div>
     <div class="row">
-      <figure class="chart span-12" id="c02">
+      <figure class="chart bare span-12" id="c02">
         <h3>Average rating by the country where the beans grew</h3>
-        <p class="chart-intro">Darker countries made better-rated bars. The colour scale only runs from 2.8 to 3.5, because that's where almost every country sits, so small gaps look bigger than they are. Hover to see how many bars each average is based on (grey means fewer than 5). The slider lets you look at recent reviews only.</p>
+        <p class="chart-intro">Darker means better-rated beans. Heads up: the colour scale only covers 2.8 to 3.5, where nearly every country sits, so small gaps look bigger than they are. Grey countries have fewer than 5 bars.</p>
         <div class="vis" id="vis02"></div>
         <p class="insight">Of the countries with at least 20 bars, Vietnam, Papua New Guinea and Madagascar come out on top. West Africa, where most of the world's cocoa comes from, sits below the average.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
@@ -81,7 +85,7 @@
       </figure>
       <figure class="chart span-5" id="c04">
         <h3>Do the biggest growers make the best bars?</h3>
-        <p class="chart-intro">Each dot is a growing country with at least 5 bars reviewed. Further right means it grows more cocoa. Higher up means its bars score better.</p>
+        <p class="chart-intro">Only countries with at least 5 bars reviewed.</p>
         <div class="vis" id="vis04"></div>
         <p class="insight">Not really. The three biggest growers here all fall below the 3.20 average, and the best scores come from countries growing under 50,000 tonnes a year.</p>
         <figcaption class="source">Data: FAOSTAT (FAO), 2024, via Our World in Data; Flavors of Cacao.</figcaption>
@@ -96,18 +100,18 @@
       <p>Most beans leave the country they're grown in. They end up with small craft makers, mostly in the US and Europe, but there are a handful here in Australia too.</p>
     </div>
     <div class="row">
-      <figure class="chart span-12" id="c05">
+      <figure class="chart bare span-12" id="c05">
         <h3>Where Australian makers get their beans</h3>
-        <p class="chart-intro">Lines join the country where the beans grew to the country where the bar was made. A thicker line means more bars. You can switch to another maker country from the menu below the map.</p>
+        <p class="chart-intro">Thicker line, more bars. Try another country from the menu under the map.</p>
         <div class="vis" id="vis05"></div>
         <p class="insight">Papua New Guinea supplies more Australian bars than anywhere else, and about a third of our makers' beans come from Pacific neighbours.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
       </figure>
     </div>
     <div class="row">
-      <figure class="chart span-12" id="c06">
+      <figure class="chart bare span-12" id="c06">
         <h3>Where the makers are</h3>
-        <p class="chart-intro">Bigger circles mean more bars were made in that country. Darker circles score better on average. Australia has a teal ring.</p>
+        <p class="chart-intro">Bigger circle, more bars. Australia is the one with the teal ring.</p>
         <div class="vis" id="vis06"></div>
         <p class="insight">The United States alone made about 45% of all the bars reviewed. Australia is small, but it holds its own on quality.</p>
         <figcaption class="source">Data: Flavors of Cacao. Map: Natural Earth via world-atlas.</figcaption>
@@ -125,7 +129,7 @@
     <div class="row">
       <figure class="chart span-7" id="c08">
         <h3>Australia's chocolate makers</h3>
-        <p class="chart-intro">Each dot is one Australian maker. The line starts at the average for all bars, so a dot on the right is above average. Treat makers with only one or two bars with care.</p>
+        <p class="chart-intro">Dots to the right of the dashed line beat the average. A maker with only one or two bars reviewed is a bit of a coin flip.</p>
         <div class="vis" id="vis08"></div>
         <p class="insight">Half of our makers beat the average. The Smooth Chocolator does it over 17 bars, more than any other Australian maker.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
@@ -177,9 +181,9 @@
     <div class="row">
       <figure class="chart span-12" id="c11">
         <h3>Words used for the best and worst bars</h3>
-        <p class="chart-intro">These are the 24 words he used most. Words further right describe better bars, and a bigger dot means the word comes up more often.</p>
+        <p class="chart-intro">His 24 most-used words. The further right, the better the bars they describe.</p>
         <div class="vis" id="vis11"></div>
-        <p class="insight">If a review says creamy, rich or cocoa, it's probably a good bar. Bitter and vanilla are warning signs.</p>
+        <p class="insight">If a review says creamy, rich or dried fruit, it's probably a good bar. Bitter and vanilla are warning signs.</p>
         <figcaption class="source">Data: Flavors of Cacao ("most memorable characteristics").</figcaption>
       </figure>
     </div>
@@ -203,7 +207,6 @@
     <div class="row">
       <figure class="chart span-7" id="c13">
         <h3>How many bars were reviewed each year</h3>
-        <p class="chart-intro">Some years had far fewer reviews, so their averages are less reliable.</p>
         <div class="vis" id="vis13"></div>
         <p class="insight">Reviews peaked in 2015, with 284 bars tasted that year.</p>
         <figcaption class="source">Data: Flavors of Cacao.</figcaption>
