@@ -10,7 +10,7 @@
       "bind": {
         "input": "select",
         "name": "Maker country: ",
-        "options": ["AUS", "USA", "CAN", "FRA", "GBR", "ITA", "BEL", "ECU", "CHE", "DEU", "JPN"],
+        "options": ["AUS", "USA", "CAN", "FRA", "GBR", "ITA", "BEL", "ECU", "DEU", "CHE", "JPN"],
         "labels": [
           "Australia",
           "United States",
@@ -20,8 +20,8 @@
           "Italy",
           "Belgium",
           "Ecuador",
-          "Switzerland",
           "Germany",
+          "Switzerland",
           "Japan"
         ]
       }
