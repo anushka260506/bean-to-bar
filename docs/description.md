@@ -52,7 +52,7 @@ A Python script only does light cleaning: standard country names, the five offic
 - **Waffle and mosaic.** Built by hand from squares and stacked rectangles, as Vega-Lite has neither.
 - **Numbers from the data.** Headline numbers in the text are filled in from the data, so they stay correct when it changes.
 
-**Colour and layout.** Browns show rating, light for low and dark for high. Raspberry marks notes and the all-bars average line. Teal always means Australia. Tooltips give exact numbers on every chart. The map's colour scale covers only 2.8 to 3.5, and the page says so.
+**Colour and layout.** Browns show rating, light for low and dark for high. Raspberry marks notes and the all-bars average line. Teal always means Australia. Tooltips give exact numbers on every chart. All three maps use the Equal Earth projection, which keeps each country's size true to its real area, so big and small countries are compared fairly. The map's colour scale covers only 2.8 to 3.5, and the page says so.
 
 ## Use of AI
 
