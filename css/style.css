@@ -179,3 +179,26 @@ footer a { color: var(--accent); }
 .side-text { align-self: center; padding: 8px 4px; }
 .side-text h3 { font-size: 1.35rem; margin-bottom: 10px; }
 .side-text p { color: var(--ink); }
+
+/* ---------- Using the full width (critique: too much empty space) ---------- */
+/* Section 1: text sits in the middle of the tall waffle card, with three key numbers under it */
+.s1-text { align-self: center; }
+.s1-text .facts { margin-top: 22px; }
+
+/* Section headings: big heading on the left, intro text on the right, like the two-column template */
+div.section-head {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gutter);
+  align-items: center;
+}
+div.section-head p { margin: 0; max-width: none; }
+
+/* Full-width maps: chart title on the left, how-to-read text on the right */
+.chart.bare { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: var(--gutter); align-items: start; }
+.chart.bare > * { grid-column: 1 / -1; }
+.chart.bare > h3 { grid-column: 1; margin: 0; }
+.chart.bare > .chart-intro { grid-column: 2; margin-bottom: 4px; max-width: none; }
+
+@media (max-width: 900px) {
+  div.section-head, .chart.bare { grid-template-columns: minmax(0, 1fr); }
+  .chart.bare > h3, .chart.bare > .chart-intro { grid-column: 1; }
+}

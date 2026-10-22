@@ -17,6 +17,7 @@ def pct(x):
 
 print("== Section 1 ==")
 print("bars:", len(d), "| years:", d.review_year.min(), "-", d.review_year.max(), "| average rating:", round(avg, 2))
+print("makers:", d.maker.nunique(), "| maker countries:", d.maker_country.nunique())
 print("share by band:", (d.rating_band.value_counts(normalize=True) * 100).round(1).to_dict())
 
 print("\n== Section 2 ==")
