@@ -19,7 +19,7 @@
 
 **Flavors of Cacao ratings** by Brady Brelinski (flavorsofcacao.com, database updated 19 April 2026). One taster rates each plain dark bar from 1 to 5 in 0.25 steps, judging flavour, texture, aftermelt and overall opinion, and notes a few memorable words and the ingredients. 2,841 bars from 667 makers in 69 countries, reviewed 2006 to 2026, with beans from 58 countries. Attributes: maker, maker country, review year, bean country, cocoa percentage, ingredients, words and rating.
 
-**Cocoa bean production, 2024** from FAOSTAT (Food and Agriculture Organization of the United Nations) via Our World in Data: tonnes grown in 57 countries, collected from national governments with FAO estimates filling gaps.
+**Cocoa bean production, 2024** from FAOSTAT (Food and Agriculture Organization of the United Nations) via Our World in Data: tonnes grown in 57 countries, collected from national governments with FAO estimates filling gaps. It is relevant because it lets the page compare how much cocoa a country grows with how often craft makers choose its beans.
 
 **Country shapes** from Natural Earth via world-atlas.
 
@@ -27,27 +27,29 @@ A Python script only does light cleaning: standard country names, the five offic
 
 ## How
 
-| # | Idiom | Why it fits |
+Nine of the thirteen idioms are advanced: waffle, choropleth, slope chart, flow map, proportional symbol map, mosaic, heatmap, recipe matrix and ridgeline. The slope chart is not a time series: it joins two different measures for the same country, so the reader can see which way each country moves.
+
+| # | Idiom | Task, and why this idiom fits |
 |---|---|---|
-| 1 | Waffle chart | 100 squares make "4 in 100 bars are outstanding" easy to count. |
-| 2 | Choropleth map | Shows where the best-rated beans grow. |
-| 3 | Slope chart | Contrasts a country's share of world cocoa with its share of bars. |
-| 4 | Scatterplot (log scale) | Tests whether bigger growers get better ratings. |
-| 5 | Flow map | Shows where a country's makers buy their beans. |
-| 6 | Proportional symbol map | Compares maker countries by number of bars and average rating. |
-| 7 | Mosaic chart | Compares rating mix across regions of very different sizes. |
-| 8 | Lollipop chart | Shows each Australian maker above or below the average. |
-| 9 | Heatmap | Compares the rating mix of each cocoa band. |
-| 10 | Recipe matrix (UpSet style) | Compares recipes as sets of ingredients. |
-| 11 | Word lollipop chart | Finds words linked to good and bad bars. |
-| 12 | Ridgeline plot | Shows how the spread of ratings shifted over time. |
-| 13 | Line chart | Shows how many bars sit behind each year. |
+| 1 | Waffle chart | Part of a whole. 100 squares coloured by rating band make "4 in 100 bars are outstanding" easy to count. |
+| 2 | Choropleth map | Compare places. There is one average per country, so it fills the country shape, with lightness for rating. |
+| 3 | Slope chart | Compare two measures. Position on the left is share of world cocoa, on the right share of bars; the slope shows the gap. |
+| 4 | Scatterplot (log scale) | Find a relationship between size and quality. A log scale fits growers from about 10 to 2 million tonnes on one axis. |
+| 5 | Flow map | Follow connections. Line width shows how many bars link a bean country to the chosen maker country. |
+| 6 | Proportional symbol map | Compare amounts by place. Circle area shows bars made, colour shows average rating. |
+| 7 | Mosaic chart | Compare mixes across groups of very different size. Column width shows each region's bars, stacked height its rating mix. |
+| 8 | Lollipop chart | Compare each Australian maker to the average. Position along one scale, starting from the average line. |
+| 9 | Heatmap | Compare two categories at once. Cocoa band against rating band, with lightness showing each band's share. |
+| 10 | Recipe matrix (UpSet style) | Compare sets. Filled dots show which ingredients a recipe uses, next to its average rating. |
+| 11 | Word lollipop chart | Rank words by rating. Position shows the average, dot size how often the word is used. |
+| 12 | Ridgeline plot | Compare distributions over time. One smoothed hill per three-year group, stacked so the shifts line up. |
+| 13 | Line chart | Show a trend. Reviews per year, so readers know which years in chart 12 rest on few bars. |
 
 **Special features**
 
-- **Year slider (chart 2).** Limits the map to reviews from a chosen year onwards, and the "Top rated" label updates with it.
+- **Year slider (chart 2).** Limits the map to reviews from a chosen year onwards (2006 to 2021, so every setting keeps enough bars), and the "Top rated" label updates with it.
 - **Maker dropdown (chart 5).** Picks the maker country; the map turns so that country sits in the middle.
-- **Hand-built recipe matrix (chart 10).** Vega-Lite has no UpSet chart, so it is built from layered dots and lines next to a bar panel with a shared sort. Hovering a recipe highlights both panels.
+- **Hand-built recipe matrix (chart 10).** Vega-Lite has no UpSet chart, so it is built from layered dots and lines next to a panel of average ratings with a shared sort. Hovering a recipe's dot highlights that row in both panels.
 - **Ridgeline average lines (chart 12).** Each hill has a white line and number for its period's average, plus a baseline to its year label. Year groups come from the data.
 - **Waffle and mosaic.** Built by hand from squares and stacked rectangles, as Vega-Lite has neither.
 - **Numbers from the data.** Headline numbers in the text are filled in from the data, so they stay correct when it changes.
@@ -56,4 +58,4 @@ A Python script only does light cleaning: standard country names, the five offic
 
 ## Use of AI
 
-Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the data files and check the grammar of the text. All design choices and final text were reviewed by the author.
+Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the data files, draft and edit the page text, and draw the chocolate bar in the header. All design choices and final text were reviewed by the author.

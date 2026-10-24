@@ -202,3 +202,8 @@ div.section-head p { margin: 0; max-width: none; }
   div.section-head, .chart.bare { grid-template-columns: minmax(0, 1fr); }
   .chart.bare > h3, .chart.bare > .chart-intro { grid-column: 1; }
 }
+
+/* Spread the Spotlight and note cards' content evenly instead of leaving one big gap */
+.spotlight { justify-content: space-between; }
+.spot-list { margin-top: 0; }
+#s6 .callout { display: flex; flex-direction: column; justify-content: center; }

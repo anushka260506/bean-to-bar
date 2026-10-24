@@ -11,7 +11,7 @@
       "bind": {
         "input": "range",
         "min": 2006,
-        "max": 2026,
+        "max": 2021,
         "step": 1,
         "name": "Show reviews from the year "
       }

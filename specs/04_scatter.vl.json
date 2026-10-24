@@ -82,33 +82,85 @@
       ]
     }
   ],
-  "encoding": {
-    "x": {
-      "field": "tonnes",
-      "type": "quantitative",
-      "title": "Cocoa grown (tonnes, log scale)",
-      "scale": {
-        "type": "log"
+  "layer": [
+    {
+      "description": "Average of all bars",
+      "mark": {
+        "type": "rule",
+        "color": "#B0304A",
+        "strokeDash": [
+          4,
+          3
+        ],
+        "strokeWidth": 1.5
       },
-      "axis": {
-        "format": "~s",
-        "grid": false
+      "encoding": {
+        "y": {
+          "datum": 3.2,
+          "type": "quantitative",
+          "title": "Average rating of its bars"
+        }
       }
     },
-    "y": {
-      "field": "avg_rating",
-      "type": "quantitative",
-      "title": "Average rating of its bars",
-      "scale": {
-        "zero": false
+    {
+      "description": "Cream outline behind the average label so it reads over the dots",
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -2,
+        "dy": -3,
+        "fontSize": 11.5,
+        "fontWeight": 600,
+        "color": "#FFFDF9",
+        "stroke": "#FFFDF9",
+        "strokeWidth": 4,
+        "strokeJoin": "round"
       },
-      "axis": {
-        "format": ".1f",
-        "tickCount": 5
+      "encoding": {
+        "x": {
+          "value": {
+            "expr": "width"
+          }
+        },
+        "y": {
+          "datum": 3.2,
+          "type": "quantitative",
+          "title": "Average rating of its bars"
+        },
+        "text": {
+          "value": "All bars: 3.20"
+        }
       }
-    }
-  },
-  "layer": [
+    },
+    {
+      "description": "Label for the average line",
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -2,
+        "dy": -3,
+        "fontSize": 11.5,
+        "fontWeight": 600,
+        "color": "#B0304A"
+      },
+      "encoding": {
+        "x": {
+          "value": {
+            "expr": "width"
+          }
+        },
+        "y": {
+          "datum": 3.2,
+          "type": "quantitative",
+          "title": "Average rating of its bars"
+        },
+        "text": {
+          "value": "All bars: 3.20"
+        }
+      }
+    },
     {
       "mark": {
         "type": "circle",
@@ -120,6 +172,30 @@
         "cursor": "pointer"
       },
       "encoding": {
+        "x": {
+          "field": "tonnes",
+          "type": "quantitative",
+          "title": "Cocoa grown (tonnes, log scale)",
+          "scale": {
+            "type": "log"
+          },
+          "axis": {
+            "format": "~s",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "avg_rating",
+          "type": "quantitative",
+          "title": "Average rating of its bars",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "tickCount": 5
+          }
+        },
         "tooltip": [
           {
             "field": "country",
@@ -147,6 +223,10 @@
       "transform": [
         {
           "filter": "(datum.size_rank <= 3 || datum.rating_rank <= 3) && datum.size_rank != 3"
+        },
+        {
+          "calculate": "datum.country == 'Congo' ? 'Rep. of Congo' : datum.country",
+          "as": "country"
         }
       ],
       "mark": {
@@ -159,6 +239,30 @@
         "color": "#2B1D14"
       },
       "encoding": {
+        "x": {
+          "field": "tonnes",
+          "type": "quantitative",
+          "title": "Cocoa grown (tonnes, log scale)",
+          "scale": {
+            "type": "log"
+          },
+          "axis": {
+            "format": "~s",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "avg_rating",
+          "type": "quantitative",
+          "title": "Average rating of its bars",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "tickCount": 5
+          }
+        },
         "text": {
           "field": "country"
         }
@@ -169,6 +273,10 @@
       "transform": [
         {
           "filter": "datum.size_rank == 3"
+        },
+        {
+          "calculate": "datum.country == 'Congo' ? 'Rep. of Congo' : datum.country",
+          "as": "country"
         }
       ],
       "mark": {
@@ -181,6 +289,30 @@
         "color": "#2B1D14"
       },
       "encoding": {
+        "x": {
+          "field": "tonnes",
+          "type": "quantitative",
+          "title": "Cocoa grown (tonnes, log scale)",
+          "scale": {
+            "type": "log"
+          },
+          "axis": {
+            "format": "~s",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "avg_rating",
+          "type": "quantitative",
+          "title": "Average rating of its bars",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "format": ".1f",
+            "tickCount": 5
+          }
+        },
         "text": {
           "field": "country"
         }

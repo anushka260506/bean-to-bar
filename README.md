@@ -50,6 +50,5 @@ Then open http://localhost:8000 in your browser.
 
 ## Use of AI
 
-Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the
-data files and check the grammar of the text. All design choices and final text were
+Claude (Anthropic) was used to help plan the story, write and debug chart code, prepare the data files, draft and edit the page text, and draw the chocolate bar in the header. All design choices and final text were
 reviewed by the author.

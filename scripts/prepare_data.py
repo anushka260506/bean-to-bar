@@ -325,7 +325,7 @@ makers.to_csv(OUT / "maker_countries.csv", index=False)
 spec_path = ROOT / "specs" / "02_choropleth.vl.json"
 if spec_path.exists():
     spec_text = spec_path.read_text()
-    new_text = re.sub(r'("input": "range",\s*"min": 2006,\s*"max": )\d{4}', rf'\g<1>{int(df["review_year"].max())}', spec_text)
+    new_text = re.sub(r'("input": "range",\s*"min": 2006,\s*"max": )\d{4}', rf'\g<1>{int(df["review_year"].max()) - 5}', spec_text)
     if new_text != spec_text:
         spec_path.write_text(new_text)
         print(f"Updated the year slider in {spec_path.name} to end at {int(df['review_year'].max())}")

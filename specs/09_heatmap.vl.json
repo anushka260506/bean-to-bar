@@ -3,15 +3,50 @@
   "description": "Chart 9. Heatmap: cocoa percentage bands (columns) against rating bands (rows). Each column adds up to 100%, so cocoa bands with many bars and with few bars can be compared fairly.",
   "width": "container",
   "height": 230,
-  "data": {"url": "data/processed/chocolate.csv"},
+  "data": {
+    "url": "data/processed/chocolate.csv"
+  },
   "transform": [
-    {"filter": "isValid(datum.cocoa_band) && datum.cocoa_band != ''"},
     {
-      "aggregate": [{"op": "count", "as": "n"}],
-      "groupby": ["cocoa_band", "rating_band", "rating_band_order"]
+      "filter": "isValid(datum.cocoa_band) && datum.cocoa_band != ''"
     },
-    {"joinaggregate": [{"op": "sum", "field": "n", "as": "row_total"}], "groupby": ["cocoa_band"]},
-    {"calculate": "datum.n / datum.row_total", "as": "share"},
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "cocoa_band",
+        "rating_band",
+        "rating_band_order"
+      ]
+    },
+    {
+      "impute": "n",
+      "key": "rating_band",
+      "groupby": [
+        "cocoa_band"
+      ],
+      "value": 0
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "n",
+          "as": "row_total"
+        }
+      ],
+      "groupby": [
+        "cocoa_band"
+      ]
+    },
+    {
+      "calculate": "datum.n / datum.row_total",
+      "as": "share"
+    },
     {
       "calculate": "datum.cocoa_band + ' (' + format(datum.row_total, ',') + ' bars)'",
       "as": "row_label"
@@ -26,7 +61,14 @@
       "field": "cocoa_band",
       "type": "ordinal",
       "title": "Cocoa content",
-      "sort": ["Under 65%", "65–69%", "70%", "71–74%", "75–79%", "80%+"],
+      "sort": [
+        "Under 65%",
+        "65–69%",
+        "70%",
+        "71–74%",
+        "75–79%",
+        "80%+"
+      ],
       "axis": {
         "orient": "top",
         "labelAngle": 0,
@@ -39,8 +81,19 @@
       "field": "rating_band",
       "type": "ordinal",
       "title": null,
-      "sort": ["Outstanding", "Highly recommended", "Recommended", "Disappointing", "Unpleasant"],
-      "axis": {"domain": false, "ticks": false, "labelLimit": 160, "labelFontSize": 12}
+      "sort": [
+        "Outstanding",
+        "Highly recommended",
+        "Recommended",
+        "Disappointing",
+        "Unpleasant"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelLimit": 160,
+        "labelFontSize": 12
+      }
     }
   },
   "layer": [
@@ -57,22 +110,61 @@
           "field": "share",
           "type": "quantitative",
           "title": "Share of the cocoa band",
-          "scale": {"domain": [0, 0.5], "range": ["#F7EBDD", "#C48A57", "#4E2A16"], "clamp": true},
+          "scale": {
+            "domain": [
+              0,
+              0.5
+            ],
+            "range": [
+              "#F7EBDD",
+              "#C48A57",
+              "#4E2A16"
+            ],
+            "clamp": true
+          },
           "legend": {
             "format": ".0%",
             "orient": "bottom",
             "direction": "horizontal",
             "gradientLength": 160,
-            "values": [0, 0.25, 0.5]
+            "values": [
+              0,
+              0.25,
+              0.5
+            ]
           }
         },
-        "opacity": {"condition": {"param": "hoverCell", "empty": true, "value": 1}, "value": 0.45},
+        "opacity": {
+          "condition": {
+            "param": "hoverCell",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.45
+        },
         "tooltip": [
-          {"field": "cocoa_band", "title": "Cocoa content"},
-          {"field": "rating_band", "title": "Rating band"},
-          {"field": "n", "title": "Bars"},
-          {"field": "share", "title": "Share of this cocoa band", "format": ".0%"},
-          {"field": "row_total", "title": "All bars in this cocoa band", "format": ","}
+          {
+            "field": "cocoa_band",
+            "title": "Cocoa content"
+          },
+          {
+            "field": "rating_band",
+            "title": "Rating band"
+          },
+          {
+            "field": "n",
+            "title": "Bars"
+          },
+          {
+            "field": "share",
+            "title": "Share of this cocoa band",
+            "format": ".0%"
+          },
+          {
+            "field": "row_total",
+            "title": "All bars in this cocoa band",
+            "format": ","
+          }
         ]
       },
       "params": [
@@ -80,7 +172,9 @@
           "name": "hoverCell",
           "select": {
             "type": "point",
-            "fields": ["cocoa_band"],
+            "fields": [
+              "cocoa_band"
+            ],
             "on": "pointerover",
             "clear": "pointerout"
           }
@@ -88,15 +182,35 @@
       ]
     },
     {
-      "mark": {"type": "text", "fontSize": 12, "fontWeight": 600},
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600
+      },
       "encoding": {
-        "text": {"field": "share", "type": "quantitative", "format": ".0%"},
+        "text": {
+          "field": "share",
+          "type": "quantitative",
+          "format": ".0%"
+        },
         "color": {
-          "condition": {"test": "datum.share > 0.28", "value": "#FFFDF9"},
+          "condition": {
+            "test": "datum.share > 0.28",
+            "value": "#FFFDF9"
+          },
           "value": "#2B1D14"
         }
       }
     }
   ],
-  "autosize": {"type": "fit-x", "contains": "padding"}
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "top": 5,
+    "left": 10,
+    "right": 5,
+    "bottom": 5
+  }
 }

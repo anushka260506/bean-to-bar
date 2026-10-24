@@ -10,7 +10,19 @@
       "bind": {
         "input": "select",
         "name": "Maker country: ",
-        "options": ["AUS", "USA", "CAN", "FRA", "GBR", "ITA", "BEL", "ECU", "DEU", "CHE", "JPN"],
+        "options": [
+          "AUS",
+          "USA",
+          "CAN",
+          "FRA",
+          "GBR",
+          "ITA",
+          "BEL",
+          "ECU",
+          "DEU",
+          "CHE",
+          "JPN"
+        ],
         "labels": [
           "Australia",
           "United States",
@@ -31,62 +43,129 @@
       "expr": "maker == 'AUS' ? 134.2 : maker == 'USA' ? -98.7 : maker == 'CAN' ? -97.9 : maker == 'FRA' ? 2.3 : maker == 'GBR' ? -2.6 : maker == 'ITA' ? 12.4 : maker == 'BEL' ? 4.6 : maker == 'ECU' ? -78.4 : maker == 'CHE' ? 8.1 : maker == 'DEU' ? 10.3 : 136.7"
     }
   ],
-  "projection": {"type": "equalEarth", "rotate": {"expr": "[-makerLon, 0, 0]"}},
+  "projection": {
+    "type": "equalEarth",
+    "rotate": {
+      "expr": "[-makerLon, 0, 0]"
+    }
+  },
   "layer": [
     {
       "description": "Background land",
       "data": {
         "url": "data/processed/world-110m.json",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
-      "transform": [{"filter": "datum.properties.iso3 != 'ATA'"}],
-      "mark": {"type": "geoshape", "fill": "#EFE7DC", "stroke": "#FFFDF9", "strokeWidth": 0.5}
+      "transform": [
+        {
+          "filter": "datum.properties.iso3 != 'ATA'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#EFE7DC",
+        "stroke": "#FFFDF9",
+        "strokeWidth": 0.5
+      }
     },
     {
       "description": "One line per bean country that supplied the chosen maker country",
-      "data": {"url": "data/processed/chocolate.csv"},
+      "data": {
+        "url": "data/processed/chocolate.csv"
+      },
       "transform": [
         {
           "filter": "datum.maker_iso3 == maker && isValid(datum.bean_iso3) && datum.bean_iso3 != ''"
         },
         {
           "aggregate": [
-            {"op": "count", "as": "n_bars"},
-            {"op": "mean", "field": "rating", "as": "avg_rating"}
+            {
+              "op": "count",
+              "as": "n_bars"
+            },
+            {
+              "op": "mean",
+              "field": "rating",
+              "as": "avg_rating"
+            }
           ],
-          "groupby": ["bean_iso3", "bean_country", "maker_iso3", "maker_country"]
+          "groupby": [
+            "bean_iso3",
+            "bean_country",
+            "maker_iso3",
+            "maker_country"
+          ]
         },
         {
           "lookup": "bean_iso3",
           "from": {
-            "data": {"url": "data/processed/country_points.csv"},
+            "data": {
+              "url": "data/processed/country_points.csv"
+            },
             "key": "iso3",
-            "fields": ["lon", "lat"]
+            "fields": [
+              "lon",
+              "lat"
+            ]
           },
-          "as": ["from_lon", "from_lat"]
+          "as": [
+            "from_lon",
+            "from_lat"
+          ]
         },
         {
           "lookup": "maker_iso3",
           "from": {
-            "data": {"url": "data/processed/country_points.csv"},
+            "data": {
+              "url": "data/processed/country_points.csv"
+            },
             "key": "iso3",
-            "fields": ["lon", "lat"]
+            "fields": [
+              "lon",
+              "lat"
+            ]
           },
-          "as": ["to_lon", "to_lat"]
+          "as": [
+            "to_lon",
+            "to_lat"
+          ]
         }
       ],
       "layer": [
         {
-          "mark": {"type": "rule", "strokeCap": "round", "opacity": 0.55, "color": "#8E5531"},
+          "mark": {
+            "type": "rule",
+            "strokeCap": "round",
+            "opacity": 0.55,
+            "color": "#8E5531"
+          },
           "encoding": {
-            "longitude": {"field": "from_lon", "type": "quantitative"},
-            "latitude": {"field": "from_lat", "type": "quantitative"},
-            "longitude2": {"field": "to_lon"},
-            "latitude2": {"field": "to_lat"},
+            "longitude": {
+              "field": "from_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "from_lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "to_lon"
+            },
+            "latitude2": {
+              "field": "to_lat"
+            },
             "strokeWidth": {
               "field": "n_bars",
               "type": "quantitative",
-              "scale": {"range": [1, 7]},
+              "scale": {
+                "range": [
+                  1,
+                  7
+                ]
+              },
               "legend": null
             }
           }
@@ -101,38 +180,123 @@
             "cursor": "pointer"
           },
           "encoding": {
-            "longitude": {"field": "from_lon", "type": "quantitative"},
-            "latitude": {"field": "from_lat", "type": "quantitative"},
+            "longitude": {
+              "field": "from_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "from_lat",
+              "type": "quantitative"
+            },
             "size": {
               "field": "n_bars",
               "type": "quantitative",
               "title": "Bars made from these beans",
-              "scale": {"range": [40, 500]},
+              "scale": {
+                "range": [
+                  40,
+                  500
+                ]
+              },
               "legend": {
                 "orient": "bottom-left",
                 "direction": "horizontal",
                 "symbolFillColor": "#C48A57",
                 "symbolStrokeWidth": 0,
-                "values": [1, 5, 20, 50]
+                "values": [
+                  1,
+                  5,
+                  20,
+                  50
+                ]
               }
             },
             "tooltip": [
-              {"field": "bean_country", "title": "Beans grown in"},
-              {"field": "maker_country", "title": "Made into bars in"},
-              {"field": "n_bars", "title": "Bars reviewed"},
-              {"field": "avg_rating", "title": "Average rating", "format": ".2f"}
+              {
+                "field": "bean_country",
+                "title": "Beans grown in"
+              },
+              {
+                "field": "maker_country",
+                "title": "Made into bars in"
+              },
+              {
+                "field": "n_bars",
+                "title": "Bars reviewed"
+              },
+              {
+                "field": "avg_rating",
+                "title": "Average rating",
+                "format": ".2f"
+              }
             ]
+          }
+        },
+        {
+          "description": "Name the three biggest bean origins for the chosen maker country",
+          "transform": [
+            {
+              "window": [
+                {
+                  "op": "row_number",
+                  "as": "rank"
+                }
+              ],
+              "sort": [
+                {
+                  "field": "n_bars",
+                  "order": "descending"
+                }
+              ]
+            },
+            {
+              "filter": "datum.rank <= 3"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -14,
+            "fontSize": 12,
+            "fontWeight": 700,
+            "color": "#2B1D14",
+            "stroke": "#F6EFE6",
+            "strokeWidth": 0.6
+          },
+          "encoding": {
+            "longitude": {
+              "field": "from_lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "from_lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "bean_country"
+            }
           }
         }
       ]
     },
     {
       "description": "The chosen maker country, highlighted (teal always means Australia; other countries use dark chocolate)",
-      "data": {"url": "data/processed/country_points.csv"},
-      "transform": [{"filter": "datum.iso3 == maker"}],
+      "data": {
+        "url": "data/processed/country_points.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.iso3 == maker"
+        }
+      ],
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"}
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
       },
       "layer": [
         {
@@ -145,33 +309,59 @@
           },
           "encoding": {
             "color": {
-              "condition": {"test": "datum.iso3 == 'AUS'", "value": "#2E7D7A"},
+              "condition": {
+                "test": "datum.iso3 == 'AUS'",
+                "value": "#2E7D7A"
+              },
               "value": "#2B1D14"
             }
           }
         },
         {
-          "mark": {"type": "text", "dy": 22, "fontSize": 13, "fontWeight": 700, "color": "#2B1D14"},
-          "encoding": {"text": {"field": "country"}}
+          "mark": {
+            "type": "text",
+            "dy": 22,
+            "fontSize": 13,
+            "fontWeight": 700,
+            "color": "#2B1D14"
+          },
+          "encoding": {
+            "text": {
+              "field": "country"
+            }
+          }
         }
       ]
     },
     {
       "description": "Annotation in the corner: how many bean countries supplied the chosen maker country",
-      "data": {"url": "data/processed/chocolate.csv"},
+      "data": {
+        "url": "data/processed/chocolate.csv"
+      },
       "transform": [
         {
           "filter": "datum.maker_iso3 == maker && isValid(datum.bean_iso3) && datum.bean_iso3 != ''"
         },
         {
           "aggregate": [
-            {"op": "distinct", "field": "bean_iso3", "as": "n_countries"},
-            {"op": "count", "as": "n_bars"},
-            {"op": "max", "field": "maker_country", "as": "maker_country"}
+            {
+              "op": "distinct",
+              "field": "bean_iso3",
+              "as": "n_countries"
+            },
+            {
+              "op": "count",
+              "as": "n_bars"
+            },
+            {
+              "op": "max",
+              "field": "maker_country",
+              "as": "maker_country"
+            }
           ]
         },
         {
-          "calculate": "'Makers in ' + datum.maker_country + ' used beans from ' + datum.n_countries + ' countries (' + datum.n_bars + ' bars with a single bean origin)'",
+          "calculate": "'Makers in ' + (indexof(['United States', 'United Kingdom'], datum.maker_country) >= 0 ? 'the ' : '') + datum.maker_country + ' used beans from ' + datum.n_countries + ' countries (' + format(datum.n_bars, ',') + ' bars with a single bean origin)'",
           "as": "label"
         }
       ],
@@ -183,8 +373,27 @@
         "fontWeight": 600,
         "color": "#2B1D14"
       },
-      "encoding": {"x": {"value": 4}, "y": {"value": 4}, "text": {"field": "label"}}
+      "encoding": {
+        "x": {
+          "value": 4
+        },
+        "y": {
+          "value": -26
+        },
+        "text": {
+          "field": "label"
+        }
+      }
     }
   ],
-  "autosize": {"type": "fit-x", "contains": "padding"}
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "top": 30,
+    "left": 5,
+    "right": 5,
+    "bottom": 5
+  }
 }
