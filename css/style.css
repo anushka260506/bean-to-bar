@@ -210,3 +210,14 @@ div.section-head p { margin: 0; max-width: none; }
 
 /* Keep takeaway lines to a readable length */
 .insight { max-width: 75ch; }
+
+/* Spotlight: small bars for the most-used bean origins */
+.origin-bars { display: grid; gap: 6px; margin-top: 8px; }
+.ob { display: grid; grid-template-columns: 9.5em 1fr 1.6em; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--ink); }
+.ob i { display: block; height: 12px; background: var(--aus); border-radius: 0 3px 3px 0; }
+.ob b { font-weight: 700; color: var(--aus); text-align: right; }
+.spotlight { justify-content: flex-start; }
+.spot-list { margin-top: auto; }
+
+/* Full-width maps: line their titles and notes up with the titles inside the cards */
+.chart.bare { padding: 0 23px; }

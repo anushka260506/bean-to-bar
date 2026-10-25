@@ -271,6 +271,31 @@
           }
         },
         {
+          "description": "Leader line from the narrow last column to its label",
+          "transform": [
+            {
+              "filter": "datum.col_rank == datum.n_cols"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#8E7A6A",
+            "strokeWidth": 0.8
+          },
+          "encoding": {
+            "x": {
+              "field": "x_mid",
+              "type": "quantitative"
+            },
+            "y": {
+              "datum": 0
+            },
+            "y2": {
+              "value": 291
+            }
+          }
+        },
+        {
           "transform": [
             {
               "filter": "datum.col_rank == datum.n_cols"

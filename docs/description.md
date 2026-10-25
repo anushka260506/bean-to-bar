@@ -28,7 +28,7 @@ A Python script only does light cleaning: standard country names, the five offic
 
 ## How
 
-Nine of the thirteen idioms are advanced, because none of them is in the brief's list of basic idioms: waffle, choropleth, slope chart, flow map, proportional symbol map, mosaic, heatmap, recipe matrix and ridgeline. The waffle is a unit chart, not a pie: each square is one percent of the bars. The slope chart is not a time series: it joins two different measures for the same country.
+Ten of the thirteen idioms are advanced, because none of them is in the brief's list of basic idioms: waffle, choropleth, slope chart, flow map, proportional symbol map, mosaic, heatmap, recipe matrix, ridgeline and streamgraph. The waffle is a unit chart, not a pie: each square is one percent of the bars. The slope chart is not a time series: it joins two different measures for the same country.
 
 | # | Idiom | Why (action and target) | Marks and channels |
 |---|---|---|---|
@@ -44,7 +44,7 @@ Nine of the thirteen idioms are advanced, because none of them is in the brief's
 | 10 | Recipe matrix (UpSet style) | Compare sets of ingredients and identify the best recipe | Point marks filled or empty for each ingredient; position for average rating |
 | 11 | Word lollipop chart | Identify words linked to good and bad bars | Point marks; horizontal position for rating; area for how often a word is used |
 | 12 | Ridgeline plot | Compare distributions over time | Area marks; height for density; vertical position for period; lightness for average |
-| 13 | Line chart | Show the trend in reviews per year | Line and point marks; vertical position for number of bars |
+| 13 | Streamgraph | Show the trend in reviews per year and how the rating mix changes | Area marks stacked around a centre line; thickness for number of bars; lightness for rating band |
 
 **Special features**
 

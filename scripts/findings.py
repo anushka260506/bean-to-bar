@@ -62,3 +62,7 @@ print("busiest year:", y.idxmax(), y.max())
 
 print("\n== Section 7 ==")
 print("blends:", round(d[d.bean_origin_raw == "Blend"].rating.mean(), 2), "| single origin:", round(d[d.bean_origin_raw != "Blend"].rating.mean(), 2))
+
+print("\n== Section 6 (streamgraph) ==")
+u = d[d.rating_band == "Unpleasant"]
+print("unpleasant bars:", len(u), "| years:", u.review_year.min(), "-", u.review_year.max())

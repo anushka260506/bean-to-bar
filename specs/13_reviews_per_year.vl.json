@@ -1,71 +1,235 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Chart 13. Line chart: how many bars were reviewed each year. Years with few reviews tell us less, so this chart helps readers judge the ridgeline beside it.",
+  "description": "Chart 13. Streamgraph: how many bars were reviewed each year, split into the five rating bands. The thickness of the stream is the number of bars that year, and each colour is a rating band (darkest = outstanding). It shows both how much each year counts and how the mix of ratings changes.",
   "width": "container",
   "height": 230,
-  "data": {"url": "data/processed/chocolate.csv"},
-  "transform": [{"aggregate": [{"op": "count", "as": "n_bars"}], "groupby": ["review_year"]}],
-  "encoding": {
-    "x": {
-      "field": "review_year",
-      "type": "quantitative",
-      "title": "Review year",
-      "axis": {
-        "format": "d",
-        "tickCount": 6,
-        "labelOverlap": "greedy",
-        "grid": false,
-        "labelFlush": false
-      },
-      "scale": {"nice": false, "zero": false}
-    },
-    "y": {
-      "field": "n_bars",
-      "type": "quantitative",
-      "title": "Bars reviewed",
-      "axis": {"tickCount": 5}
-    }
+  "data": {
+    "url": "data/processed/chocolate.csv"
   },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "n_bars"
+        }
+      ],
+      "groupby": [
+        "review_year",
+        "rating_band",
+        "rating_band_order"
+      ]
+    },
+    {
+      "impute": "n_bars",
+      "key": "review_year",
+      "groupby": [
+        "rating_band"
+      ],
+      "value": 0
+    },
+    {
+      "calculate": "indexof([\"Outstanding\", \"Highly recommended\", \"Recommended\", \"Disappointing\", \"Unpleasant\"], datum.rating_band)",
+      "as": "band_order"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "n_bars",
+          "as": "year_total"
+        }
+      ],
+      "groupby": [
+        "review_year"
+      ]
+    }
+  ],
   "layer": [
-    {"mark": {"type": "line", "strokeWidth": 2, "color": "#8E5531", "interpolate": "linear"}},
     {
       "params": [
         {
-          "name": "hoverYear",
+          "name": "hoverBand",
           "select": {
             "type": "point",
-            "fields": ["review_year"],
+            "fields": [
+              "rating_band"
+            ],
             "on": "pointerover",
-            "nearest": true,
             "clear": "pointerout"
           }
         }
       ],
-      "mark": {"type": "circle", "color": "#8E5531", "stroke": "#FFFDF9", "strokeWidth": 1.5},
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "stroke": "#FFFDF9",
+        "strokeWidth": 0.8,
+        "cursor": "pointer"
+      },
       "encoding": {
-        "size": {"condition": {"param": "hoverYear", "empty": false, "value": 120}, "value": 40},
+        "x": {
+          "field": "review_year",
+          "type": "quantitative",
+          "title": "Review year",
+          "scale": {
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "format": "d",
+            "tickCount": 6,
+            "grid": false,
+            "labelFlush": false,
+            "labelOverlap": "greedy",
+            "values": [
+              2006,
+              2010,
+              2014,
+              2018,
+              2022,
+              2026
+            ]
+          }
+        },
+        "y": {
+          "field": "n_bars",
+          "type": "quantitative",
+          "stack": "center",
+          "title": null,
+          "axis": null
+        },
+        "color": {
+          "field": "rating_band",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Outstanding",
+              "Highly recommended",
+              "Recommended",
+              "Disappointing",
+              "Unpleasant"
+            ],
+            "range": [
+              "#4E2A16",
+              "#8E5531",
+              "#C48A57",
+              "#E0B98A",
+              "#EFD5B2"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "symbolType": "square",
+            "labelLimit": 0,
+            "rowPadding": 5,
+            "symbolSize": 110
+          }
+        },
+        "order": {
+          "field": "band_order",
+          "type": "quantitative",
+          "sort": "descending"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hoverBand",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.35
+        },
         "tooltip": [
-          {"field": "review_year", "title": "Year", "format": "d"},
-          {"field": "n_bars", "title": "Bars reviewed"}
+          {
+            "field": "review_year",
+            "title": "Year",
+            "format": "d"
+          },
+          {
+            "field": "rating_band",
+            "title": "Rating band"
+          },
+          {
+            "field": "n_bars",
+            "title": "Bars in this band"
+          },
+          {
+            "field": "year_total",
+            "title": "All bars that year"
+          }
         ]
       }
     },
     {
-      "description": "Label the busiest year",
+      "description": "Label the busiest year at the top of the stream",
       "transform": [
         {
-          "window": [{"op": "row_number", "as": "rank"}],
-          "sort": [{"field": "n_bars", "order": "descending"}]
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "n_bars",
+              "as": "total"
+            }
+          ],
+          "groupby": [
+            "review_year"
+          ]
         },
-        {"filter": "datum.rank == 1"},
         {
-          "calculate": "'Busiest year: ' + datum.review_year + ' (' + datum.n_bars + ' bars)'",
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "total",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rank == 1"
+        },
+        {
+          "calculate": "'Busiest year: ' + datum.review_year + ' (' + datum.total + ' bars)'",
           "as": "txt"
         }
       ],
-      "mark": {"type": "text", "dy": -12, "fontSize": 12, "fontWeight": 600, "color": "#2B1D14"},
-      "encoding": {"text": {"field": "txt"}}
+      "mark": {
+        "type": "text",
+        "dy": -9,
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2B1D14"
+      },
+      "encoding": {
+        "x": {
+          "field": "review_year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative",
+          "stack": null
+        },
+        "text": {
+          "field": "txt"
+        }
+      }
     }
   ],
-  "autosize": {"type": "fit-x", "contains": "padding"}
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "top": 18,
+    "left": 5,
+    "right": 14,
+    "bottom": 5
+  }
 }
