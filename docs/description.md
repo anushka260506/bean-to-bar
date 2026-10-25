@@ -2,6 +2,7 @@
 
 **Live page:** https://anushka260506.github.io/bean-to-bar/
 **Code and data:** https://github.com/anushka260506/bean-to-bar
+**Sketch:** https://anushka260506.github.io/bean-to-bar/sketch/sketch.pdf
 
 ## Why
 
@@ -11,39 +12,39 @@
 
 **Audience.** Everyday chocolate buyers in Australia who wonder if an expensive craft bar is worth it. They need no data background, so the text is plain and each chart has a one-line takeaway.
 
-**Tasks.** See how ratings spread, compare countries, regions, makers and recipes, test whether bigger growers get better ratings, and track change over time.
+**Tasks (Munzner's action and target).** Present and discover the *distribution* of ratings; *compare* countries, regions, makers, cocoa bands and recipes; *identify* the best and worst values; look for a *correlation* between how much cocoa a country grows and its ratings; and follow the *trend* over time.
 
 **Why this topic.** Nearly everyone buys chocolate, and the price gap between a supermarket bar and a craft bar made me want to know what the extra money actually buys. Thousands of reviews by one expert seemed a fair way to find out.
 
 ## What
 
-**Flavors of Cacao ratings** by Brady Brelinski (flavorsofcacao.com, database updated 19 April 2026). One taster rates each plain dark bar from 1 to 5 in 0.25 steps, judging flavour, texture, aftermelt and overall opinion, and notes a few memorable words and the ingredients. 2,841 bars from 667 makers in 69 countries, reviewed 2006 to 2026, with beans from 58 countries. Attributes: maker, maker country, review year, bean country, cocoa percentage, ingredients, words and rating.
+**Flavors of Cacao ratings** by Brady Brelinski (flavorsofcacao.com, database updated 19 April 2026). One taster rates each plain dark bar from 1 to 5 in 0.25 steps, judging flavour, texture, aftermelt and overall opinion, and notes a few memorable words and the ingredients. 2,841 bars from 667 makers in 69 countries, reviewed 2006 to 2026, with beans from 58 countries. **Dataset type:** a table, one item per bar. **Attribute types:** categorical (maker, maker country, bean country, ingredients, tasting words), ordinal (rating band, cocoa band, review year) and quantitative (rating, cocoa percentage).
 
 **Cocoa bean production, 2024** from FAOSTAT (Food and Agriculture Organization of the United Nations) via Our World in Data: tonnes grown in 57 countries, collected from national governments with FAO estimates filling gaps. It is relevant because it lets the page compare how much cocoa a country grows with how often craft makers choose its beans.
 
-**Country shapes** from Natural Earth via world-atlas.
+**Country shapes** from Natural Earth via world-atlas: geometry (a spatial dataset) that the country tables are joined to by ISO code.
 
 A Python script only does light cleaning: standard country names, the five official rating bands, cocoa bands, recipe flags, single tasting words, and joining production to bean countries. No rating or production figure is changed.
 
 ## How
 
-Nine of the thirteen idioms are advanced: waffle, choropleth, slope chart, flow map, proportional symbol map, mosaic, heatmap, recipe matrix and ridgeline. The slope chart is not a time series: it joins two different measures for the same country, so the reader can see which way each country moves.
+Nine of the thirteen idioms are advanced, because none of them is in the brief's list of basic idioms: waffle, choropleth, slope chart, flow map, proportional symbol map, mosaic, heatmap, recipe matrix and ridgeline. The waffle is a unit chart, not a pie: each square is one percent of the bars. The slope chart is not a time series: it joins two different measures for the same country.
 
-| # | Idiom | Task, and why this idiom fits |
-|---|---|---|
-| 1 | Waffle chart | Part of a whole. 100 squares coloured by rating band make "4 in 100 bars are outstanding" easy to count. |
-| 2 | Choropleth map | Compare places. There is one average per country, so it fills the country shape, with lightness for rating. |
-| 3 | Slope chart | Compare two measures. Position on the left is share of world cocoa, on the right share of bars; the slope shows the gap. |
-| 4 | Scatterplot (log scale) | Find a relationship between size and quality. A log scale fits growers from about 10 to 2 million tonnes on one axis. |
-| 5 | Flow map | Follow connections. Line width shows how many bars link a bean country to the chosen maker country. |
-| 6 | Proportional symbol map | Compare amounts by place. Circle area shows bars made, colour shows average rating. |
-| 7 | Mosaic chart | Compare mixes across groups of very different size. Column width shows each region's bars, stacked height its rating mix. |
-| 8 | Lollipop chart | Compare each Australian maker to the average. Position along one scale, starting from the average line. |
-| 9 | Heatmap | Compare two categories at once. Cocoa band against rating band, with lightness showing each band's share. |
-| 10 | Recipe matrix (UpSet style) | Compare sets. Filled dots show which ingredients a recipe uses, next to its average rating. |
-| 11 | Word lollipop chart | Rank words by rating. Position shows the average, dot size how often the word is used. |
-| 12 | Ridgeline plot | Compare distributions over time. One smoothed hill per three-year group, stacked so the shifts line up. |
-| 13 | Line chart | Show a trend. Reviews per year, so readers know which years in chart 12 rest on few bars. |
+| # | Idiom | Why (action and target) | Marks and channels |
+|---|---|---|---|
+| 1 | Waffle chart | Present a part of a whole: how many bars reach each rating band | Square marks; colour lightness for band; count of squares for share |
+| 2 | Choropleth map | Compare and identify ratings by place | Area marks (countries); colour lightness for average rating |
+| 3 | Slope chart | Compare two measures per country: share of world cocoa vs share of bars | Point and line marks; vertical position for each share; slope and hue for direction |
+| 4 | Scatterplot (log scale) | Look for a correlation between tonnes grown and rating | Point marks; horizontal position (log) for tonnes; vertical position for rating |
+| 5 | Flow map | Discover connections between bean countries and a maker country | Line marks with width for bars; point marks with area for bars |
+| 6 | Proportional symbol map | Compare amounts and quality by maker country | Point marks; area for bars made; colour lightness for rating |
+| 7 | Mosaic chart | Compare rating mixes across regions of very different size | Rectangle marks; width for region size; height for band share; lightness for band |
+| 8 | Lollipop chart | Compare each Australian maker with the average | Line and point marks; horizontal position for rating, from the average line |
+| 9 | Heatmap | Compare the rating mix of each cocoa band | Rectangle marks in a grid; colour lightness for share |
+| 10 | Recipe matrix (UpSet style) | Compare sets of ingredients and identify the best recipe | Point marks filled or empty for each ingredient; position for average rating |
+| 11 | Word lollipop chart | Identify words linked to good and bad bars | Point marks; horizontal position for rating; area for how often a word is used |
+| 12 | Ridgeline plot | Compare distributions over time | Area marks; height for density; vertical position for period; lightness for average |
+| 13 | Line chart | Show the trend in reviews per year | Line and point marks; vertical position for number of bars |
 
 **Special features**
 

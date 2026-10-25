@@ -3,24 +3,54 @@
   "description": "Chart 3. Slope chart: for the biggest cocoa growers and the most-reviewed bean origins, the left end shows each country's share of the world's cocoa (FAO, 2024) and the right end shows its share of the single-origin bars reviewed. Lines going up = more popular with craft makers than the country's size would suggest.",
   "width": "container",
   "height": 380,
-  "autosize": {"type": "fit-x", "contains": "padding"},
-  "data": {"url": "data/processed/grower_compare.csv"},
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "data": {
+    "url": "data/processed/grower_compare.csv"
+  },
   "layer": [
     {
       "description": "The two columns and their headings",
       "data": {
         "values": [
-          {"x": 0, "t": "Share of the world's cocoa (2024)"},
-          {"x": 1, "t": "Share of craft bars reviewed"}
+          {
+            "x": 0,
+            "t": [
+              "Share of the world's",
+              "cocoa (2024)"
+            ]
+          },
+          {
+            "x": 1,
+            "t": [
+              "Share of craft",
+              "bars reviewed"
+            ]
+          }
         ]
       },
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#E3D6C6", "strokeWidth": 1},
+          "mark": {
+            "type": "rule",
+            "color": "#E3D6C6",
+            "strokeWidth": 1
+          },
           "encoding": {
-            "x": {"field": "x", "type": "quantitative", "axis": null},
-            "y": {"datum": 0, "axis": null},
-            "y2": {"datum": 0.38}
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "datum": 0,
+              "axis": null
+            },
+            "y2": {
+              "datum": 0.38
+            }
           }
         },
         {
@@ -29,32 +59,64 @@
             "fontSize": 12.5,
             "fontWeight": 700,
             "color": "#2B1D14",
-            "dy": -14
+            "dy": -28,
+            "lineHeight": 15
           },
           "encoding": {
-            "x": {"field": "x", "type": "quantitative", "axis": null},
-            "y": {"datum": 0.38, "axis": null},
-            "text": {"field": "t"}
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "datum": 0.38,
+              "axis": null
+            },
+            "text": {
+              "field": "t"
+            }
           }
         }
       ]
     },
     {
       "transform": [
-        {"fold": ["world_share", "bar_share"], "as": ["side", "share"]},
-        {"calculate": "datum.side == 'world_share' ? 0 : 1", "as": "x"}
+        {
+          "fold": [
+            "world_share",
+            "bar_share"
+          ],
+          "as": [
+            "side",
+            "share"
+          ]
+        },
+        {
+          "calculate": "datum.side == 'world_share' ? 0 : 1",
+          "as": "x"
+        }
       ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.75, 1.75]},
+          "scale": {
+            "domain": [
+              -1.0,
+              2.0
+            ]
+          },
           "axis": null
         },
         "y": {
           "field": "share",
           "type": "quantitative",
-          "scale": {"domain": [0, 0.38]},
+          "scale": {
+            "domain": [
+              0,
+              0.38
+            ]
+          },
           "axis": null
         },
         "color": {
@@ -62,8 +124,14 @@
           "type": "nominal",
           "title": null,
           "scale": {
-            "domain": ["More popular with craft makers", "Less popular with craft makers"],
-            "range": ["#B0304A", "#A08470"]
+            "domain": [
+              "More popular with craft makers",
+              "Less popular with craft makers"
+            ],
+            "range": [
+              "#B0304A",
+              "#A08470"
+            ]
           },
           "legend": {
             "orient": "bottom",
@@ -72,10 +140,17 @@
             "labelLimit": 260
           }
         },
-        "detail": {"field": "country"}
+        "detail": {
+          "field": "country"
+        }
       },
       "layer": [
-        {"mark": {"type": "line", "strokeWidth": 2.2}},
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2.2
+          }
+        },
         {
           "mark": {
             "type": "circle",
@@ -87,10 +162,25 @@
           },
           "encoding": {
             "tooltip": [
-              {"field": "country", "title": "Country"},
-              {"field": "world_share", "title": "Share of world cocoa (2024)", "format": ".1%"},
-              {"field": "bar_share", "title": "Share of bars reviewed", "format": ".1%"},
-              {"field": "tonnes", "title": "Cocoa grown (tonnes)", "format": ","}
+              {
+                "field": "country",
+                "title": "Country"
+              },
+              {
+                "field": "world_share",
+                "title": "Share of world cocoa (2024)",
+                "format": ".1%"
+              },
+              {
+                "field": "bar_share",
+                "title": "Share of bars reviewed",
+                "format": ".1%"
+              },
+              {
+                "field": "tonnes",
+                "title": "Cocoa grown (tonnes)",
+                "format": ","
+              }
             ]
           }
         }
@@ -98,20 +188,42 @@
     },
     {
       "description": "Left-hand labels for the big growers, with short leader lines so they never overlap",
-      "transform": [{"filter": "isValid(datum.label_left) && datum.label_left > 0"}],
+      "transform": [
+        {
+          "filter": "isValid(datum.label_left) && datum.label_left > 0"
+        }
+      ],
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#C9B8A6", "strokeWidth": 0.8},
+          "mark": {
+            "type": "rule",
+            "color": "#C9B8A6",
+            "strokeWidth": 0.8
+          },
           "encoding": {
-            "x": {"datum": 0, "axis": null},
-            "x2": {"datum": -0.07},
-            "y": {"field": "world_share", "type": "quantitative", "axis": null},
-            "y2": {"field": "label_left"}
+            "x": {
+              "datum": 0,
+              "axis": null
+            },
+            "x2": {
+              "datum": -0.07
+            },
+            "y": {
+              "field": "world_share",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y2": {
+              "field": "label_left"
+            }
           }
         },
         {
           "transform": [
-            {"calculate": "datum.country + '  ' + format(datum.world_share, '.0%')", "as": "txt"}
+            {
+              "calculate": "datum.country + '  ' + format(datum.world_share, '.0%')",
+              "as": "txt"
+            }
           ],
           "mark": {
             "type": "text",
@@ -121,29 +233,60 @@
             "color": "#2B1D14"
           },
           "encoding": {
-            "x": {"datum": -0.09, "axis": null},
-            "y": {"field": "label_left", "type": "quantitative", "axis": null},
-            "text": {"field": "txt"}
+            "x": {
+              "datum": -0.09,
+              "axis": null
+            },
+            "y": {
+              "field": "label_left",
+              "type": "quantitative",
+              "axis": null
+            },
+            "text": {
+              "field": "txt"
+            }
           }
         }
       ]
     },
     {
       "description": "Right-hand labels for the origins craft makers use most",
-      "transform": [{"filter": "isValid(datum.label_right) && datum.label_right > 0"}],
+      "transform": [
+        {
+          "filter": "isValid(datum.label_right) && datum.label_right > 0"
+        }
+      ],
       "layer": [
         {
-          "mark": {"type": "rule", "color": "#C9B8A6", "strokeWidth": 0.8},
+          "mark": {
+            "type": "rule",
+            "color": "#C9B8A6",
+            "strokeWidth": 0.8
+          },
           "encoding": {
-            "x": {"datum": 1, "axis": null},
-            "x2": {"datum": 1.07},
-            "y": {"field": "bar_share", "type": "quantitative", "axis": null},
-            "y2": {"field": "label_right"}
+            "x": {
+              "datum": 1,
+              "axis": null
+            },
+            "x2": {
+              "datum": 1.07
+            },
+            "y": {
+              "field": "bar_share",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y2": {
+              "field": "label_right"
+            }
           }
         },
         {
           "transform": [
-            {"calculate": "format(datum.bar_share, '.0%') + '  ' + datum.country", "as": "txt"}
+            {
+              "calculate": "format(datum.bar_share, '.0%') + '  ' + datum.country",
+              "as": "txt"
+            }
           ],
           "mark": {
             "type": "text",
@@ -153,9 +296,105 @@
             "color": "#2B1D14"
           },
           "encoding": {
-            "x": {"datum": 1.09, "axis": null},
-            "y": {"field": "label_right", "type": "quantitative", "axis": null},
-            "text": {"field": "txt"}
+            "x": {
+              "datum": 1.09,
+              "axis": null
+            },
+            "y": {
+              "field": "label_right",
+              "type": "quantitative",
+              "axis": null
+            },
+            "text": {
+              "field": "txt"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "description": "Group labels for the line ends that sit too close together to label one by one",
+      "data": {
+        "values": [
+          {
+            "x": -0.09,
+            "y": 0.016,
+            "align": "right",
+            "t": [
+              "Peru 3%, Dominican Rep. 1%,",
+              "Venezuela, Madagascar under 1%"
+            ]
+          },
+          {
+            "x": 1.09,
+            "y": 0.012,
+            "align": "left",
+            "t": [
+              "Côte d'Ivoire, Indonesia, Ghana,",
+              "Nigeria, Cameroon: each under 2%"
+            ]
+          }
+        ]
+      },
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.align == 'right'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "fontSize": 11.5,
+            "color": "#6E5A4B",
+            "lineHeight": 14
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative",
+              "axis": null
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.align == 'left'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 11.5,
+            "color": "#6E5A4B",
+            "lineHeight": 14
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "axis": null
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative",
+              "axis": null
+            },
+            "text": {
+              "field": "t"
+            }
           }
         }
       ]

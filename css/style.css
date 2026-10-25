@@ -207,3 +207,6 @@ div.section-head p { margin: 0; max-width: none; }
 .spotlight { justify-content: space-between; }
 .spot-list { margin-top: 0; }
 #s6 .callout { display: flex; flex-direction: column; justify-content: center; }
+
+/* Keep takeaway lines to a readable length */
+.insight { max-width: 75ch; }
