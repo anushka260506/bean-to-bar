@@ -103,65 +103,6 @@
       }
     },
     {
-      "description": "Cream outline behind the average label so it reads over the dots",
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "bottom",
-        "dx": -2,
-        "dy": -3,
-        "fontSize": 11.5,
-        "fontWeight": 600,
-        "color": "#FFFDF9",
-        "stroke": "#FFFDF9",
-        "strokeWidth": 4,
-        "strokeJoin": "round"
-      },
-      "encoding": {
-        "x": {
-          "value": {
-            "expr": "width"
-          }
-        },
-        "y": {
-          "datum": 3.2,
-          "type": "quantitative",
-          "title": "Average rating of its bars"
-        },
-        "text": {
-          "value": "All bars: 3.20"
-        }
-      }
-    },
-    {
-      "description": "Label for the average line",
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "bottom",
-        "dx": -2,
-        "dy": -3,
-        "fontSize": 11.5,
-        "fontWeight": 600,
-        "color": "#B0304A"
-      },
-      "encoding": {
-        "x": {
-          "value": {
-            "expr": "width"
-          }
-        },
-        "y": {
-          "datum": 3.2,
-          "type": "quantitative",
-          "title": "Average rating of its bars"
-        },
-        "text": {
-          "value": "All bars: 3.20"
-        }
-      }
-    },
-    {
       "mark": {
         "type": "circle",
         "size": 70,
